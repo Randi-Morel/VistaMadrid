@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +51,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Archivo.cs" />
+    <Compile Include="EF\Cliente.cs" />
+    <Compile Include="EF\Condicion.cs" />
+    <Compile Include="EF\Mesa.cs" />
+    <Compile Include="EF\MetodoPago.cs" />
+    <Compile Include="EF\Model1.cs" />
+    <Compile Include="EF\MovimientoInventario.cs" />
+    <Compile Include="EF\MovimientoTipo.cs" />
+    <Compile Include="EF\Orden.cs" />
+    <Compile Include="EF\OrdenDetalle.cs" />
+    <Compile Include="EF\Pago.cs" />
+    <Compile Include="EF\Permiso.cs" />
+    <Compile Include="EF\PermisoUsuario.cs" />
+    <Compile Include="EF\Producto.cs" />
+    <Compile Include="EF\ProductoArchivo.cs" />
+    <Compile Include="EF\ProductoCategoria.cs" />
+    <Compile Include="EF\Proveedor.cs" />
+    <Compile Include="EF\Rol.cs" />
+    <Compile Include="EF\Sala.cs" />
+    <Compile Include="EF\sysdiagrams.cs" />
+    <Compile Include="EF\UnidadMedida.cs" />
+    <Compile Include="EF\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +83,10 @@
     <Folder Include="Presentador\" />
     <Folder Include="Utils\" />
     <Folder Include="Vista\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
