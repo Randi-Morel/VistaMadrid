@@ -12,10 +12,11 @@ namespace VistaMadrid
 {
     public partial class frmPrincipal : Form
     {
-        ImageList botones = new ImageList();
-
         //Lista para almacenar los paneles en los que estan los botones de Mantenimientos, Procesos y Reportes
         List<Panel> Paneles = new List<Panel>();
+
+        //Lista para almacenar los botones de Manenimientos, Procesos y Reportes
+        List<Button> ColorButtons = new List<Button>();
         
         HoverButton hoverButton = new HoverButton();
 
@@ -56,7 +57,7 @@ namespace VistaMadrid
 
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
 
-            pnSubBotones.Height = pnLateral.Height - 242;
+            //pnSubBotones.Height = pnLateral.Height - 242;
         }
 
         private void spLateral_SplitterMoved(object sender, SplitterEventArgs e)
@@ -127,6 +128,10 @@ namespace VistaMadrid
                             pan.Visible = false;
                         }
                     }
+                    foreach (Button btn in ColorButtons)
+                    {
+                        hoverButton.MouseOff(btn);
+                    }
                 }
                 
                 foreach (Control ctrl in subpanel.Controls)
@@ -144,13 +149,11 @@ namespace VistaMadrid
 
         private void AddInList()
         {
-            botones.ImageSize = new Size(20, 20);
-            //Imagelist con flechas
-            botones.Images.Add(Properties.Resources.DownArrrow);
-            botones.Images.Add(Properties.Resources.UpArrow);
 
-            //Se cargan las imagenes del imageList al boton
-            
+            //Se cargan 
+            ColorButtons.Add(btnMantenimientos);
+            ColorButtons.Add(btnProcesos);
+            ColorButtons.Add(btnReportes);
 
             //Se almacenan los paneles que contienen botones, sirve para ocultarlos en caso de que se abra otro
             Paneles.Add(pnMantenimientos);

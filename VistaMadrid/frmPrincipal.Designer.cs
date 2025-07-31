@@ -69,6 +69,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnSeparadorInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
+            this.pnPanelInferior = new System.Windows.Forms.Panel();
+            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
@@ -119,14 +121,14 @@
             this.pnSeparadorUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSeparadorUsuario.Location = new System.Drawing.Point(0, 60);
             this.pnSeparadorUsuario.Name = "pnSeparadorUsuario";
-            this.pnSeparadorUsuario.Size = new System.Drawing.Size(162, 2);
+            this.pnSeparadorUsuario.Size = new System.Drawing.Size(162, 1);
             this.pnSeparadorUsuario.TabIndex = 5;
             // 
             // pnContenedorLateral
             // 
-            this.pnContenedorLateral.Controls.Add(this.pnSubBotones);
-            this.pnContenedorLateral.Controls.Add(this.panel1);
             this.pnContenedorLateral.Controls.Add(this.pnLatBotones);
+            this.pnContenedorLateral.Controls.Add(this.panel1);
+            this.pnContenedorLateral.Controls.Add(this.pnSubBotones);
             this.pnContenedorLateral.Location = new System.Drawing.Point(9, 80);
             this.pnContenedorLateral.Name = "pnContenedorLateral";
             this.pnContenedorLateral.Size = new System.Drawing.Size(144, 616);
@@ -135,14 +137,15 @@
             // pnSubBotones
             // 
             this.pnSubBotones.AutoScroll = true;
-            this.pnSubBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnSubBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.pnSubBotones.Controls.Add(this.pnReportes);
             this.pnSubBotones.Controls.Add(this.pnMantenimientos);
             this.pnSubBotones.Controls.Add(this.pnProcesos);
             this.pnSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSubBotones.Location = new System.Drawing.Point(0, 149);
+            this.pnSubBotones.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnSubBotones.Location = new System.Drawing.Point(0, 0);
             this.pnSubBotones.Name = "pnSubBotones";
-            this.pnSubBotones.Size = new System.Drawing.Size(144, 464);
+            this.pnSubBotones.Size = new System.Drawing.Size(144, 200);
             this.pnSubBotones.TabIndex = 0;
             // 
             // pnReportes
@@ -504,7 +507,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 120);
+            this.panel1.Location = new System.Drawing.Point(0, 200);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(144, 29);
             this.panel1.TabIndex = 4;
@@ -516,7 +519,7 @@
             this.pnLatBotones.Controls.Add(this.btnProcesos);
             this.pnLatBotones.Controls.Add(this.btnMantenimientos);
             this.pnLatBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLatBotones.Location = new System.Drawing.Point(0, 0);
+            this.pnLatBotones.Location = new System.Drawing.Point(0, 229);
             this.pnLatBotones.Name = "pnLatBotones";
             this.pnLatBotones.Size = new System.Drawing.Size(144, 120);
             this.pnLatBotones.TabIndex = 5;
@@ -617,6 +620,7 @@
             // tabMenu
             // 
             this.tabMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabMenu.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabMenu.Location = new System.Drawing.Point(4, 34);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(3);
@@ -652,11 +656,31 @@
             this.pnSeparadorLateral.Size = new System.Drawing.Size(4, 702);
             this.pnSeparadorLateral.TabIndex = 10;
             // 
+            // pnPanelInferior
+            // 
+            this.pnPanelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnPanelInferior.Location = new System.Drawing.Point(164, 635);
+            this.pnPanelInferior.Name = "pnPanelInferior";
+            this.pnPanelInferior.Size = new System.Drawing.Size(958, 67);
+            this.pnPanelInferior.TabIndex = 11;
+            // 
+            // pnSeparadorPanelInferior
+            // 
+            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 634);
+            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
+            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
+            this.pnSeparadorPanelInferior.TabIndex = 12;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1126, 706);
+            this.Controls.Add(this.pnSeparadorPanelInferior);
+            this.Controls.Add(this.pnPanelInferior);
             this.Controls.Add(this.pnSeparadorLateral);
             this.Controls.Add(this.pnSeparadorInferior);
             this.Controls.Add(this.tabControl);
@@ -726,5 +750,7 @@
         private System.Windows.Forms.Button btnCuentasPorCobrar;
         private System.Windows.Forms.Button btnEntradasYSalidas;
         private System.Windows.Forms.Button btnStockActual;
+        private System.Windows.Forms.Panel pnPanelInferior;
+        private System.Windows.Forms.Panel pnSeparadorPanelInferior;
     }
 }
