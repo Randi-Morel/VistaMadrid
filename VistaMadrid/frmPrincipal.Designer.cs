@@ -33,47 +33,34 @@
             this.pnLateral = new System.Windows.Forms.Panel();
             this.pnSeparadorUsuario = new System.Windows.Forms.Panel();
             this.pnContenedorLateral = new System.Windows.Forms.Panel();
-            this.pnLatBotones = new System.Windows.Forms.Panel();
-            this.btnCxC = new System.Windows.Forms.Button();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnRestaurante = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelSubBotones = new System.Windows.Forms.Panel();
-            this.pnCxC = new System.Windows.Forms.Panel();
-            this.pnReportesCxC = new System.Windows.Forms.Panel();
+            this.pnSubBotones = new System.Windows.Forms.Panel();
+            this.pnReportes = new System.Windows.Forms.Panel();
             this.btnDeudaCliente = new System.Windows.Forms.Button();
             this.btnCuentasVencidas = new System.Windows.Forms.Button();
             this.btnEstadoCuenta = new System.Windows.Forms.Button();
             this.btnCuentasPorCobrar = new System.Windows.Forms.Button();
-            this.btnReportesCxC = new System.Windows.Forms.Button();
-            this.pnProcesosCxC = new System.Windows.Forms.Panel();
-            this.btnRegistroPago = new System.Windows.Forms.Button();
-            this.btnProcesosCxC = new System.Windows.Forms.Button();
-            this.pnMantenimientosCxC = new System.Windows.Forms.Panel();
+            this.btnEntradasYSalidas = new System.Windows.Forms.Button();
+            this.btnStockActual = new System.Windows.Forms.Button();
+            this.pnMantenimientos = new System.Windows.Forms.Panel();
             this.btnMetodosPago = new System.Windows.Forms.Button();
             this.btnCondicionesPago = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.btnMantenimientosCxC = new System.Windows.Forms.Button();
-            this.pnInventario = new System.Windows.Forms.Panel();
-            this.pnReportesInventario = new System.Windows.Forms.Panel();
-            this.btnEntradasYSalidas = new System.Windows.Forms.Button();
-            this.btnStockActual = new System.Windows.Forms.Button();
-            this.btnReportesInventario = new System.Windows.Forms.Button();
-            this.pnProcesosInventario = new System.Windows.Forms.Panel();
-            this.btnMovimientos = new System.Windows.Forms.Button();
-            this.btnProcesosInventario = new System.Windows.Forms.Button();
-            this.pnMantenimientosInventario = new System.Windows.Forms.Panel();
             this.btnTiposMovimiento = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnUnidadesMedida = new System.Windows.Forms.Button();
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
-            this.btnMantenimientosInventario = new System.Windows.Forms.Button();
-            this.pnRestaurante = new System.Windows.Forms.Panel();
-            this.pnProcesosRestaurante = new System.Windows.Forms.Panel();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnMesas = new System.Windows.Forms.Button();
+            this.pnProcesos = new System.Windows.Forms.Panel();
+            this.btnRegistroPago = new System.Windows.Forms.Button();
+            this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
-            this.btnProcesosRestaurante = new System.Windows.Forms.Button();
-            this.btnMantenimientosRestaurante = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnLatBotones = new System.Windows.Forms.Panel();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnProcesos = new System.Windows.Forms.Button();
+            this.btnMantenimientos = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
@@ -82,27 +69,16 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnSeparadorInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
-            this.pnMantenimientosRestaurante = new System.Windows.Forms.Panel();
-            this.btnMesas = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
+            this.pnSubBotones.SuspendLayout();
+            this.pnReportes.SuspendLayout();
+            this.pnMantenimientos.SuspendLayout();
+            this.pnProcesos.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
-            this.panelSubBotones.SuspendLayout();
-            this.pnCxC.SuspendLayout();
-            this.pnReportesCxC.SuspendLayout();
-            this.pnProcesosCxC.SuspendLayout();
-            this.pnMantenimientosCxC.SuspendLayout();
-            this.pnInventario.SuspendLayout();
-            this.pnReportesInventario.SuspendLayout();
-            this.pnProcesosInventario.SuspendLayout();
-            this.pnMantenimientosInventario.SuspendLayout();
-            this.pnRestaurante.SuspendLayout();
-            this.pnProcesosRestaurante.SuspendLayout();
             this.pnUsuario.SuspendLayout();
             this.tabControl.SuspendLayout();
-            this.pnMantenimientosRestaurante.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -148,7 +124,7 @@
             // 
             // pnContenedorLateral
             // 
-            this.pnContenedorLateral.Controls.Add(this.panelSubBotones);
+            this.pnContenedorLateral.Controls.Add(this.pnSubBotones);
             this.pnContenedorLateral.Controls.Add(this.panel1);
             this.pnContenedorLateral.Controls.Add(this.pnLatBotones);
             this.pnContenedorLateral.Location = new System.Drawing.Point(9, 80);
@@ -156,116 +132,32 @@
             this.pnContenedorLateral.Size = new System.Drawing.Size(144, 616);
             this.pnContenedorLateral.TabIndex = 0;
             // 
-            // pnLatBotones
+            // pnSubBotones
             // 
-            this.pnLatBotones.AutoScroll = true;
-            this.pnLatBotones.Controls.Add(this.btnCxC);
-            this.pnLatBotones.Controls.Add(this.btnInventario);
-            this.pnLatBotones.Controls.Add(this.btnRestaurante);
-            this.pnLatBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLatBotones.Location = new System.Drawing.Point(0, 0);
-            this.pnLatBotones.Name = "pnLatBotones";
-            this.pnLatBotones.Size = new System.Drawing.Size(144, 120);
-            this.pnLatBotones.TabIndex = 5;
+            this.pnSubBotones.AutoScroll = true;
+            this.pnSubBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnSubBotones.Controls.Add(this.pnReportes);
+            this.pnSubBotones.Controls.Add(this.pnMantenimientos);
+            this.pnSubBotones.Controls.Add(this.pnProcesos);
+            this.pnSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnSubBotones.Location = new System.Drawing.Point(0, 149);
+            this.pnSubBotones.Name = "pnSubBotones";
+            this.pnSubBotones.Size = new System.Drawing.Size(144, 464);
+            this.pnSubBotones.TabIndex = 0;
             // 
-            // btnCxC
+            // pnReportes
             // 
-            this.btnCxC.CausesValidation = false;
-            this.btnCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCxC.FlatAppearance.BorderSize = 0;
-            this.btnCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCxC.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCxC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCxC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCxC.Location = new System.Drawing.Point(0, 80);
-            this.btnCxC.Name = "btnCxC";
-            this.btnCxC.Size = new System.Drawing.Size(144, 40);
-            this.btnCxC.TabIndex = 10;
-            this.btnCxC.Text = "CxC";
-            this.btnCxC.UseVisualStyleBackColor = true;
-            this.btnCxC.Click += new System.EventHandler(this.btnCxC_Click);
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.CausesValidation = false;
-            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventario.FlatAppearance.BorderSize = 0;
-            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInventario.Location = new System.Drawing.Point(0, 40);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(144, 40);
-            this.btnInventario.TabIndex = 2;
-            this.btnInventario.Text = "Inventario";
-            this.btnInventario.UseVisualStyleBackColor = true;
-            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
-            // 
-            // btnRestaurante
-            // 
-            this.btnRestaurante.CausesValidation = false;
-            this.btnRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRestaurante.FlatAppearance.BorderSize = 0;
-            this.btnRestaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurante.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestaurante.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRestaurante.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRestaurante.Location = new System.Drawing.Point(0, 0);
-            this.btnRestaurante.Name = "btnRestaurante";
-            this.btnRestaurante.Size = new System.Drawing.Size(144, 40);
-            this.btnRestaurante.TabIndex = 0;
-            this.btnRestaurante.Text = "Restaurante";
-            this.btnRestaurante.UseVisualStyleBackColor = true;
-            this.btnRestaurante.Click += new System.EventHandler(this.btnRestaurante_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 120);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(144, 29);
-            this.panel1.TabIndex = 4;
-            // 
-            // panelSubBotones
-            // 
-            this.panelSubBotones.AutoScroll = true;
-            this.panelSubBotones.Controls.Add(this.pnCxC);
-            this.panelSubBotones.Controls.Add(this.pnInventario);
-            this.panelSubBotones.Controls.Add(this.pnRestaurante);
-            this.panelSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubBotones.Location = new System.Drawing.Point(0, 149);
-            this.panelSubBotones.Name = "panelSubBotones";
-            this.panelSubBotones.Size = new System.Drawing.Size(144, 280);
-            this.panelSubBotones.TabIndex = 0;
-            // 
-            // pnCxC
-            // 
-            this.pnCxC.AutoSize = true;
-            this.pnCxC.Controls.Add(this.pnReportesCxC);
-            this.pnCxC.Controls.Add(this.btnReportesCxC);
-            this.pnCxC.Controls.Add(this.pnProcesosCxC);
-            this.pnCxC.Controls.Add(this.btnProcesosCxC);
-            this.pnCxC.Controls.Add(this.pnMantenimientosCxC);
-            this.pnCxC.Controls.Add(this.btnMantenimientosCxC);
-            this.pnCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnCxC.Location = new System.Drawing.Point(0, 640);
-            this.pnCxC.Name = "pnCxC";
-            this.pnCxC.Size = new System.Drawing.Size(123, 440);
-            this.pnCxC.TabIndex = 2;
-            // 
-            // pnReportesCxC
-            // 
-            this.pnReportesCxC.Controls.Add(this.btnDeudaCliente);
-            this.pnReportesCxC.Controls.Add(this.btnCuentasVencidas);
-            this.pnReportesCxC.Controls.Add(this.btnEstadoCuenta);
-            this.pnReportesCxC.Controls.Add(this.btnCuentasPorCobrar);
-            this.pnReportesCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReportesCxC.Location = new System.Drawing.Point(0, 280);
-            this.pnReportesCxC.Name = "pnReportesCxC";
-            this.pnReportesCxC.Size = new System.Drawing.Size(123, 160);
-            this.pnReportesCxC.TabIndex = 38;
+            this.pnReportes.Controls.Add(this.btnDeudaCliente);
+            this.pnReportes.Controls.Add(this.btnCuentasVencidas);
+            this.pnReportes.Controls.Add(this.btnEstadoCuenta);
+            this.pnReportes.Controls.Add(this.btnCuentasPorCobrar);
+            this.pnReportes.Controls.Add(this.btnEntradasYSalidas);
+            this.pnReportes.Controls.Add(this.btnStockActual);
+            this.pnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnReportes.Location = new System.Drawing.Point(0, 520);
+            this.pnReportes.Name = "pnReportes";
+            this.pnReportes.Size = new System.Drawing.Size(123, 240);
+            this.pnReportes.TabIndex = 3;
             // 
             // btnDeudaCliente
             // 
@@ -275,10 +167,10 @@
             this.btnDeudaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeudaCliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeudaCliente.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDeudaCliente.Location = new System.Drawing.Point(0, 120);
+            this.btnDeudaCliente.Location = new System.Drawing.Point(0, 200);
             this.btnDeudaCliente.Name = "btnDeudaCliente";
             this.btnDeudaCliente.Size = new System.Drawing.Size(123, 40);
-            this.btnDeudaCliente.TabIndex = 31;
+            this.btnDeudaCliente.TabIndex = 35;
             this.btnDeudaCliente.Text = "Deuda por Cliente";
             this.btnDeudaCliente.UseVisualStyleBackColor = true;
             this.btnDeudaCliente.Visible = false;
@@ -292,10 +184,10 @@
             this.btnCuentasVencidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCuentasVencidas.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasVencidas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCuentasVencidas.Location = new System.Drawing.Point(0, 80);
+            this.btnCuentasVencidas.Location = new System.Drawing.Point(0, 160);
             this.btnCuentasVencidas.Name = "btnCuentasVencidas";
             this.btnCuentasVencidas.Size = new System.Drawing.Size(123, 40);
-            this.btnCuentasVencidas.TabIndex = 30;
+            this.btnCuentasVencidas.TabIndex = 34;
             this.btnCuentasVencidas.Text = "Cuentas Vencidas";
             this.btnCuentasVencidas.UseVisualStyleBackColor = true;
             this.btnCuentasVencidas.Visible = false;
@@ -309,10 +201,10 @@
             this.btnEstadoCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstadoCuenta.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstadoCuenta.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEstadoCuenta.Location = new System.Drawing.Point(0, 40);
+            this.btnEstadoCuenta.Location = new System.Drawing.Point(0, 120);
             this.btnEstadoCuenta.Name = "btnEstadoCuenta";
             this.btnEstadoCuenta.Size = new System.Drawing.Size(123, 40);
-            this.btnEstadoCuenta.TabIndex = 29;
+            this.btnEstadoCuenta.TabIndex = 33;
             this.btnEstadoCuenta.Text = "Estado de Cuenta";
             this.btnEstadoCuenta.UseVisualStyleBackColor = true;
             this.btnEstadoCuenta.Visible = false;
@@ -326,175 +218,13 @@
             this.btnCuentasPorCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCuentasPorCobrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasPorCobrar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCuentasPorCobrar.Location = new System.Drawing.Point(0, 0);
+            this.btnCuentasPorCobrar.Location = new System.Drawing.Point(0, 80);
             this.btnCuentasPorCobrar.Name = "btnCuentasPorCobrar";
             this.btnCuentasPorCobrar.Size = new System.Drawing.Size(123, 40);
-            this.btnCuentasPorCobrar.TabIndex = 28;
+            this.btnCuentasPorCobrar.TabIndex = 32;
             this.btnCuentasPorCobrar.Text = "Cuentas por Cobrar";
             this.btnCuentasPorCobrar.UseVisualStyleBackColor = true;
             this.btnCuentasPorCobrar.Visible = false;
-            // 
-            // btnReportesCxC
-            // 
-            this.btnReportesCxC.CausesValidation = false;
-            this.btnReportesCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportesCxC.FlatAppearance.BorderSize = 0;
-            this.btnReportesCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportesCxC.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportesCxC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnReportesCxC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportesCxC.Location = new System.Drawing.Point(0, 240);
-            this.btnReportesCxC.Name = "btnReportesCxC";
-            this.btnReportesCxC.Size = new System.Drawing.Size(123, 40);
-            this.btnReportesCxC.TabIndex = 37;
-            this.btnReportesCxC.Text = "Reportes";
-            this.btnReportesCxC.UseVisualStyleBackColor = true;
-            this.btnReportesCxC.Click += new System.EventHandler(this.btnReportesCxC_Click);
-            // 
-            // pnProcesosCxC
-            // 
-            this.pnProcesosCxC.Controls.Add(this.btnRegistroPago);
-            this.pnProcesosCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnProcesosCxC.Location = new System.Drawing.Point(0, 200);
-            this.pnProcesosCxC.Name = "pnProcesosCxC";
-            this.pnProcesosCxC.Size = new System.Drawing.Size(123, 40);
-            this.pnProcesosCxC.TabIndex = 36;
-            // 
-            // btnRegistroPago
-            // 
-            this.btnRegistroPago.CausesValidation = false;
-            this.btnRegistroPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRegistroPago.FlatAppearance.BorderSize = 0;
-            this.btnRegistroPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistroPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroPago.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRegistroPago.Location = new System.Drawing.Point(0, 0);
-            this.btnRegistroPago.Name = "btnRegistroPago";
-            this.btnRegistroPago.Size = new System.Drawing.Size(123, 40);
-            this.btnRegistroPago.TabIndex = 24;
-            this.btnRegistroPago.Text = "Registro de Pago";
-            this.btnRegistroPago.UseVisualStyleBackColor = true;
-            this.btnRegistroPago.Visible = false;
-            // 
-            // btnProcesosCxC
-            // 
-            this.btnProcesosCxC.CausesValidation = false;
-            this.btnProcesosCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProcesosCxC.FlatAppearance.BorderSize = 0;
-            this.btnProcesosCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcesosCxC.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcesosCxC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProcesosCxC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProcesosCxC.Location = new System.Drawing.Point(0, 160);
-            this.btnProcesosCxC.Name = "btnProcesosCxC";
-            this.btnProcesosCxC.Size = new System.Drawing.Size(123, 40);
-            this.btnProcesosCxC.TabIndex = 35;
-            this.btnProcesosCxC.Text = "Procesos";
-            this.btnProcesosCxC.UseVisualStyleBackColor = true;
-            this.btnProcesosCxC.Click += new System.EventHandler(this.btnProcesosCxC_Click);
-            // 
-            // pnMantenimientosCxC
-            // 
-            this.pnMantenimientosCxC.Controls.Add(this.btnMetodosPago);
-            this.pnMantenimientosCxC.Controls.Add(this.btnCondicionesPago);
-            this.pnMantenimientosCxC.Controls.Add(this.btnClientes);
-            this.pnMantenimientosCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnMantenimientosCxC.Location = new System.Drawing.Point(0, 40);
-            this.pnMantenimientosCxC.Name = "pnMantenimientosCxC";
-            this.pnMantenimientosCxC.Size = new System.Drawing.Size(123, 120);
-            this.pnMantenimientosCxC.TabIndex = 34;
-            // 
-            // btnMetodosPago
-            // 
-            this.btnMetodosPago.AutoEllipsis = true;
-            this.btnMetodosPago.CausesValidation = false;
-            this.btnMetodosPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMetodosPago.FlatAppearance.BorderSize = 0;
-            this.btnMetodosPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMetodosPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMetodosPago.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMetodosPago.Location = new System.Drawing.Point(0, 80);
-            this.btnMetodosPago.Name = "btnMetodosPago";
-            this.btnMetodosPago.Size = new System.Drawing.Size(123, 40);
-            this.btnMetodosPago.TabIndex = 25;
-            this.btnMetodosPago.Text = "Metodos de Pago";
-            this.btnMetodosPago.UseVisualStyleBackColor = true;
-            this.btnMetodosPago.Visible = false;
-            // 
-            // btnCondicionesPago
-            // 
-            this.btnCondicionesPago.AutoEllipsis = true;
-            this.btnCondicionesPago.CausesValidation = false;
-            this.btnCondicionesPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCondicionesPago.FlatAppearance.BorderSize = 0;
-            this.btnCondicionesPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCondicionesPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCondicionesPago.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCondicionesPago.Location = new System.Drawing.Point(0, 40);
-            this.btnCondicionesPago.Name = "btnCondicionesPago";
-            this.btnCondicionesPago.Size = new System.Drawing.Size(123, 40);
-            this.btnCondicionesPago.TabIndex = 24;
-            this.btnCondicionesPago.Text = "Condiciones de Pago";
-            this.btnCondicionesPago.UseVisualStyleBackColor = true;
-            this.btnCondicionesPago.Visible = false;
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.CausesValidation = false;
-            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnClientes.Location = new System.Drawing.Point(0, 0);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(123, 40);
-            this.btnClientes.TabIndex = 23;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Visible = false;
-            // 
-            // btnMantenimientosCxC
-            // 
-            this.btnMantenimientosCxC.CausesValidation = false;
-            this.btnMantenimientosCxC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantenimientosCxC.FlatAppearance.BorderSize = 0;
-            this.btnMantenimientosCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimientosCxC.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimientosCxC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMantenimientosCxC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMantenimientosCxC.Location = new System.Drawing.Point(0, 0);
-            this.btnMantenimientosCxC.Name = "btnMantenimientosCxC";
-            this.btnMantenimientosCxC.Size = new System.Drawing.Size(123, 40);
-            this.btnMantenimientosCxC.TabIndex = 33;
-            this.btnMantenimientosCxC.Text = "Mantenimientos";
-            this.btnMantenimientosCxC.UseVisualStyleBackColor = true;
-            this.btnMantenimientosCxC.Click += new System.EventHandler(this.btnMantenimientosCxC_Click);
-            // 
-            // pnInventario
-            // 
-            this.pnInventario.AutoSize = true;
-            this.pnInventario.Controls.Add(this.pnReportesInventario);
-            this.pnInventario.Controls.Add(this.btnReportesInventario);
-            this.pnInventario.Controls.Add(this.pnProcesosInventario);
-            this.pnInventario.Controls.Add(this.btnProcesosInventario);
-            this.pnInventario.Controls.Add(this.pnMantenimientosInventario);
-            this.pnInventario.Controls.Add(this.btnMantenimientosInventario);
-            this.pnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnInventario.Location = new System.Drawing.Point(0, 200);
-            this.pnInventario.Name = "pnInventario";
-            this.pnInventario.Size = new System.Drawing.Size(123, 440);
-            this.pnInventario.TabIndex = 1;
-            // 
-            // pnReportesInventario
-            // 
-            this.pnReportesInventario.Controls.Add(this.btnEntradasYSalidas);
-            this.pnReportesInventario.Controls.Add(this.btnStockActual);
-            this.pnReportesInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReportesInventario.Location = new System.Drawing.Point(0, 360);
-            this.pnReportesInventario.Name = "pnReportesInventario";
-            this.pnReportesInventario.Size = new System.Drawing.Size(123, 80);
-            this.pnReportesInventario.TabIndex = 32;
             // 
             // btnEntradasYSalidas
             // 
@@ -508,7 +238,7 @@
             this.btnEntradasYSalidas.Location = new System.Drawing.Point(0, 40);
             this.btnEntradasYSalidas.Name = "btnEntradasYSalidas";
             this.btnEntradasYSalidas.Size = new System.Drawing.Size(123, 40);
-            this.btnEntradasYSalidas.TabIndex = 21;
+            this.btnEntradasYSalidas.TabIndex = 23;
             this.btnEntradasYSalidas.Text = "Entradas y Salidas";
             this.btnEntradasYSalidas.UseVisualStyleBackColor = true;
             this.btnEntradasYSalidas.Visible = false;
@@ -524,82 +254,78 @@
             this.btnStockActual.Location = new System.Drawing.Point(0, 0);
             this.btnStockActual.Name = "btnStockActual";
             this.btnStockActual.Size = new System.Drawing.Size(123, 40);
-            this.btnStockActual.TabIndex = 20;
+            this.btnStockActual.TabIndex = 22;
             this.btnStockActual.Text = "Stock Actual";
             this.btnStockActual.UseVisualStyleBackColor = true;
             this.btnStockActual.Visible = false;
             // 
-            // btnReportesInventario
+            // pnMantenimientos
             // 
-            this.btnReportesInventario.CausesValidation = false;
-            this.btnReportesInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportesInventario.FlatAppearance.BorderSize = 0;
-            this.btnReportesInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportesInventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportesInventario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnReportesInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportesInventario.Location = new System.Drawing.Point(0, 320);
-            this.btnReportesInventario.Name = "btnReportesInventario";
-            this.btnReportesInventario.Size = new System.Drawing.Size(123, 40);
-            this.btnReportesInventario.TabIndex = 31;
-            this.btnReportesInventario.Text = "Reportes";
-            this.btnReportesInventario.UseVisualStyleBackColor = true;
-            this.btnReportesInventario.Click += new System.EventHandler(this.btnReportesInventario_Click);
+            this.pnMantenimientos.Controls.Add(this.btnMetodosPago);
+            this.pnMantenimientos.Controls.Add(this.btnCondicionesPago);
+            this.pnMantenimientos.Controls.Add(this.btnClientes);
+            this.pnMantenimientos.Controls.Add(this.btnTiposMovimiento);
+            this.pnMantenimientos.Controls.Add(this.btnProveedores);
+            this.pnMantenimientos.Controls.Add(this.btnUnidadesMedida);
+            this.pnMantenimientos.Controls.Add(this.btnCategorias);
+            this.pnMantenimientos.Controls.Add(this.btnProductos);
+            this.pnMantenimientos.Controls.Add(this.btnEmpleados);
+            this.pnMantenimientos.Controls.Add(this.btnMesas);
+            this.pnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnMantenimientos.Location = new System.Drawing.Point(0, 120);
+            this.pnMantenimientos.Name = "pnMantenimientos";
+            this.pnMantenimientos.Size = new System.Drawing.Size(123, 400);
+            this.pnMantenimientos.TabIndex = 0;
             // 
-            // pnProcesosInventario
+            // btnMetodosPago
             // 
-            this.pnProcesosInventario.Controls.Add(this.btnMovimientos);
-            this.pnProcesosInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnProcesosInventario.Location = new System.Drawing.Point(0, 280);
-            this.pnProcesosInventario.Name = "pnProcesosInventario";
-            this.pnProcesosInventario.Size = new System.Drawing.Size(123, 40);
-            this.pnProcesosInventario.TabIndex = 30;
+            this.btnMetodosPago.AutoEllipsis = true;
+            this.btnMetodosPago.CausesValidation = false;
+            this.btnMetodosPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMetodosPago.FlatAppearance.BorderSize = 0;
+            this.btnMetodosPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMetodosPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMetodosPago.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMetodosPago.Location = new System.Drawing.Point(0, 360);
+            this.btnMetodosPago.Name = "btnMetodosPago";
+            this.btnMetodosPago.Size = new System.Drawing.Size(123, 40);
+            this.btnMetodosPago.TabIndex = 46;
+            this.btnMetodosPago.Text = "Metodos de Pago";
+            this.btnMetodosPago.UseVisualStyleBackColor = true;
+            this.btnMetodosPago.Visible = false;
             // 
-            // btnMovimientos
+            // btnCondicionesPago
             // 
-            this.btnMovimientos.CausesValidation = false;
-            this.btnMovimientos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMovimientos.FlatAppearance.BorderSize = 0;
-            this.btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMovimientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMovimientos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMovimientos.Location = new System.Drawing.Point(0, 0);
-            this.btnMovimientos.Name = "btnMovimientos";
-            this.btnMovimientos.Size = new System.Drawing.Size(123, 40);
-            this.btnMovimientos.TabIndex = 18;
-            this.btnMovimientos.Text = "Movimientos";
-            this.btnMovimientos.UseVisualStyleBackColor = true;
-            this.btnMovimientos.Visible = false;
+            this.btnCondicionesPago.AutoEllipsis = true;
+            this.btnCondicionesPago.CausesValidation = false;
+            this.btnCondicionesPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCondicionesPago.FlatAppearance.BorderSize = 0;
+            this.btnCondicionesPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCondicionesPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCondicionesPago.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCondicionesPago.Location = new System.Drawing.Point(0, 320);
+            this.btnCondicionesPago.Name = "btnCondicionesPago";
+            this.btnCondicionesPago.Size = new System.Drawing.Size(123, 40);
+            this.btnCondicionesPago.TabIndex = 45;
+            this.btnCondicionesPago.Text = "Condiciones de Pago";
+            this.btnCondicionesPago.UseVisualStyleBackColor = true;
+            this.btnCondicionesPago.Visible = false;
             // 
-            // btnProcesosInventario
+            // btnClientes
             // 
-            this.btnProcesosInventario.CausesValidation = false;
-            this.btnProcesosInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProcesosInventario.FlatAppearance.BorderSize = 0;
-            this.btnProcesosInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcesosInventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcesosInventario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProcesosInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProcesosInventario.Location = new System.Drawing.Point(0, 240);
-            this.btnProcesosInventario.Name = "btnProcesosInventario";
-            this.btnProcesosInventario.Size = new System.Drawing.Size(123, 40);
-            this.btnProcesosInventario.TabIndex = 29;
-            this.btnProcesosInventario.Text = "Procesos";
-            this.btnProcesosInventario.UseVisualStyleBackColor = true;
-            this.btnProcesosInventario.Click += new System.EventHandler(this.btnProcesosInventario_Click);
-            // 
-            // pnMantenimientosInventario
-            // 
-            this.pnMantenimientosInventario.Controls.Add(this.btnTiposMovimiento);
-            this.pnMantenimientosInventario.Controls.Add(this.btnProveedores);
-            this.pnMantenimientosInventario.Controls.Add(this.btnUnidadesMedida);
-            this.pnMantenimientosInventario.Controls.Add(this.btnCategorias);
-            this.pnMantenimientosInventario.Controls.Add(this.btnProductos);
-            this.pnMantenimientosInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnMantenimientosInventario.Location = new System.Drawing.Point(0, 40);
-            this.pnMantenimientosInventario.Name = "pnMantenimientosInventario";
-            this.pnMantenimientosInventario.Size = new System.Drawing.Size(123, 200);
-            this.pnMantenimientosInventario.TabIndex = 28;
+            this.btnClientes.CausesValidation = false;
+            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnClientes.Location = new System.Drawing.Point(0, 280);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(123, 40);
+            this.btnClientes.TabIndex = 44;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Visible = false;
             // 
             // btnTiposMovimiento
             // 
@@ -610,10 +336,10 @@
             this.btnTiposMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTiposMovimiento.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTiposMovimiento.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnTiposMovimiento.Location = new System.Drawing.Point(0, 160);
+            this.btnTiposMovimiento.Location = new System.Drawing.Point(0, 240);
             this.btnTiposMovimiento.Name = "btnTiposMovimiento";
             this.btnTiposMovimiento.Size = new System.Drawing.Size(123, 40);
-            this.btnTiposMovimiento.TabIndex = 20;
+            this.btnTiposMovimiento.TabIndex = 43;
             this.btnTiposMovimiento.Text = "Tipos de Movimientos";
             this.btnTiposMovimiento.UseVisualStyleBackColor = true;
             this.btnTiposMovimiento.Visible = false;
@@ -626,10 +352,10 @@
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 120);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 200);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(123, 40);
-            this.btnProveedores.TabIndex = 19;
+            this.btnProveedores.TabIndex = 42;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
             this.btnProveedores.Visible = false;
@@ -643,10 +369,10 @@
             this.btnUnidadesMedida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnidadesMedida.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUnidadesMedida.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUnidadesMedida.Location = new System.Drawing.Point(0, 80);
+            this.btnUnidadesMedida.Location = new System.Drawing.Point(0, 160);
             this.btnUnidadesMedida.Name = "btnUnidadesMedida";
             this.btnUnidadesMedida.Size = new System.Drawing.Size(123, 40);
-            this.btnUnidadesMedida.TabIndex = 18;
+            this.btnUnidadesMedida.TabIndex = 41;
             this.btnUnidadesMedida.Text = "Unidades de Medida";
             this.btnUnidadesMedida.UseVisualStyleBackColor = true;
             this.btnUnidadesMedida.Visible = false;
@@ -659,10 +385,10 @@
             this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategorias.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategorias.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCategorias.Location = new System.Drawing.Point(0, 40);
+            this.btnCategorias.Location = new System.Drawing.Point(0, 120);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(123, 40);
-            this.btnCategorias.TabIndex = 17;
+            this.btnCategorias.TabIndex = 40;
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.UseVisualStyleBackColor = true;
             this.btnCategorias.Visible = false;
@@ -675,51 +401,88 @@
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProductos.Location = new System.Drawing.Point(0, 0);
+            this.btnProductos.Location = new System.Drawing.Point(0, 80);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(123, 40);
-            this.btnProductos.TabIndex = 16;
+            this.btnProductos.TabIndex = 39;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Visible = false;
             // 
-            // btnMantenimientosInventario
+            // btnEmpleados
             // 
-            this.btnMantenimientosInventario.CausesValidation = false;
-            this.btnMantenimientosInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantenimientosInventario.FlatAppearance.BorderSize = 0;
-            this.btnMantenimientosInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimientosInventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimientosInventario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMantenimientosInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMantenimientosInventario.Location = new System.Drawing.Point(0, 0);
-            this.btnMantenimientosInventario.Name = "btnMantenimientosInventario";
-            this.btnMantenimientosInventario.Size = new System.Drawing.Size(123, 40);
-            this.btnMantenimientosInventario.TabIndex = 27;
-            this.btnMantenimientosInventario.Text = "Mantenimientos";
-            this.btnMantenimientosInventario.UseVisualStyleBackColor = true;
-            this.btnMantenimientosInventario.Click += new System.EventHandler(this.btnMantenimientosInventario_Click);
+            this.btnEmpleados.CausesValidation = false;
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 40);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(123, 40);
+            this.btnEmpleados.TabIndex = 38;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Visible = false;
             // 
-            // pnRestaurante
+            // btnMesas
             // 
-            this.pnRestaurante.Controls.Add(this.pnProcesosRestaurante);
-            this.pnRestaurante.Controls.Add(this.btnProcesosRestaurante);
-            this.pnRestaurante.Controls.Add(this.pnMantenimientosRestaurante);
-            this.pnRestaurante.Controls.Add(this.btnMantenimientosRestaurante);
-            this.pnRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnRestaurante.Location = new System.Drawing.Point(0, 0);
-            this.pnRestaurante.Name = "pnRestaurante";
-            this.pnRestaurante.Size = new System.Drawing.Size(123, 200);
-            this.pnRestaurante.TabIndex = 0;
+            this.btnMesas.CausesValidation = false;
+            this.btnMesas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMesas.FlatAppearance.BorderSize = 0;
+            this.btnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMesas.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMesas.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMesas.Location = new System.Drawing.Point(0, 0);
+            this.btnMesas.Name = "btnMesas";
+            this.btnMesas.Size = new System.Drawing.Size(123, 40);
+            this.btnMesas.TabIndex = 37;
+            this.btnMesas.Text = "Mesas";
+            this.btnMesas.UseVisualStyleBackColor = true;
+            this.btnMesas.Visible = false;
             // 
-            // pnProcesosRestaurante
+            // pnProcesos
             // 
-            this.pnProcesosRestaurante.Controls.Add(this.btnFacturacion);
-            this.pnProcesosRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnProcesosRestaurante.Location = new System.Drawing.Point(0, 160);
-            this.pnProcesosRestaurante.Name = "pnProcesosRestaurante";
-            this.pnProcesosRestaurante.Size = new System.Drawing.Size(123, 40);
-            this.pnProcesosRestaurante.TabIndex = 26;
+            this.pnProcesos.Controls.Add(this.btnRegistroPago);
+            this.pnProcesos.Controls.Add(this.btnMovimientos);
+            this.pnProcesos.Controls.Add(this.btnFacturacion);
+            this.pnProcesos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnProcesos.Location = new System.Drawing.Point(0, 0);
+            this.pnProcesos.Name = "pnProcesos";
+            this.pnProcesos.Size = new System.Drawing.Size(123, 120);
+            this.pnProcesos.TabIndex = 1;
+            // 
+            // btnRegistroPago
+            // 
+            this.btnRegistroPago.CausesValidation = false;
+            this.btnRegistroPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistroPago.FlatAppearance.BorderSize = 0;
+            this.btnRegistroPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroPago.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroPago.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRegistroPago.Location = new System.Drawing.Point(0, 80);
+            this.btnRegistroPago.Name = "btnRegistroPago";
+            this.btnRegistroPago.Size = new System.Drawing.Size(123, 40);
+            this.btnRegistroPago.TabIndex = 35;
+            this.btnRegistroPago.Text = "Registro de Pago";
+            this.btnRegistroPago.UseVisualStyleBackColor = true;
+            this.btnRegistroPago.Visible = false;
+            // 
+            // btnMovimientos
+            // 
+            this.btnMovimientos.CausesValidation = false;
+            this.btnMovimientos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMovimientos.FlatAppearance.BorderSize = 0;
+            this.btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMovimientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovimientos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMovimientos.Location = new System.Drawing.Point(0, 40);
+            this.btnMovimientos.Name = "btnMovimientos";
+            this.btnMovimientos.Size = new System.Drawing.Size(123, 40);
+            this.btnMovimientos.TabIndex = 34;
+            this.btnMovimientos.Text = "Movimientos";
+            this.btnMovimientos.UseVisualStyleBackColor = true;
+            this.btnMovimientos.Visible = false;
             // 
             // btnFacturacion
             // 
@@ -731,45 +494,84 @@
             this.btnFacturacion.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnFacturacion.Location = new System.Drawing.Point(0, 0);
             this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Size = new System.Drawing.Size(123, 42);
-            this.btnFacturacion.TabIndex = 32;
+            this.btnFacturacion.Size = new System.Drawing.Size(123, 40);
+            this.btnFacturacion.TabIndex = 33;
             this.btnFacturacion.Text = "Facturacion";
             this.btnFacturacion.UseVisualStyleBackColor = true;
             this.btnFacturacion.Visible = false;
             // 
-            // btnProcesosRestaurante
+            // panel1
             // 
-            this.btnProcesosRestaurante.CausesValidation = false;
-            this.btnProcesosRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProcesosRestaurante.FlatAppearance.BorderSize = 0;
-            this.btnProcesosRestaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcesosRestaurante.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcesosRestaurante.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProcesosRestaurante.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProcesosRestaurante.Location = new System.Drawing.Point(0, 120);
-            this.btnProcesosRestaurante.Name = "btnProcesosRestaurante";
-            this.btnProcesosRestaurante.Size = new System.Drawing.Size(123, 40);
-            this.btnProcesosRestaurante.TabIndex = 25;
-            this.btnProcesosRestaurante.Text = "Procesos";
-            this.btnProcesosRestaurante.UseVisualStyleBackColor = true;
-            this.btnProcesosRestaurante.Click += new System.EventHandler(this.btnProcesosRestaurante_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 120);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(144, 29);
+            this.panel1.TabIndex = 4;
             // 
-            // btnMantenimientosRestaurante
+            // pnLatBotones
             // 
-            this.btnMantenimientosRestaurante.CausesValidation = false;
-            this.btnMantenimientosRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantenimientosRestaurante.FlatAppearance.BorderSize = 0;
-            this.btnMantenimientosRestaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimientosRestaurante.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimientosRestaurante.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMantenimientosRestaurante.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMantenimientosRestaurante.Location = new System.Drawing.Point(0, 0);
-            this.btnMantenimientosRestaurante.Name = "btnMantenimientosRestaurante";
-            this.btnMantenimientosRestaurante.Size = new System.Drawing.Size(123, 40);
-            this.btnMantenimientosRestaurante.TabIndex = 23;
-            this.btnMantenimientosRestaurante.Text = "Mantenimientos";
-            this.btnMantenimientosRestaurante.UseVisualStyleBackColor = true;
-            this.btnMantenimientosRestaurante.Click += new System.EventHandler(this.btnMantenimientosRestaurante_Click);
+            this.pnLatBotones.AutoScroll = true;
+            this.pnLatBotones.Controls.Add(this.btnReportes);
+            this.pnLatBotones.Controls.Add(this.btnProcesos);
+            this.pnLatBotones.Controls.Add(this.btnMantenimientos);
+            this.pnLatBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLatBotones.Location = new System.Drawing.Point(0, 0);
+            this.pnLatBotones.Name = "pnLatBotones";
+            this.pnLatBotones.Size = new System.Drawing.Size(144, 120);
+            this.pnLatBotones.TabIndex = 5;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.AutoSize = true;
+            this.btnReportes.CausesValidation = false;
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportes.Location = new System.Drawing.Point(0, 80);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(144, 40);
+            this.btnReportes.TabIndex = 10;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnProcesos
+            // 
+            this.btnProcesos.CausesValidation = false;
+            this.btnProcesos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProcesos.FlatAppearance.BorderSize = 0;
+            this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcesos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcesos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnProcesos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProcesos.Location = new System.Drawing.Point(0, 40);
+            this.btnProcesos.Name = "btnProcesos";
+            this.btnProcesos.Size = new System.Drawing.Size(144, 40);
+            this.btnProcesos.TabIndex = 2;
+            this.btnProcesos.Text = "Procesos";
+            this.btnProcesos.UseVisualStyleBackColor = true;
+            this.btnProcesos.Click += new System.EventHandler(this.btnProcesos_Click);
+            // 
+            // btnMantenimientos
+            // 
+            this.btnMantenimientos.CausesValidation = false;
+            this.btnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantenimientos.FlatAppearance.BorderSize = 0;
+            this.btnMantenimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantenimientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantenimientos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMantenimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMantenimientos.Location = new System.Drawing.Point(0, 0);
+            this.btnMantenimientos.Name = "btnMantenimientos";
+            this.btnMantenimientos.Size = new System.Drawing.Size(144, 40);
+            this.btnMantenimientos.TabIndex = 0;
+            this.btnMantenimientos.Text = "Mantenimientos";
+            this.btnMantenimientos.UseVisualStyleBackColor = true;
+            this.btnMantenimientos.Click += new System.EventHandler(this.btnMantenimientos_Click);
             // 
             // pnUsuario
             // 
@@ -850,48 +652,6 @@
             this.pnSeparadorLateral.Size = new System.Drawing.Size(4, 702);
             this.pnSeparadorLateral.TabIndex = 10;
             // 
-            // pnMantenimientosRestaurante
-            // 
-            this.pnMantenimientosRestaurante.Controls.Add(this.btnEmpleados);
-            this.pnMantenimientosRestaurante.Controls.Add(this.btnMesas);
-            this.pnMantenimientosRestaurante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnMantenimientosRestaurante.Location = new System.Drawing.Point(0, 40);
-            this.pnMantenimientosRestaurante.Name = "pnMantenimientosRestaurante";
-            this.pnMantenimientosRestaurante.Size = new System.Drawing.Size(123, 80);
-            this.pnMantenimientosRestaurante.TabIndex = 24;
-            // 
-            // btnMesas
-            // 
-            this.btnMesas.CausesValidation = false;
-            this.btnMesas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMesas.FlatAppearance.BorderSize = 0;
-            this.btnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMesas.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMesas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMesas.Location = new System.Drawing.Point(0, 0);
-            this.btnMesas.Name = "btnMesas";
-            this.btnMesas.Size = new System.Drawing.Size(123, 40);
-            this.btnMesas.TabIndex = 35;
-            this.btnMesas.Text = "Mesas";
-            this.btnMesas.UseVisualStyleBackColor = true;
-            this.btnMesas.Visible = false;
-            // 
-            // btnEmpleados
-            // 
-            this.btnEmpleados.CausesValidation = false;
-            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEmpleados.FlatAppearance.BorderSize = 0;
-            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 40);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(123, 40);
-            this.btnEmpleados.TabIndex = 36;
-            this.btnEmpleados.Text = "Empleados";
-            this.btnEmpleados.UseVisualStyleBackColor = true;
-            this.btnEmpleados.Visible = false;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -911,23 +671,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.pnLateral.ResumeLayout(false);
             this.pnContenedorLateral.ResumeLayout(false);
+            this.pnSubBotones.ResumeLayout(false);
+            this.pnReportes.ResumeLayout(false);
+            this.pnMantenimientos.ResumeLayout(false);
+            this.pnProcesos.ResumeLayout(false);
             this.pnLatBotones.ResumeLayout(false);
-            this.panelSubBotones.ResumeLayout(false);
-            this.panelSubBotones.PerformLayout();
-            this.pnCxC.ResumeLayout(false);
-            this.pnReportesCxC.ResumeLayout(false);
-            this.pnProcesosCxC.ResumeLayout(false);
-            this.pnMantenimientosCxC.ResumeLayout(false);
-            this.pnInventario.ResumeLayout(false);
-            this.pnReportesInventario.ResumeLayout(false);
-            this.pnProcesosInventario.ResumeLayout(false);
-            this.pnMantenimientosInventario.ResumeLayout(false);
-            this.pnRestaurante.ResumeLayout(false);
-            this.pnProcesosRestaurante.ResumeLayout(false);
+            this.pnLatBotones.PerformLayout();
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
             this.tabControl.ResumeLayout(false);
-            this.pnMantenimientosRestaurante.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -938,9 +690,9 @@
         private System.Windows.Forms.Panel pnLateral;
         private System.Windows.Forms.Splitter spLateral;
         private System.Windows.Forms.Panel pnLatBotones;
-        private System.Windows.Forms.Button btnCxC;
-        private System.Windows.Forms.Button btnInventario;
-        private System.Windows.Forms.Button btnRestaurante;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnProcesos;
+        private System.Windows.Forms.Button btnMantenimientos;
         private System.Windows.Forms.Panel pnContenedorLateral;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnUsuario;
@@ -951,44 +703,28 @@
         private System.Windows.Forms.Panel pnSeparadorUsuario;
         private System.Windows.Forms.Panel pnSeparadorInferior;
         private System.Windows.Forms.Panel pnSeparadorLateral;
-        private System.Windows.Forms.Panel panelSubBotones;
-        private System.Windows.Forms.Panel pnRestaurante;
-        private System.Windows.Forms.Button btnMantenimientosRestaurante;
-        private System.Windows.Forms.Panel pnInventario;
-        private System.Windows.Forms.Panel pnReportesInventario;
-        private System.Windows.Forms.Button btnEntradasYSalidas;
-        private System.Windows.Forms.Button btnStockActual;
-        private System.Windows.Forms.Button btnReportesInventario;
-        private System.Windows.Forms.Panel pnProcesosInventario;
+        private System.Windows.Forms.Panel pnSubBotones;
+        private System.Windows.Forms.Panel pnProcesos;
+        private System.Windows.Forms.Button btnRegistroPago;
         private System.Windows.Forms.Button btnMovimientos;
-        private System.Windows.Forms.Button btnProcesosInventario;
-        private System.Windows.Forms.Panel pnMantenimientosInventario;
+        private System.Windows.Forms.Button btnFacturacion;
+        private System.Windows.Forms.Panel pnMantenimientos;
+        private System.Windows.Forms.Button btnMetodosPago;
+        private System.Windows.Forms.Button btnCondicionesPago;
+        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnTiposMovimiento;
         private System.Windows.Forms.Button btnProveedores;
         private System.Windows.Forms.Button btnUnidadesMedida;
         private System.Windows.Forms.Button btnCategorias;
         private System.Windows.Forms.Button btnProductos;
-        private System.Windows.Forms.Button btnMantenimientosInventario;
-        private System.Windows.Forms.Panel pnProcesosRestaurante;
-        private System.Windows.Forms.Button btnFacturacion;
-        private System.Windows.Forms.Button btnProcesosRestaurante;
-        private System.Windows.Forms.Panel pnCxC;
-        private System.Windows.Forms.Panel pnReportesCxC;
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnMesas;
+        private System.Windows.Forms.Panel pnReportes;
         private System.Windows.Forms.Button btnDeudaCliente;
         private System.Windows.Forms.Button btnCuentasVencidas;
         private System.Windows.Forms.Button btnEstadoCuenta;
         private System.Windows.Forms.Button btnCuentasPorCobrar;
-        private System.Windows.Forms.Button btnReportesCxC;
-        private System.Windows.Forms.Panel pnProcesosCxC;
-        private System.Windows.Forms.Button btnRegistroPago;
-        private System.Windows.Forms.Button btnProcesosCxC;
-        private System.Windows.Forms.Panel pnMantenimientosCxC;
-        private System.Windows.Forms.Button btnMetodosPago;
-        private System.Windows.Forms.Button btnCondicionesPago;
-        private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Button btnMantenimientosCxC;
-        private System.Windows.Forms.Panel pnMantenimientosRestaurante;
-        private System.Windows.Forms.Button btnEmpleados;
-        private System.Windows.Forms.Button btnMesas;
+        private System.Windows.Forms.Button btnEntradasYSalidas;
+        private System.Windows.Forms.Button btnStockActual;
     }
 }

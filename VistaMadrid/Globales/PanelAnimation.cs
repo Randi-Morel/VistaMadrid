@@ -21,7 +21,7 @@ public static class PanelAnimationHelper
     /// <param name="animationSpeed">Velocidad de animación en milisegundos (por defecto 15ms)</param>
     /// <param name="onComplete">Acción a ejecutar cuando termine la animación</param>
     public static void AnimatePanel(Panel panel,bool expand, int targetHeight = 0, 
-                                   int animationSpeed = 15, Action onComplete = null)
+                                   int animationSpeed = 10, Action onComplete = null)
     {
         // Detener animación anterior si existe
         StopAnimation();

@@ -34,20 +34,13 @@ namespace VistaMadrid
             AddInList();
 
             //Asigna la altura a 0, para hacer la animacion
-            pnMantenimientosRestaurante.Height = 0;
-            pnProcesosRestaurante.Height = 0;
+            pnMantenimientos.Height = 0;
+            pnProcesos.Height = 0;
+            pnReportes.Height = 0;
 
-            pnMantenimientosInventario.Height = 0;
-            pnProcesosInventario.Height = 0;
-            pnReportesInventario.Height = 0;
-
-            pnMantenimientosCxC.Height = 0;
-            pnProcesosCxC.Height = 0;
-            pnReportesCxC.Height = 0;
-
-            pnRestaurante.Visible = false;
-            pnInventario.Visible = false;
-            pnCxC.Visible = false;
+            pnMantenimientos.Visible = false;
+            pnProcesos.Visible = false;
+            pnReportes.Visible = false;
 
             pnLateral.Size = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.15), 0);
             pnLateral.MinimumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.10), 0);
@@ -62,6 +55,8 @@ namespace VistaMadrid
             pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.35), 0);
 
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+
+            pnSubBotones.Height = pnLateral.Height - 242;
         }
 
         private void spLateral_SplitterMoved(object sender, SplitterEventArgs e)
@@ -71,65 +66,21 @@ namespace VistaMadrid
         }
 
 
-        //Muestra los sub-botones
-        private void btnMantenimientosRestaurante_Click(object sender, EventArgs e)
-        {
-            
-            OpenInSubPanel(btnMantenimientosRestaurante, pnMantenimientosRestaurante, alturas[0]);
-        }
-
-        private void btnProcesosRestaurante_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnProcesosRestaurante, pnProcesosRestaurante, alturas[1]);
-        }
-
-        private void btnMantenimientosInventario_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnMantenimientosInventario, pnMantenimientosInventario, alturas[2]);
-        }
-
-        private void btnProcesosInventario_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnProcesosInventario, pnProcesosInventario, alturas[3]);
-        }
-
-        private void btnReportesInventario_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnReportesInventario, pnReportesInventario, alturas[4]);
-        }
-
-        private void btnMantenimientosCxC_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnMantenimientosCxC, pnMantenimientosCxC, alturas[5]);
-        }
-
-        private void btnProcesosCxC_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnProcesosCxC, pnProcesosCxC, alturas[6]);
-        }
-
-        private void btnReportesCxC_Click(object sender, EventArgs e)
-        {
-            OpenInSubPanel(btnReportesCxC, pnReportesCxC, alturas[7]);
-        }
-        //Muestra los sub-botones
-
-
         //Muestra los paneles que contienen categorias, ejemplo: Mantenimientos, Procesos,etc
-        private void btnRestaurante_Click(object sender, EventArgs e)
+        private void btnMantenimientos_Click(object sender, EventArgs e)
         {
-            OpenInPanel(btnRestaurante,pnRestaurante);
             
+            OpenInPanel(btnMantenimientos, pnMantenimientos, alturas[0]);
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
+        private void btnProcesos_Click(object sender, EventArgs e)
         {
-            OpenInPanel(btnInventario,pnInventario);
+            OpenInPanel(btnProcesos, pnProcesos, alturas[1]);
         }
 
-        private void btnCxC_Click(object sender, EventArgs e)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
-            OpenInPanel(btnCxC,pnCxC);
+            OpenInPanel(btnReportes, pnReportes, alturas[2]);
         }
 
         private void OpenInSubPanel(Button boton, Panel subpanel, int height)
@@ -151,12 +102,16 @@ namespace VistaMadrid
 
         }
 
-        private void OpenInPanel(Button boton, Panel subpanel)
+        private void OpenInPanel(Button boton, Panel subpanel, int height)
         {
             if (subpanel.Visible)
             {
                 hoverButton.MouseOff(boton);
+                PanelAnimationHelper.TogglePanel(subpanel, height);
+                subpanel.Height = 0;
                 subpanel.Visible = false;
+                abierto = false;
+                
             }
             else
             {
@@ -167,13 +122,22 @@ namespace VistaMadrid
                     {
                         if (pan.Visible)
                         {
+                            PanelAnimationHelper.TogglePanel(pan, height);
+                            pan.Height = 0;
                             pan.Visible = false;
                         }
                     }
                 }
+                
+                foreach (Control ctrl in subpanel.Controls)
+                {
+                    ctrl.Visible = true;
+                }
+                
                 hoverButton.MouseOn(boton);
                 subpanel.Visible=true;
-               
+                PanelAnimationHelper.TogglePanel(subpanel, height);
+
                 abierto = true;
             }
         }
@@ -186,52 +150,19 @@ namespace VistaMadrid
             botones.Images.Add(Properties.Resources.UpArrow);
 
             //Se cargan las imagenes del imageList al boton
-            btnMantenimientosRestaurante.ImageList = botones;
-            btnProcesosRestaurante.ImageList = botones;
-           
-            btnMantenimientosInventario.ImageList= botones;
-            btnProcesosInventario.ImageList = botones;
-            btnReportesInventario.ImageList = botones;
-
-            btnMantenimientosCxC.ImageList = botones;
-            btnProcesosCxC.ImageList = botones;
-            btnReportesCxC.ImageList = botones;
-
-            //Se le añade la primera imagen
-            btnMantenimientosRestaurante.ImageIndex = 0;
-            btnProcesosRestaurante.ImageIndex = 0;
-
-            btnMantenimientosInventario.ImageIndex = 0;
-            btnProcesosInventario.ImageIndex = 0;
-            btnReportesInventario.ImageIndex = 0;
-
-            btnMantenimientosCxC.ImageIndex = 0;
-            btnProcesosCxC.ImageIndex = 0;
-            btnReportesCxC.ImageIndex = 0;
+            
 
             //Se almacenan los paneles que contienen botones, sirve para ocultarlos en caso de que se abra otro
-            Paneles.Add(pnRestaurante);
-            Paneles.Add(pnInventario);
-            Paneles.Add(pnCxC);
+            Paneles.Add(pnMantenimientos);
+            Paneles.Add(pnProcesos);
+            Paneles.Add(pnReportes);
         }
 
         private void AddHeight()
         {
-            //Del 0 al 1 Restaurante
-            this.alturas[0] = pnMantenimientosRestaurante.Height;
-            this.alturas[1] = pnProcesosRestaurante.Height;
-
-            //Del 2 al 4 Inventario
-            this.alturas[2] = pnMantenimientosInventario.Height;
-            this.alturas[3] = pnProcesosInventario.Height;
-            this.alturas[4] = pnReportesInventario.Height;
-
-            //Del 5 al 7 Reportes
-            this.alturas[5] = pnMantenimientosCxC.Height;
-            this.alturas[6] = pnProcesosCxC.Height;
-            this.alturas[7] = pnReportesCxC.Height;
-
-            
+            this.alturas[0] = pnMantenimientos.Height;
+            this.alturas[1] = pnProcesos.Height;
+            this.alturas[2] = pnReportes.Height;
         }
 
     }
