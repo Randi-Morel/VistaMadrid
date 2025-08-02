@@ -14,9 +14,16 @@ namespace VistaMadrid
         [STAThread]
         static void Main()
         {
+            // El 'if' sirve para hacer que el programa se vea en hd
+            if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmPrincipal());
         }
+        // Otro componente para hacer que se vea en hd
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 }
