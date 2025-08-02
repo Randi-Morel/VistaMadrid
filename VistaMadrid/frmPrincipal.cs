@@ -43,8 +43,8 @@ namespace VistaMadrid
             pnProcesos.Visible = false;
             pnReportes.Visible = false;
 
-            pnLateral.Size = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.15), 0);
-            pnLateral.MinimumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.10), 0);
+            pnLateral.Size = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.10), 0);
+            pnLateral.MinimumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.12), 0);
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height-34);
         }
 
@@ -54,7 +54,7 @@ namespace VistaMadrid
                 pnLateral.Width = Convert.ToInt32(pnSuperior.Width * 0.15);
             }
             pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.35), 0);
-
+            pnSubBotones.MaximumSize = new System.Drawing.Size(0, pnSeparadorLateral.Height - 269);
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
 
             //pnSubBotones.Height = pnLateral.Height - 242;
@@ -84,24 +84,6 @@ namespace VistaMadrid
             OpenInPanel(btnReportes, pnReportes, alturas[2]);
         }
 
-        private void OpenInSubPanel(Button boton, Panel subpanel, int height)
-        {
-            
-            if (subpanel.Height != 0)
-            {
-                boton.ImageIndex = 0;
-                PanelAnimationHelper.TogglePanel(subpanel, height);
-            }
-            else {
-                foreach (Control ctrl in subpanel.Controls)
-                {
-                    ctrl.Visible = true;
-                }
-                boton.ImageIndex = 1;
-                PanelAnimationHelper.TogglePanel(subpanel, height);
-            }
-
-        }
 
         private void OpenInPanel(Button boton, Panel subpanel, int height)
         {
@@ -109,7 +91,7 @@ namespace VistaMadrid
             {
                 hoverButton.MouseOff(boton);
                 PanelAnimationHelper.TogglePanel(subpanel, height);
-                subpanel.Height = 0;
+                //subpanel.Height = 0;
                 subpanel.Visible = false;
                 abierto = false;
                 
