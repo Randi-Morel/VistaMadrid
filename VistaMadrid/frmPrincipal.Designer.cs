@@ -33,6 +33,10 @@
             this.pnLateral = new System.Windows.Forms.Panel();
             this.pnSeparadorUsuario = new System.Windows.Forms.Panel();
             this.pnContenedorLateral = new System.Windows.Forms.Panel();
+            this.pnLatBotones = new System.Windows.Forms.Panel();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnProcesos = new System.Windows.Forms.Button();
+            this.btnMantenimientos = new System.Windows.Forms.Button();
             this.pnSubBotones = new System.Windows.Forms.Panel();
             this.pnReportes = new System.Windows.Forms.Panel();
             this.btnDeudaCliente = new System.Windows.Forms.Button();
@@ -56,11 +60,6 @@
             this.btnRegistroPago = new System.Windows.Forms.Button();
             this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnLatBotones = new System.Windows.Forms.Panel();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.btnProcesos = new System.Windows.Forms.Button();
-            this.btnMantenimientos = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
@@ -71,14 +70,15 @@
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
+            this.spSubBotones = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
+            this.pnLatBotones.SuspendLayout();
             this.pnSubBotones.SuspendLayout();
             this.pnReportes.SuspendLayout();
             this.pnMantenimientos.SuspendLayout();
             this.pnProcesos.SuspendLayout();
-            this.pnLatBotones.SuspendLayout();
             this.pnUsuario.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
@@ -127,12 +127,79 @@
             // pnContenedorLateral
             // 
             this.pnContenedorLateral.Controls.Add(this.pnLatBotones);
-            this.pnContenedorLateral.Controls.Add(this.panel1);
+            this.pnContenedorLateral.Controls.Add(this.spSubBotones);
             this.pnContenedorLateral.Controls.Add(this.pnSubBotones);
             this.pnContenedorLateral.Location = new System.Drawing.Point(9, 80);
             this.pnContenedorLateral.Name = "pnContenedorLateral";
             this.pnContenedorLateral.Size = new System.Drawing.Size(144, 616);
             this.pnContenedorLateral.TabIndex = 0;
+            // 
+            // pnLatBotones
+            // 
+            this.pnLatBotones.AutoScroll = true;
+            this.pnLatBotones.Controls.Add(this.btnReportes);
+            this.pnLatBotones.Controls.Add(this.btnProcesos);
+            this.pnLatBotones.Controls.Add(this.btnMantenimientos);
+            this.pnLatBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLatBotones.Location = new System.Drawing.Point(0, 229);
+            this.pnLatBotones.Name = "pnLatBotones";
+            this.pnLatBotones.Size = new System.Drawing.Size(144, 120);
+            this.pnLatBotones.TabIndex = 5;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.AutoEllipsis = true;
+            this.btnReportes.AutoSize = true;
+            this.btnReportes.CausesValidation = false;
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportes.Location = new System.Drawing.Point(0, 80);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(144, 40);
+            this.btnReportes.TabIndex = 10;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnProcesos
+            // 
+            this.btnProcesos.AutoEllipsis = true;
+            this.btnProcesos.CausesValidation = false;
+            this.btnProcesos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProcesos.FlatAppearance.BorderSize = 0;
+            this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcesos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcesos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnProcesos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProcesos.Location = new System.Drawing.Point(0, 40);
+            this.btnProcesos.Name = "btnProcesos";
+            this.btnProcesos.Size = new System.Drawing.Size(144, 40);
+            this.btnProcesos.TabIndex = 2;
+            this.btnProcesos.Text = "Procesos";
+            this.btnProcesos.UseVisualStyleBackColor = true;
+            this.btnProcesos.Click += new System.EventHandler(this.btnProcesos_Click);
+            // 
+            // btnMantenimientos
+            // 
+            this.btnMantenimientos.AutoEllipsis = true;
+            this.btnMantenimientos.CausesValidation = false;
+            this.btnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantenimientos.FlatAppearance.BorderSize = 0;
+            this.btnMantenimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantenimientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantenimientos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMantenimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMantenimientos.Location = new System.Drawing.Point(0, 0);
+            this.btnMantenimientos.Name = "btnMantenimientos";
+            this.btnMantenimientos.Size = new System.Drawing.Size(144, 40);
+            this.btnMantenimientos.TabIndex = 0;
+            this.btnMantenimientos.Text = "Mantenimientos";
+            this.btnMantenimientos.UseVisualStyleBackColor = true;
+            this.btnMantenimientos.Click += new System.EventHandler(this.btnMantenimientos_Click);
             // 
             // pnSubBotones
             // 
@@ -144,6 +211,7 @@
             this.pnSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubBotones.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnSubBotones.Location = new System.Drawing.Point(0, 0);
+            this.pnSubBotones.MinimumSize = new System.Drawing.Size(0, 120);
             this.pnSubBotones.Name = "pnSubBotones";
             this.pnSubBotones.Size = new System.Drawing.Size(144, 200);
             this.pnSubBotones.TabIndex = 0;
@@ -457,6 +525,7 @@
             // 
             // btnRegistroPago
             // 
+            this.btnRegistroPago.AutoEllipsis = true;
             this.btnRegistroPago.CausesValidation = false;
             this.btnRegistroPago.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistroPago.FlatAppearance.BorderSize = 0;
@@ -503,79 +572,6 @@
             this.btnFacturacion.UseVisualStyleBackColor = true;
             this.btnFacturacion.Visible = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 200);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(144, 29);
-            this.panel1.TabIndex = 4;
-            // 
-            // pnLatBotones
-            // 
-            this.pnLatBotones.AutoScroll = true;
-            this.pnLatBotones.Controls.Add(this.btnReportes);
-            this.pnLatBotones.Controls.Add(this.btnProcesos);
-            this.pnLatBotones.Controls.Add(this.btnMantenimientos);
-            this.pnLatBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLatBotones.Location = new System.Drawing.Point(0, 229);
-            this.pnLatBotones.Name = "pnLatBotones";
-            this.pnLatBotones.Size = new System.Drawing.Size(144, 120);
-            this.pnLatBotones.TabIndex = 5;
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.AutoSize = true;
-            this.btnReportes.CausesValidation = false;
-            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FlatAppearance.BorderSize = 0;
-            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportes.Location = new System.Drawing.Point(0, 80);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(144, 40);
-            this.btnReportes.TabIndex = 10;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-            // 
-            // btnProcesos
-            // 
-            this.btnProcesos.CausesValidation = false;
-            this.btnProcesos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProcesos.FlatAppearance.BorderSize = 0;
-            this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcesos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcesos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProcesos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProcesos.Location = new System.Drawing.Point(0, 40);
-            this.btnProcesos.Name = "btnProcesos";
-            this.btnProcesos.Size = new System.Drawing.Size(144, 40);
-            this.btnProcesos.TabIndex = 2;
-            this.btnProcesos.Text = "Procesos";
-            this.btnProcesos.UseVisualStyleBackColor = true;
-            this.btnProcesos.Click += new System.EventHandler(this.btnProcesos_Click);
-            // 
-            // btnMantenimientos
-            // 
-            this.btnMantenimientos.CausesValidation = false;
-            this.btnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantenimientos.FlatAppearance.BorderSize = 0;
-            this.btnMantenimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimientos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMantenimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMantenimientos.Location = new System.Drawing.Point(0, 0);
-            this.btnMantenimientos.Name = "btnMantenimientos";
-            this.btnMantenimientos.Size = new System.Drawing.Size(144, 40);
-            this.btnMantenimientos.TabIndex = 0;
-            this.btnMantenimientos.Text = "Mantenimientos";
-            this.btnMantenimientos.UseVisualStyleBackColor = true;
-            this.btnMantenimientos.Click += new System.EventHandler(this.btnMantenimientos_Click);
-            // 
             // pnUsuario
             // 
             this.pnUsuario.Controls.Add(this.ptbUsuario);
@@ -609,8 +605,8 @@
             this.tabControl.Controls.Add(this.tabMenu);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl.ItemSize = new System.Drawing.Size(71, 30);
+            this.tabControl.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl.ItemSize = new System.Drawing.Size(71, 32);
             this.tabControl.Location = new System.Drawing.Point(164, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -621,10 +617,10 @@
             // 
             this.tabMenu.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabMenu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabMenu.Location = new System.Drawing.Point(4, 34);
+            this.tabMenu.Location = new System.Drawing.Point(4, 36);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMenu.Size = new System.Drawing.Size(954, 668);
+            this.tabMenu.Size = new System.Drawing.Size(954, 666);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Menu";
             // 
@@ -674,6 +670,15 @@
             this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
             this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
+            // spSubBotones
+            // 
+            this.spSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.spSubBotones.Location = new System.Drawing.Point(0, 200);
+            this.spSubBotones.Name = "spSubBotones";
+            this.spSubBotones.Size = new System.Drawing.Size(144, 29);
+            this.spSubBotones.TabIndex = 6;
+            this.spSubBotones.TabStop = false;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -695,12 +700,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.pnLateral.ResumeLayout(false);
             this.pnContenedorLateral.ResumeLayout(false);
+            this.pnLatBotones.ResumeLayout(false);
+            this.pnLatBotones.PerformLayout();
             this.pnSubBotones.ResumeLayout(false);
             this.pnReportes.ResumeLayout(false);
             this.pnMantenimientos.ResumeLayout(false);
             this.pnProcesos.ResumeLayout(false);
-            this.pnLatBotones.ResumeLayout(false);
-            this.pnLatBotones.PerformLayout();
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
             this.tabControl.ResumeLayout(false);
@@ -718,7 +723,6 @@
         private System.Windows.Forms.Button btnProcesos;
         private System.Windows.Forms.Button btnMantenimientos;
         private System.Windows.Forms.Panel pnContenedorLateral;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnUsuario;
         private System.Windows.Forms.Panel pnSuperior;
         private System.Windows.Forms.TabControl tabControl;
@@ -752,5 +756,6 @@
         private System.Windows.Forms.Button btnStockActual;
         private System.Windows.Forms.Panel pnPanelInferior;
         private System.Windows.Forms.Panel pnSeparadorPanelInferior;
+        private System.Windows.Forms.Splitter spSubBotones;
     }
 }
