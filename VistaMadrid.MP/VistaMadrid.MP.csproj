@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,16 +51,80 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Entidades\Archivo.cs" />
+    <Compile Include="EF\Entidades\Cliente.cs" />
+    <Compile Include="EF\Entidades\Condicion.cs" />
+    <Compile Include="EF\Entidades\Mesa.cs" />
+    <Compile Include="EF\Entidades\MetodoPago.cs" />
+    <Compile Include="EF\BDVistaMadridEntidades.cs" />
+    <Compile Include="EF\Entidades\MovimientoInventario.cs" />
+    <Compile Include="EF\Entidades\MovimientoTipo.cs" />
+    <Compile Include="EF\Entidades\Orden.cs" />
+    <Compile Include="EF\Entidades\OrdenDetalle.cs" />
+    <Compile Include="EF\Entidades\Pago.cs" />
+    <Compile Include="EF\Entidades\Permiso.cs" />
+    <Compile Include="EF\Entidades\PermisoUsuario.cs" />
+    <Compile Include="EF\Entidades\Producto.cs" />
+    <Compile Include="EF\Entidades\ProductoArchivo.cs" />
+    <Compile Include="EF\Entidades\ProductoCategoria.cs" />
+    <Compile Include="EF\Entidades\Proveedor.cs" />
+    <Compile Include="EF\Entidades\Rol.cs" />
+    <Compile Include="EF\Entidades\Sala.cs" />
+    <Compile Include="EF\Entidades\UnidadMedida.cs" />
+    <Compile Include="EF\Entidades\Usuario.cs" />
+    <Compile Include="Modelo\BaseModelo.cs" />
+    <Compile Include="Modelo\MovimientoInventario\IMovimientoInventarioRepositorio.cs" />
+    <Compile Include="Modelo\MovimientoInventario\ModeloMovimientoInventario.cs" />
+    <Compile Include="Modelo\MovimientoTipo\IMovimientoTipoRepositorio.cs" />
+    <Compile Include="Modelo\MovimientoTipo\ModeloMovimientoTipo.cs" />
+    <Compile Include="Modelo\Orden\IOrdenRepositorio.cs" />
+    <Compile Include="Modelo\Orden\ModeloOrden.cs" />
+    <Compile Include="Modelo\OrdenDetalle\IOrdenDetalleRepositorio.cs" />
+    <Compile Include="Modelo\OrdenDetalle\ModeloOrdenDetalle.cs" />
+    <Compile Include="Modelo\Pago\IPagoRepositorio.cs" />
+    <Compile Include="Modelo\Pago\ModeloPago.cs" />
+    <Compile Include="Modelo\Permiso\IPermisoRepositorio.cs" />
+    <Compile Include="Modelo\Permiso\ModeloPermiso.cs" />
+    <Compile Include="Modelo\PermisoUsuario\IPermisoUsuarioRepositorio.cs" />
+    <Compile Include="Modelo\PermisoUsuario\ModeloPermisoUsuario.cs" />
+    <Compile Include="Modelo\ProductoArchivo\IProductoArchivoRepositorio.cs" />
+    <Compile Include="Modelo\ProductoArchivo\ModeloProductoArchivo.cs" />
+    <Compile Include="Modelo\ProductoCategoria\IProductoCategoriaRepositorio.cs" />
+    <Compile Include="Modelo\ProductoCategoria\ModeloProductoCategoria.cs" />
+    <Compile Include="Modelo\Proveedor\IProveedorRepositorio.cs" />
+    <Compile Include="Modelo\Proveedor\ModeloProveedor.cs" />
+    <Compile Include="Modelo\Rol\IRolRepositorio.cs" />
+    <Compile Include="Modelo\Rol\ModeloRol.cs" />
+    <Compile Include="Modelo\Sala\ISalaRepositorio.cs" />
+    <Compile Include="Modelo\Sala\ModeloSala.cs" />
+    <Compile Include="Modelo\UnidadMedida\IUnidadMedidaRepositorio.cs" />
+    <Compile Include="Modelo\UnidadMedida\ModeloUnidadMedida.cs" />
+    <Compile Include="Modelo\Usuario\IUsuarioRepositorio.cs" />
+    <Compile Include="Modelo\Usuario\ModeloUsuario.cs" />
+    <Compile Include="Modelo\MetodoPago\IMetodoPagoRepositorio.cs" />
+    <Compile Include="Modelo\MetodoPago\ModeloMetodoPago.cs" />
+    <Compile Include="Modelo\Mesa\IMesaRepositorio.cs" />
+    <Compile Include="Modelo\Mesa\ModeloMesa.cs" />
+    <Compile Include="Modelo\Condicion\ICondicionRepositorio.cs" />
+    <Compile Include="Modelo\Condicion\ModeloCondicion.cs" />
+    <Compile Include="Modelo\Cliente\IClienteRepositorio.cs" />
+    <Compile Include="Modelo\Cliente\ModeloCliente.cs" />
+    <Compile Include="Modelo\Producto\IProductoRepositorio.cs" />
+    <Compile Include="Modelo\Producto\ModeloProducto.cs" />
+    <Compile Include="Modelo\RepositorioBase\RepositorioBase.cs" />
+    <Compile Include="Modelo\RepositorioBase\IRepositorioBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EF\Entidades\" />
     <Folder Include="EF\Procedimientos\" />
     <Folder Include="EF\Vistas\" />
-    <Folder Include="Modelo\" />
     <Folder Include="Presentador\" />
     <Folder Include="Utils\" />
     <Folder Include="Vista\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
