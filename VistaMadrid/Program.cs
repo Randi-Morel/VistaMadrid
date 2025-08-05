@@ -22,7 +22,7 @@ namespace VistaMadrid
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCliente());
+            Application.Run(new frmPrincipal());
         }
         // Otro componente para hacer que se vea en hd
         [System.Runtime.InteropServices.DllImport("user32.dll")]

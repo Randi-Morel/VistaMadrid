@@ -31,15 +31,18 @@
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.tblAccesibilidad = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbRol = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtOrden = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.cbPermiso = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tblInfoEmpleado = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,9 +56,6 @@
             this.lblInfoEmpleado = new System.Windows.Forms.Label();
             this.lblEmpleado = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cbRol = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbPermiso = new System.Windows.Forms.ComboBox();
             this.tblCentral.SuspendLayout();
             this.tblAccesibilidad.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -105,22 +105,45 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.cbRol);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtOrden);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(284, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(276, 347);
             this.panel1.TabIndex = 1;
             // 
-            // textBox2
+            // cbRol
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbRol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(13, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 27);
-            this.textBox2.TabIndex = 46;
+            this.cbRol.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRol.FormattingEnabled = true;
+            this.cbRol.Location = new System.Drawing.Point(13, 215);
+            this.cbRol.Name = "cbRol";
+            this.cbRol.Size = new System.Drawing.Size(236, 28);
+            this.cbRol.TabIndex = 48;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label9.Location = new System.Drawing.Point(9, 189);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 23);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Rol";
+            // 
+            // txtOrden
+            // 
+            this.txtOrden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtOrden.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrden.Location = new System.Drawing.Point(13, 83);
+            this.txtOrden.Name = "txtOrden";
+            this.txtOrden.Size = new System.Drawing.Size(236, 27);
+            this.txtOrden.TabIndex = 46;
             // 
             // label7
             // 
@@ -145,6 +168,17 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(275, 347);
             this.panel6.TabIndex = 0;
+            // 
+            // cbPermiso
+            // 
+            this.cbPermiso.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbPermiso.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPermiso.FormattingEnabled = true;
+            this.cbPermiso.Location = new System.Drawing.Point(13, 215);
+            this.cbPermiso.Name = "cbPermiso";
+            this.cbPermiso.Size = new System.Drawing.Size(236, 28);
+            this.cbPermiso.TabIndex = 39;
             // 
             // label8
             // 
@@ -200,7 +234,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtContrasena);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtApellido);
             this.panel3.Controls.Add(this.label3);
@@ -209,16 +243,16 @@
             this.panel3.Size = new System.Drawing.Size(276, 347);
             this.panel3.TabIndex = 1;
             // 
-            // textBox1
+            // txtContrasena
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtContrasena.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 215);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(255, 27);
-            this.textBox1.TabIndex = 44;
+            this.txtContrasena.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasena.Location = new System.Drawing.Point(13, 215);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(255, 27);
+            this.txtContrasena.TabIndex = 44;
             // 
             // label5
             // 
@@ -370,48 +404,14 @@
             this.panel5.Size = new System.Drawing.Size(1144, 297);
             this.panel5.TabIndex = 2;
             // 
-            // cbRol
-            // 
-            this.cbRol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbRol.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRol.FormattingEnabled = true;
-            this.cbRol.Location = new System.Drawing.Point(13, 215);
-            this.cbRol.Name = "cbRol";
-            this.cbRol.Size = new System.Drawing.Size(236, 28);
-            this.cbRol.TabIndex = 48;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label9.Location = new System.Drawing.Point(9, 189);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 23);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "Rol";
-            // 
-            // cbPermiso
-            // 
-            this.cbPermiso.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbPermiso.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPermiso.FormattingEnabled = true;
-            this.cbPermiso.Location = new System.Drawing.Point(13, 215);
-            this.cbPermiso.Name = "cbPermiso";
-            this.cbPermiso.Size = new System.Drawing.Size(236, 28);
-            this.cbPermiso.TabIndex = 39;
-            // 
             // frmEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1144, 753);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.tblCentral);
             this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmpleado";
             this.Text = "frmEmpleado";
             this.ResizeBegin += new System.EventHandler(this.frmEmpleado_ResizeBegin);
@@ -438,7 +438,7 @@
         private System.Windows.Forms.TableLayoutPanel tblInfoEmpleado;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label3;
@@ -450,7 +450,7 @@
         private System.Windows.Forms.Label lblEmpleado;
         private System.Windows.Forms.TableLayoutPanel tblAccesibilidad;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOrden;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;

@@ -37,6 +37,7 @@
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.btnMantenimientos = new System.Windows.Forms.Button();
+            this.spSubBotones = new System.Windows.Forms.Splitter();
             this.pnSubBotones = new System.Windows.Forms.Panel();
             this.pnReportes = new System.Windows.Forms.Panel();
             this.btnDeudaCliente = new System.Windows.Forms.Button();
@@ -70,7 +71,6 @@
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
-            this.spSubBotones = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
@@ -148,7 +148,6 @@
             // 
             // btnReportes
             // 
-            this.btnReportes.AutoEllipsis = true;
             this.btnReportes.AutoSize = true;
             this.btnReportes.CausesValidation = false;
             this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -200,6 +199,15 @@
             this.btnMantenimientos.Text = "Mantenimientos";
             this.btnMantenimientos.UseVisualStyleBackColor = true;
             this.btnMantenimientos.Click += new System.EventHandler(this.btnMantenimientos_Click);
+            // 
+            // spSubBotones
+            // 
+            this.spSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.spSubBotones.Location = new System.Drawing.Point(0, 200);
+            this.spSubBotones.Name = "spSubBotones";
+            this.spSubBotones.Size = new System.Drawing.Size(144, 29);
+            this.spSubBotones.TabIndex = 6;
+            this.spSubBotones.TabStop = false;
             // 
             // pnSubBotones
             // 
@@ -626,10 +634,10 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Location = new System.Drawing.Point(4, 36);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(954, 668);
+            this.tabPage2.Size = new System.Drawing.Size(954, 666);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -670,19 +678,10 @@
             this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
             this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
-            // spSubBotones
-            // 
-            this.spSubBotones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.spSubBotones.Location = new System.Drawing.Point(0, 200);
-            this.spSubBotones.Name = "spSubBotones";
-            this.spSubBotones.Size = new System.Drawing.Size(144, 29);
-            this.spSubBotones.TabIndex = 6;
-            this.spSubBotones.TabStop = false;
-            // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1126, 706);
             this.Controls.Add(this.pnSeparadorPanelInferior);
             this.Controls.Add(this.pnPanelInferior);

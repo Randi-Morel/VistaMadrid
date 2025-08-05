@@ -33,19 +33,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbRol = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOrden = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tblInfoEmpleado = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtDireccion = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.lblAccesibilidad = new System.Windows.Forms.Label();
             this.lblInfoCliente = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tblCentral.SuspendLayout();
             this.tblAccesibilidad.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -104,7 +104,7 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.cbRol);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtOrden);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(284, 3);
             this.panel1.Name = "panel1";
@@ -134,15 +134,15 @@
             this.label9.TabIndex = 47;
             this.label9.Text = "Rol";
             // 
-            // textBox2
+            // txtOrden
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtOrden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(13, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 27);
-            this.textBox2.TabIndex = 46;
+            this.txtOrden.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrden.Location = new System.Drawing.Point(13, 83);
+            this.txtOrden.Name = "txtOrden";
+            this.txtOrden.Size = new System.Drawing.Size(236, 27);
+            this.txtOrden.TabIndex = 46;
             // 
             // label7
             // 
@@ -159,7 +159,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.txtCondicion);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.cbEstado);
             this.panel6.Controls.Add(this.label6);
@@ -167,6 +167,16 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(275, 347);
             this.panel6.TabIndex = 0;
+            // 
+            // txtCondicion
+            // 
+            this.txtCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCondicion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCondicion.Location = new System.Drawing.Point(13, 215);
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(236, 27);
+            this.txtCondicion.TabIndex = 47;
             // 
             // label8
             // 
@@ -222,7 +232,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.richTextBox1);
+            this.panel3.Controls.Add(this.txtDireccion);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtApellido);
             this.panel3.Controls.Add(this.label3);
@@ -230,6 +240,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(276, 347);
             this.panel3.TabIndex = 1;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDireccion.Location = new System.Drawing.Point(13, 215);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(255, 92);
+            this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.Text = "";
             // 
             // label5
             // 
@@ -268,7 +287,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.txtUsuario);
+            this.panel2.Controls.Add(this.txtEmail);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label2);
@@ -277,15 +296,15 @@
             this.panel2.Size = new System.Drawing.Size(275, 347);
             this.panel2.TabIndex = 0;
             // 
-            // txtUsuario
+            // txtEmail
             // 
-            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(13, 215);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(255, 27);
-            this.txtUsuario.TabIndex = 35;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(13, 215);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(255, 27);
+            this.txtEmail.TabIndex = 35;
             // 
             // label4
             // 
@@ -372,32 +391,13 @@
             this.lblCliente.TabIndex = 17;
             this.lblCliente.Text = "Mantenimiento de Cliente";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 215);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(255, 92);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 215);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 27);
-            this.textBox1.TabIndex = 47;
-            // 
             // frmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1144, 753);
             this.Controls.Add(this.tblCentral);
             this.Controls.Add(this.panel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCliente";
             this.Text = "frmCliente";
             this.ResizeBegin += new System.EventHandler(this.frmCliente_ResizeBegin);
@@ -426,7 +426,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbRol;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOrden;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
@@ -438,7 +438,7 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
@@ -446,7 +446,7 @@
         private System.Windows.Forms.Label lblAccesibilidad;
         private System.Windows.Forms.Label lblInfoCliente;
         private System.Windows.Forms.Label lblCliente;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtCondicion;
     }
 }
