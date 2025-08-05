@@ -64,6 +64,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Mantenimientos\Cliente\frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Mantenimientos\Cliente\frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Mantenimientos\Empleado\frmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Mantenimientos\Empleado\frmEmpleado.Designer.cs">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Prueba\frmPrueba.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Mantenimientos\Cliente\frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Mantenimientos\Empleado\frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Prueba\frmPrueba.resx">
       <DependentUpon>frmPrueba.cs</DependentUpon>
@@ -112,6 +130,16 @@
   <ItemGroup>
     <Folder Include="Style\" />
     <Folder Include="Vista\Login\ConfiguracionLogin\" />
+    <Folder Include="Vista\Mantenimientos\Categoria\" />
+    <Folder Include="Vista\Mantenimientos\Cliente\ConfiguracionCliente\" />
+    <Folder Include="Vista\Mantenimientos\Condicion de Pago\" />
+    <Folder Include="Vista\Mantenimientos\Empleado\ConfiguracionEmpleado\" />
+    <Folder Include="Vista\Mantenimientos\Mesa\" />
+    <Folder Include="Vista\Mantenimientos\Metodo de Pago\" />
+    <Folder Include="Vista\Mantenimientos\Producto\" />
+    <Folder Include="Vista\Mantenimientos\Proveedor\" />
+    <Folder Include="Vista\Mantenimientos\Tipo de Movimiento\" />
+    <Folder Include="Vista\Mantenimientos\Unidad de Medida\" />
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
   </ItemGroup>
   <ItemGroup>

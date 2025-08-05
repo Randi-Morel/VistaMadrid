@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VistaMadrid.Vista.Mantenimientos.Cliente;
+using VistaMadrid.Vista.Mantenimientos.Empleados;
 
 namespace VistaMadrid
 {
@@ -20,7 +22,7 @@ namespace VistaMadrid
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrueba());
+            Application.Run(new frmCliente());
         }
         // Otro componente para hacer que se vea en hd
         [System.Runtime.InteropServices.DllImport("user32.dll")]
