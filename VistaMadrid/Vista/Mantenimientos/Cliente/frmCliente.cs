@@ -25,7 +25,7 @@ namespace VistaMadrid.Vista.Mantenimientos.Cliente
         private void frmCliente_ResizeEnd(object sender, EventArgs e)
         {
             ResumeLayout();
-            lblInfoCliente.Location = new Point(tblInfoEmpleado.Location.X, lblInfoCliente.Location.Y);
+            lblInfo.Location = new Point(tblInfoEmpleado.Location.X, lblInfo.Location.Y);
             lblAccesibilidad.Location = new Point(tblAccesibilidad.Location.X, lblAccesibilidad.Location.Y);
         }
     }

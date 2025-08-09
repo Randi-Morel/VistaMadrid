@@ -1,6 +1,6 @@
-﻿namespace VistaMadrid.Vista.Mantenimientos.Empleados
+﻿namespace VistaMadrid.Vista.Mantenimientos.Proveedor
 {
-    partial class frmEmpleado
+    partial class frmProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pnInferior = new System.Windows.Forms.Panel();
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.tblAccesibilidad = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtPermisos = new ReaLTaiizor.Controls.CyberRichTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rbInactivo = new ReaLTaiizor.Controls.FoxRadioButton();
             this.rbActivo = new ReaLTaiizor.Controls.FoxRadioButton();
-            this.cbPermiso = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tblInfoEmpleado = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new ReaLTaiizor.Controls.CyberRichTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblAccesibilidad = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
-            this.lblEmpleado = new System.Windows.Forms.Label();
-            this.pnInferior = new System.Windows.Forms.Panel();
+            this.lblProveedor = new System.Windows.Forms.Label();
             this.tblCentral.SuspendLayout();
             this.tblAccesibilidad.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tblInfoEmpleado.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnSuperior.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnInferior
+            // 
+            this.pnInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnInferior.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnInferior.Location = new System.Drawing.Point(0, 456);
+            this.pnInferior.Name = "pnInferior";
+            this.pnInferior.Size = new System.Drawing.Size(1144, 297);
+            this.pnInferior.TabIndex = 10;
             // 
             // tblCentral
             // 
@@ -81,90 +84,32 @@
             this.tblCentral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblCentral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 361F));
             this.tblCentral.Size = new System.Drawing.Size(1144, 363);
-            this.tblCentral.TabIndex = 3;
+            this.tblCentral.TabIndex = 8;
             // 
             // tblAccesibilidad
             // 
-            this.tblAccesibilidad.ColumnCount = 2;
-            this.tblAccesibilidad.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblAccesibilidad.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblAccesibilidad.Controls.Add(this.panel1, 1, 0);
+            this.tblAccesibilidad.ColumnCount = 1;
+            this.tblAccesibilidad.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblAccesibilidad.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblAccesibilidad.Controls.Add(this.panel6, 0, 0);
             this.tblAccesibilidad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblAccesibilidad.Location = new System.Drawing.Point(576, 5);
             this.tblAccesibilidad.Name = "tblAccesibilidad";
             this.tblAccesibilidad.RowCount = 1;
-            this.tblAccesibilidad.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblAccesibilidad.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 353F));
+            this.tblAccesibilidad.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblAccesibilidad.Size = new System.Drawing.Size(563, 353);
             this.tblAccesibilidad.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.txtPermisos);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(284, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 347);
-            this.panel1.TabIndex = 1;
-            // 
-            // txtPermisos
-            // 
-            this.txtPermisos.Alpha = 20;
-            this.txtPermisos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPermisos.BackColor = System.Drawing.Color.Transparent;
-            this.txtPermisos.Background_WidthPen = 1F;
-            this.txtPermisos.BackgroundPen = true;
-            this.txtPermisos.ColorBackground = System.Drawing.SystemColors.Window;
-            this.txtPermisos.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtPermisos.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtPermisos.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtPermisos.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.txtPermisos.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtPermisos.Enabled = false;
-            this.txtPermisos.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPermisos.ForeColor = System.Drawing.Color.Black;
-            this.txtPermisos.Lighting = false;
-            this.txtPermisos.LinearGradientPen = false;
-            this.txtPermisos.Location = new System.Drawing.Point(13, 83);
-            this.txtPermisos.Name = "txtPermisos";
-            this.txtPermisos.PenWidth = 10;
-            this.txtPermisos.RGB = false;
-            this.txtPermisos.Rounding = true;
-            this.txtPermisos.RoundingInt = 20;
-            this.txtPermisos.Size = new System.Drawing.Size(255, 101);
-            this.txtPermisos.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtPermisos.TabIndex = 48;
-            this.txtPermisos.Tag = "Cyber";
-            this.txtPermisos.TextButton = "";
-            this.txtPermisos.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtPermisos.Timer_RGB = 300;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label9.Location = new System.Drawing.Point(9, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 23);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "Permisos";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.rbInactivo);
             this.panel6.Controls.Add(this.rbActivo);
-            this.panel6.Controls.Add(this.cbPermiso);
-            this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label6);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(275, 347);
+            this.panel6.Size = new System.Drawing.Size(557, 347);
             this.panel6.TabIndex = 0;
             // 
             // rbInactivo
@@ -181,10 +126,10 @@
             this.rbInactivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbInactivo.ForeColor = System.Drawing.Color.Black;
             this.rbInactivo.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.rbInactivo.Location = new System.Drawing.Point(119, 83);
+            this.rbInactivo.Location = new System.Drawing.Point(272, 145);
             this.rbInactivo.Name = "rbInactivo";
             this.rbInactivo.Size = new System.Drawing.Size(106, 27);
-            this.rbInactivo.TabIndex = 50;
+            this.rbInactivo.TabIndex = 48;
             this.rbInactivo.Text = "Inactivo";
             // 
             // rbActivo
@@ -201,34 +146,11 @@
             this.rbActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbActivo.ForeColor = System.Drawing.Color.Black;
             this.rbActivo.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.rbActivo.Location = new System.Drawing.Point(13, 83);
+            this.rbActivo.Location = new System.Drawing.Point(166, 145);
             this.rbActivo.Name = "rbActivo";
             this.rbActivo.Size = new System.Drawing.Size(89, 27);
-            this.rbActivo.TabIndex = 49;
+            this.rbActivo.TabIndex = 5;
             this.rbActivo.Text = "Activo";
-            // 
-            // cbPermiso
-            // 
-            this.cbPermiso.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbPermiso.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPermiso.FormattingEnabled = true;
-            this.cbPermiso.Location = new System.Drawing.Point(13, 215);
-            this.cbPermiso.Name = "cbPermiso";
-            this.cbPermiso.Size = new System.Drawing.Size(255, 28);
-            this.cbPermiso.TabIndex = 39;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label8.Location = new System.Drawing.Point(9, 189);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 23);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Rol";
             // 
             // label6
             // 
@@ -236,7 +158,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label6.Location = new System.Drawing.Point(9, 57);
+            this.label6.Location = new System.Drawing.Point(162, 119);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 36;
@@ -261,25 +183,46 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.txtContrasena);
+            this.panel3.Controls.Add(this.txtDireccion);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.txtApellido);
+            this.panel3.Controls.Add(this.txtTelefono);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(284, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(276, 347);
             this.panel3.TabIndex = 1;
             // 
-            // txtContrasena
+            // txtDireccion
             // 
-            this.txtContrasena.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDireccion.Alpha = 20;
+            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrasena.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.Location = new System.Drawing.Point(13, 215);
-            this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.PasswordChar = '*';
-            this.txtContrasena.Size = new System.Drawing.Size(255, 27);
-            this.txtContrasena.TabIndex = 44;
+            this.txtDireccion.BackColor = System.Drawing.Color.Transparent;
+            this.txtDireccion.Background_WidthPen = 1F;
+            this.txtDireccion.BackgroundPen = true;
+            this.txtDireccion.ColorBackground = System.Drawing.SystemColors.Window;
+            this.txtDireccion.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.txtDireccion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.txtDireccion.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.txtDireccion.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.txtDireccion.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.ForeColor = System.Drawing.Color.Black;
+            this.txtDireccion.Lighting = false;
+            this.txtDireccion.LinearGradientPen = false;
+            this.txtDireccion.Location = new System.Drawing.Point(13, 215);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.PenWidth = 10;
+            this.txtDireccion.RGB = false;
+            this.txtDireccion.Rounding = true;
+            this.txtDireccion.RoundingInt = 20;
+            this.txtDireccion.Size = new System.Drawing.Size(255, 101);
+            this.txtDireccion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.txtDireccion.TabIndex = 0;
+            this.txtDireccion.Tag = "Cyber";
+            this.txtDireccion.TextButton = "";
+            this.txtDireccion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.txtDireccion.Timer_RGB = 300;
             // 
             // label5
             // 
@@ -289,19 +232,19 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label5.Location = new System.Drawing.Point(9, 189);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.Size = new System.Drawing.Size(88, 23);
             this.label5.TabIndex = 43;
-            this.label5.Text = "Contraseña";
+            this.label5.Text = "Dirección";
             // 
-            // txtApellido
+            // txtTelefono
             // 
-            this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(13, 83);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(255, 27);
-            this.txtApellido.TabIndex = 42;
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(13, 83);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(255, 27);
+            this.txtTelefono.TabIndex = 42;
             // 
             // label3
             // 
@@ -311,14 +254,14 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(9, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 23);
+            this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Apellido";
+            this.label3.Text = "Teléfono";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.txtUsuario);
+            this.panel2.Controls.Add(this.txtEmail);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label2);
@@ -327,15 +270,15 @@
             this.panel2.Size = new System.Drawing.Size(275, 347);
             this.panel2.TabIndex = 0;
             // 
-            // txtUsuario
+            // txtEmail
             // 
-            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(13, 215);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(255, 27);
-            this.txtUsuario.TabIndex = 35;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(13, 215);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(255, 27);
+            this.txtEmail.TabIndex = 35;
             // 
             // label4
             // 
@@ -345,9 +288,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(9, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.Size = new System.Drawing.Size(54, 23);
             this.label4.TabIndex = 34;
-            this.label4.Text = "Usuario";
+            this.label4.Text = "Email";
             // 
             // txtNombre
             // 
@@ -371,17 +314,17 @@
             this.label2.TabIndex = 32;
             this.label2.Text = "Nombre";
             // 
-            // panel4
+            // pnSuperior
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.panel4.Controls.Add(this.lblAccesibilidad);
-            this.panel4.Controls.Add(this.lblInfo);
-            this.panel4.Controls.Add(this.lblEmpleado);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1144, 93);
-            this.panel4.TabIndex = 4;
+            this.pnSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnSuperior.Controls.Add(this.lblAccesibilidad);
+            this.pnSuperior.Controls.Add(this.lblInfo);
+            this.pnSuperior.Controls.Add(this.lblProveedor);
+            this.pnSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnSuperior.Name = "pnSuperior";
+            this.pnSuperior.Size = new System.Drawing.Size(1144, 93);
+            this.pnSuperior.TabIndex = 9;
             // 
             // lblAccesibilidad
             // 
@@ -405,49 +348,37 @@
             this.lblInfo.Location = new System.Drawing.Point(3, 61);
             this.lblInfo.Margin = new System.Windows.Forms.Padding(5);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(279, 27);
+            this.lblInfo.Size = new System.Drawing.Size(282, 27);
             this.lblInfo.TabIndex = 18;
-            this.lblInfo.Text = "Información del empleado";
+            this.lblInfo.Text = "Informacion del Proveedor";
             // 
-            // lblEmpleado
+            // lblProveedor
             // 
-            this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpleado.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.lblEmpleado.Location = new System.Drawing.Point(5, 5);
-            this.lblEmpleado.Margin = new System.Windows.Forms.Padding(5);
-            this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(451, 40);
-            this.lblEmpleado.TabIndex = 17;
-            this.lblEmpleado.Text = "Mantenimiento de Empleado";
+            this.lblProveedor.AutoSize = true;
+            this.lblProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.lblProveedor.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.lblProveedor.Location = new System.Drawing.Point(5, 5);
+            this.lblProveedor.Margin = new System.Windows.Forms.Padding(5);
+            this.lblProveedor.Name = "lblProveedor";
+            this.lblProveedor.Size = new System.Drawing.Size(459, 40);
+            this.lblProveedor.TabIndex = 17;
+            this.lblProveedor.Text = "Mantenimiento de Proveedor";
             // 
-            // pnInferior
-            // 
-            this.pnInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.pnInferior.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnInferior.Location = new System.Drawing.Point(0, 456);
-            this.pnInferior.Name = "pnInferior";
-            this.pnInferior.Size = new System.Drawing.Size(1144, 297);
-            this.pnInferior.TabIndex = 2;
-            // 
-            // frmEmpleado
+            // frmProveedor
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1144, 753);
             this.Controls.Add(this.pnInferior);
             this.Controls.Add(this.tblCentral);
-            this.Controls.Add(this.panel4);
-            this.DoubleBuffered = true;
+            this.Controls.Add(this.pnSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEmpleado";
-            this.Text = "frmEmpleado";
-            this.ResizeBegin += new System.EventHandler(this.frmEmpleado_ResizeBegin);
-            this.ResizeEnd += new System.EventHandler(this.frmEmpleado_ResizeEnd);
+            this.Name = "frmProveedor";
+            this.Text = "frmProveedor";
+            this.ResizeBegin += new System.EventHandler(this.frmProveedor_ResizeBegin);
+            this.ResizeEnd += new System.EventHandler(this.frmProveedor_ResizeEnd);
             this.tblCentral.ResumeLayout(false);
             this.tblAccesibilidad.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.tblInfoEmpleado.ResumeLayout(false);
@@ -455,39 +386,35 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnSuperior.ResumeLayout(false);
+            this.pnSuperior.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel pnInferior;
         private System.Windows.Forms.TableLayoutPanel tblCentral;
+        private System.Windows.Forms.TableLayoutPanel tblAccesibilidad;
+        private System.Windows.Forms.Panel panel6;
+        private ReaLTaiizor.Controls.FoxRadioButton rbInactivo;
+        private ReaLTaiizor.Controls.FoxRadioButton rbActivo;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tblInfoEmpleado;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtContrasena;
+        private ReaLTaiizor.Controls.CyberRichTextBox txtDireccion;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblEmpleado;
-        private System.Windows.Forms.TableLayoutPanel tblAccesibilidad;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel pnInferior;
+        private System.Windows.Forms.Panel pnSuperior;
         private System.Windows.Forms.Label lblAccesibilidad;
         private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.Label label9;
-        private ReaLTaiizor.Controls.FoxRadioButton rbInactivo;
-        private ReaLTaiizor.Controls.FoxRadioButton rbActivo;
-        private System.Windows.Forms.ComboBox cbPermiso;
-        private ReaLTaiizor.Controls.CyberRichTextBox txtPermisos;
+        private System.Windows.Forms.Label lblProveedor;
     }
 }

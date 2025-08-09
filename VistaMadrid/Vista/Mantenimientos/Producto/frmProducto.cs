@@ -8,22 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VistaMadrid.Vista.Mantenimientos.Empleados
+namespace VistaMadrid.Vista.Mantenimientos.Producto
 {
-    public partial class frmEmpleado : Form
+    public partial class frmProducto : Form
     {
-        public frmEmpleado()
+        public frmProducto()
         {
             InitializeComponent();
-            
         }
 
-        private void frmEmpleado_ResizeBegin(object sender, EventArgs e)
+        private void frmProducto_ResizeBegin(object sender, EventArgs e)
         {
             SuspendLayout();
         }
 
-        private void frmEmpleado_ResizeEnd(object sender, EventArgs e)
+        private void frmProducto_ResizeEnd(object sender, EventArgs e)
         {
             ResumeLayout();
             lblInfo.Location = new Point(tblInfoEmpleado.Location.X, lblInfo.Location.Y);

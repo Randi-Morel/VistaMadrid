@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
 using VistaMadrid.Vista.Mantenimientos.Empleados;
+using VistaMadrid.Vista.Mantenimientos.Condicion_de_Pago;
+using VistaMadrid.Vista.Mantenimientos.Producto;
 
 namespace VistaMadrid
 {

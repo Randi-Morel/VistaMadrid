@@ -23,7 +23,5 @@ namespace VistaMadrid
             this.txtPassword.AutoSize = false;
             this.txtPassword.Size = new System.Drawing.Size(309, 32);
         }
-
-      
     }
 }
