@@ -9,13 +9,6 @@ namespace VistaMadrid.MP.EF
     [Table("Usuario")]
     public partial class Usuario
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Usuario()
-        {
-            Orden = new HashSet<Orden>();
-            PermisoUsuario = new HashSet<PermisoUsuario>();
-        }
-
         [Key]
         public int ID_Usuario { get; set; }
 
@@ -42,13 +35,5 @@ namespace VistaMadrid.MP.EF
         public string Apellidos { get; set; }
 
         public bool Activo { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Orden> Orden { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PermisoUsuario> PermisoUsuario { get; set; }
-
-        public virtual Rol Rol { get; set; }
     }
 }

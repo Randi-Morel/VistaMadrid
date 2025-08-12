@@ -7,6 +7,11 @@ namespace VistaMadrid.MP.EF
 {
     public partial class BDVistaMadridEntidades : DbContext
     {
+        static BDVistaMadridEntidades()
+        {
+            Database.SetInitializer<BDVistaMadridEntidades>(null);
+        }
+
         public BDVistaMadridEntidades()
             : base("name=BDVistaMadridEntidades")
         {
@@ -38,6 +43,22 @@ namespace VistaMadrid.MP.EF
 #region "ModelBuilder"
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Usuario1)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Contrasena)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Nombre)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Apellidos)
+                .IsUnicode(false);
+
             modelBuilder.Entity<Archivo>()
                 .Property(e => e.NombreArchivo)
                 .IsUnicode(false);
@@ -220,11 +241,6 @@ namespace VistaMadrid.MP.EF
                 .Property(e => e.Descripcion)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Rol>()
-                .HasMany(e => e.Usuario)
-                .WithRequired(e => e.Rol)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<Sala>()
                 .Property(e => e.Descripcion)
                 .IsUnicode(false);
@@ -258,16 +274,6 @@ namespace VistaMadrid.MP.EF
             modelBuilder.Entity<Usuario>()
                 .Property(e => e.Apellidos)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<Usuario>()
-                .HasMany(e => e.Orden)
-                .WithRequired(e => e.Usuario)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Usuario>()
-                .HasMany(e => e.PermisoUsuario)
-                .WithRequired(e => e.Usuario)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<MovimientoInventario>()
                 .Property(e => e.Cantidad)
