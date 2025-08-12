@@ -63,9 +63,9 @@ namespace VistaMadrid.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DownArrrow {
+        internal static System.Drawing.Bitmap Delete1 {
             get {
-                object obj = ResourceManager.GetObject("DownArrrow", resourceCulture);
+                object obj = ResourceManager.GetObject("Delete1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +76,16 @@ namespace VistaMadrid.Properties {
         internal static System.Drawing.Bitmap Log {
             get {
                 object obj = ResourceManager.GetObject("Log", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SaveFloppyDisk {
+            get {
+                object obj = ResourceManager.GetObject("SaveFloppyDisk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
