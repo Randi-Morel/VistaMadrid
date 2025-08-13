@@ -98,16 +98,17 @@
     <Compile Include="Vista\Empleado\frmEmpleado.Designer.cs">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Login\ConfiguracionControlesLogin\ConfiguracionControlesLogin.cs" />
     <Compile Include="Vista\Mesa\frmMesa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Mesa\frmMesa.Designer.cs">
       <DependentUpon>frmMesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Metodo de Pago\frmMetodoPago.cs">
+    <Compile Include="Vista\MetodoPago\frmMetodoPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Metodo de Pago\frmMetodoPago.Designer.cs">
+    <Compile Include="Vista\MetodoPago\frmMetodoPago.Designer.cs">
       <DependentUpon>frmMetodoPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Permiso\frmPermiso.cs">
@@ -184,7 +185,7 @@
     <EmbeddedResource Include="Vista\Mesa\frmMesa.resx">
       <DependentUpon>frmMesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Metodo de Pago\frmMetodoPago.resx">
+    <EmbeddedResource Include="Vista\MetodoPago\frmMetodoPago.resx">
       <DependentUpon>frmMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Permiso\frmPermiso.resx">
@@ -244,9 +245,8 @@
     <Folder Include="Vista\Cliente\ConfiguracionCliente\" />
     <Folder Include="Vista\CondicionPago\ConfiguracionCondicionPago\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
-    <Folder Include="Vista\Login\ConfiguracionLogin\" />
     <Folder Include="Vista\Mesa\ConfiguracionMesa\" />
-    <Folder Include="Vista\Metodo de Pago\ConfiguracionMetodoPago\" />
+    <Folder Include="Vista\MetodoPago\ConfiguracionMetodoPago\" />
     <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
     <Folder Include="Vista\Producto\ConfiguracionProducto\" />
     <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />
