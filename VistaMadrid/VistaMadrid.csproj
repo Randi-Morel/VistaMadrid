@@ -74,82 +74,82 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Categoria\frmCategoria.cs">
+    <Compile Include="Vista\Categoria\frmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Categoria\frmCategoria.Designer.cs">
+    <Compile Include="Vista\Categoria\frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Cliente\frmCliente.cs">
+    <Compile Include="Vista\Cliente\frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Cliente\frmCliente.Designer.cs">
+    <Compile Include="Vista\Cliente\frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\CondicionPago\frmCondicionPago.cs">
+    <Compile Include="Vista\CondicionPago\frmCondicionPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\CondicionPago\frmCondicionPago.Designer.cs">
+    <Compile Include="Vista\CondicionPago\frmCondicionPago.Designer.cs">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Empleado\frmEmpleado.cs">
+    <Compile Include="Vista\Empleado\frmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Empleado\frmEmpleado.Designer.cs">
+    <Compile Include="Vista\Empleado\frmEmpleado.Designer.cs">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Mesa\frmMesa.cs">
+    <Compile Include="Vista\Mesa\frmMesa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Mesa\frmMesa.Designer.cs">
+    <Compile Include="Vista\Mesa\frmMesa.Designer.cs">
       <DependentUpon>frmMesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Metodo de Pago\frmMetodoPago.cs">
+    <Compile Include="Vista\Metodo de Pago\frmMetodoPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Metodo de Pago\frmMetodoPago.Designer.cs">
+    <Compile Include="Vista\Metodo de Pago\frmMetodoPago.Designer.cs">
       <DependentUpon>frmMetodoPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Permiso\frmPermiso.cs">
+    <Compile Include="Vista\Permiso\frmPermiso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Permiso\frmPermiso.Designer.cs">
+    <Compile Include="Vista\Permiso\frmPermiso.Designer.cs">
       <DependentUpon>frmPermiso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Producto\frmProducto.cs">
+    <Compile Include="Vista\Producto\frmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Producto\frmProducto.Designer.cs">
+    <Compile Include="Vista\Producto\frmProducto.Designer.cs">
       <DependentUpon>frmProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Proveedor\frmProveedor.cs">
+    <Compile Include="Vista\Proveedor\frmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Proveedor\frmProveedor.Designer.cs">
+    <Compile Include="Vista\Proveedor\frmProveedor.Designer.cs">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Rol\frmRol.cs">
+    <Compile Include="Vista\Rol\frmRol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Rol\frmRol.Designer.cs">
+    <Compile Include="Vista\Rol\frmRol.Designer.cs">
       <DependentUpon>frmRol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Sala\frmSala.cs">
+    <Compile Include="Vista\Sala\frmSala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Sala\frmSala.Designer.cs">
+    <Compile Include="Vista\Sala\frmSala.Designer.cs">
       <DependentUpon>frmSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Tipo de Movimiento\frmTipoMovimiento.cs">
+    <Compile Include="Vista\Tipo de Movimiento\frmTipoMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Tipo de Movimiento\frmTipoMovimiento.Designer.cs">
+    <Compile Include="Vista\Tipo de Movimiento\frmTipoMovimiento.Designer.cs">
       <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Unidad de Medida\frmUnidadMedida.cs">
+    <Compile Include="Vista\Unidad de Medida\frmUnidadMedida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Mantenimientos\Unidad de Medida\frmUnidadMedida.Designer.cs">
+    <Compile Include="Vista\Unidad de Medida\frmUnidadMedida.Designer.cs">
       <DependentUpon>frmUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Prueba\frmPrueba.cs">
@@ -169,43 +169,43 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Categoria\frmCategoria.resx">
+    <EmbeddedResource Include="Vista\Categoria\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Cliente\frmCliente.resx">
+    <EmbeddedResource Include="Vista\Cliente\frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\CondicionPago\frmCondicionPago.resx">
+    <EmbeddedResource Include="Vista\CondicionPago\frmCondicionPago.resx">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Empleado\frmEmpleado.resx">
+    <EmbeddedResource Include="Vista\Empleado\frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Mesa\frmMesa.resx">
+    <EmbeddedResource Include="Vista\Mesa\frmMesa.resx">
       <DependentUpon>frmMesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Metodo de Pago\frmMetodoPago.resx">
+    <EmbeddedResource Include="Vista\Metodo de Pago\frmMetodoPago.resx">
       <DependentUpon>frmMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Permiso\frmPermiso.resx">
+    <EmbeddedResource Include="Vista\Permiso\frmPermiso.resx">
       <DependentUpon>frmPermiso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Producto\frmProducto.resx">
+    <EmbeddedResource Include="Vista\Producto\frmProducto.resx">
       <DependentUpon>frmProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Proveedor\frmProveedor.resx">
+    <EmbeddedResource Include="Vista\Proveedor\frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Rol\frmRol.resx">
+    <EmbeddedResource Include="Vista\Rol\frmRol.resx">
       <DependentUpon>frmRol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Sala\frmSala.resx">
+    <EmbeddedResource Include="Vista\Sala\frmSala.resx">
       <DependentUpon>frmSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Tipo de Movimiento\frmTipoMovimiento.resx">
+    <EmbeddedResource Include="Vista\Tipo de Movimiento\frmTipoMovimiento.resx">
       <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Mantenimientos\Unidad de Medida\frmUnidadMedida.resx">
+    <EmbeddedResource Include="Vista\Unidad de Medida\frmUnidadMedida.resx">
       <DependentUpon>frmUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Prueba\frmPrueba.resx">
@@ -240,21 +240,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />
+    <Folder Include="Vista\Categoria\ConfiguracionCategoria\" />
+    <Folder Include="Vista\Cliente\ConfiguracionCliente\" />
+    <Folder Include="Vista\CondicionPago\ConfiguracionCondicionPago\" />
+    <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
     <Folder Include="Vista\Login\ConfiguracionLogin\" />
-    <Folder Include="Vista\Mantenimientos\Categoria\ConfiguracionCategoria\" />
-    <Folder Include="Vista\Mantenimientos\Cliente\ConfiguracionCliente\" />
-    <Folder Include="Vista\Mantenimientos\CondicionPago\ConfiguracionCondicionPago\" />
-    <Folder Include="Vista\Mantenimientos\Empleado\ConfiguracionEmpleado\" />
-    <Folder Include="Vista\Mantenimientos\Mesa\ConfiguracionMesa\" />
-    <Folder Include="Vista\Mantenimientos\Metodo de Pago\ConfiguracionMetodoPago\" />
-    <Folder Include="Vista\Mantenimientos\Permiso\ConfiguracionPermiso\" />
-    <Folder Include="Vista\Mantenimientos\Producto\ConfiguracionProducto\" />
-    <Folder Include="Vista\Mantenimientos\Proveedor\ConfiguracionProveedor\" />
-    <Folder Include="Vista\Mantenimientos\Rol\ConfiguracionRol\" />
-    <Folder Include="Vista\Mantenimientos\Sala\ConfiguracionSala\" />
-    <Folder Include="Vista\Mantenimientos\Tipo de Movimiento\ConfiguracionTipoMovimiento\" />
-    <Folder Include="Vista\Mantenimientos\Unidad de Medida\ConfiguracionUnidadMedida\" />
+    <Folder Include="Vista\Mesa\ConfiguracionMesa\" />
+    <Folder Include="Vista\Metodo de Pago\ConfiguracionMetodoPago\" />
+    <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
+    <Folder Include="Vista\Producto\ConfiguracionProducto\" />
+    <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
+    <Folder Include="Vista\Rol\ConfiguracionRol\" />
+    <Folder Include="Vista\Sala\ConfiguracionSala\" />
+    <Folder Include="Vista\Tipo de Movimiento\ConfiguracionTipoMovimiento\" />
+    <Folder Include="Vista\Unidad de Medida\ConfiguracionUnidadMedida\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />
