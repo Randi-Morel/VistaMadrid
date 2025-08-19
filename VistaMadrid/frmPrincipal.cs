@@ -7,6 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VistaMadrid.Vista.Mantenimientos.Categoria;
+using VistaMadrid.Vista.Mantenimientos.Cliente;
+using VistaMadrid.Vista.Mantenimientos.Condicion_de_Pago;
+using VistaMadrid.Vista.Mantenimientos.Empleados;
+using VistaMadrid.Vista.Mantenimientos.Mesa;
+using VistaMadrid.Vista.Mantenimientos.Metodo_de_Pago;
+using VistaMadrid.Vista.Mantenimientos.Permiso;
+using VistaMadrid.Vista.Mantenimientos.Producto;
+using VistaMadrid.Vista.Mantenimientos.Proveedor;
+using VistaMadrid.Vista.Mantenimientos.Rol;
+using VistaMadrid.Vista.Mantenimientos.Sala;
+using VistaMadrid.Vista.Mantenimientos.Tipo_de_Movimiento;
+using VistaMadrid.Vista.Mantenimientos.Unidad_de_Medida;
 
 namespace VistaMadrid
 {
@@ -24,6 +37,9 @@ namespace VistaMadrid
         bool abierto = false;
         
         private bool SplitterMoved = false;
+
+        private readonly Dictionary<Type, TabPage> _tabsPorTipo = new Dictionary<Type, TabPage>();
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -33,6 +49,21 @@ namespace VistaMadrid
 
             //Se entran los botones en listas y sus imagenes
             AddInList();
+
+            btnMesas.Click += (s, e) => AbrirTabForm<frmMesa>("Mesas");
+            btnCategorias.Click += (s, e) => AbrirTabForm<frmCategoria>("Categorias");
+            btnClientes.Click += (s, e) => AbrirTabForm<frmCliente>("Clientes");
+            btnCondicionesPago.Click += (s, e) => AbrirTabForm<frmCondicionPago>("Condicion de Pago");
+            btnEmpleados.Click += (s, e) => AbrirTabForm<frmEmpleado>("Empleados");
+            btnMetodosPago.Click += (s, e) => AbrirTabForm<frmMetodoPago>("Metodo de Pago");
+            //btnPermisos.Click += (s, e) => AbrirTabForm<frmPermiso>("Permisos");
+            btnProductos.Click += (s, e) => AbrirTabForm<frmProducto>("Productos");
+            btnProveedores.Click += (s, e) => AbrirTabForm<frmProveedor>("Proveedores");
+            //btnRol.Click += (s, e) => AbrirTabForm<frmRol>("Roles");
+            //btnSalas.Click += (s, e) => AbrirTabForm<frmSala>("Salas");
+            btnTiposMovimiento.Click += (s, e) => AbrirTabForm<frmTipoMovimiento>("Tipos de Movimientos");
+            btnUnidadesMedida.Click += (s, e) => AbrirTabForm<frmUnidadMedida>("Unidades de Medidas");
+
 
             //Asigna la altura a 0, para hacer la animacion
             pnMantenimientos.Height = 0;
@@ -46,7 +77,124 @@ namespace VistaMadrid
             pnLateral.Size = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.10), 0);
             pnLateral.MinimumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.12), 0);
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height-34);
+
+            tabControl.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl.Padding = new Point(18, 4); // deja espacio para la X
+            tabControl.DrawItem += tabControlMain_DrawItem;
+            tabControl.MouseDown += tabControlMain_MouseDown;
         }
+
+        /// Abre un Form embebido como TabPage. Si ya existe, solo enfoca la pestaña.
+        public void AbrirTabForm<TForm>(string titulo = null, Func<TForm> factory = null)
+        where TForm : Form, new()
+        {
+            var tipo = typeof(TForm);
+            if (_tabsPorTipo.TryGetValue(tipo, out var existente))
+            {
+                if (existente == null || existente.IsDisposed || !tabControl.TabPages.Contains(existente))
+                    _tabsPorTipo.Remove(tipo);
+                else
+                {
+                    tabControl.SelectedTab = existente;
+                    return;
+                }
+            }
+
+            // Crear el formulario (vía factory si necesitas pasar parámetros)
+            var frm = (factory != null) ? factory() : new TForm();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            // Crear la pestaña
+            var textoTab = titulo ?? QuitarPrefijoFrm(tipo.Name);
+            var tab = new TabPage(textoTab);
+
+            // Cuando el form se cierre (si decides cerrarlo por código), quita la pestaña del diccionario
+            frm.FormClosed += (s, e) =>
+            {
+                if (_tabsPorTipo.ContainsKey(tipo))
+                    _tabsPorTipo.Remove(tipo);
+                if (!tab.IsDisposed) tab.Dispose();
+            };
+
+            tab.Controls.Add(frm);
+            tabControl.TabPages.Add(tab);
+            _tabsPorTipo[tipo] = tab;
+
+            frm.Show();
+            tabControl.SelectedTab = tab;
+        }
+
+        private static string QuitarPrefijoFrm(string name)
+        => name.StartsWith("frm", StringComparison.OrdinalIgnoreCase) ? name.Substring(3) : name;
+   
+        /// Cierra la pestaña actual (y dispone el Form embebido).
+        private void tabControlMain_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            var tab = tabControl.TabPages[e.Index];
+            var rect = tabControl.GetTabRect(e.Index);
+
+            // texto
+            TextRenderer.DrawText(
+                e.Graphics,
+                tab.Text,
+                e.Font,
+                new Rectangle(rect.X + 6, rect.Y + 5, rect.Width - 22, rect.Height - 5),
+                tab.Enabled ? SystemColors.ControlText : SystemColors.GrayText,
+                TextFormatFlags.EndEllipsis
+            );
+
+            // rectángulo de la X (14x14, pegado a la derecha)
+            var close = GetCloseRect(rect);
+            // dibuja la X simple
+            using (var pen = new Pen(Color.DimGray, 1.6f))
+            {
+                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                e.Graphics.DrawLine(pen, close.Left, close.Top, close.Right, close.Bottom);
+                e.Graphics.DrawLine(pen, close.Right, close.Top, close.Left, close.Bottom);
+            }
+
+            e.DrawFocusRectangle();
+        }
+
+        private Rectangle GetCloseRect(Rectangle tabRect)
+        {
+            const int s = 14; // tamaño del botón X
+            int x = tabRect.Right - s - 6;
+            int y = tabRect.Top + (tabRect.Height - s) / 2;
+            return new Rectangle(x, y, s, s);
+        }
+
+        private void tabControlMain_MouseDown(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < tabControl.TabPages.Count; i++)
+            {
+                var rect = tabControl.GetTabRect(i);
+                var close = GetCloseRect(rect);
+
+                bool clickX = e.Button == MouseButtons.Left && close.Contains(e.Location);
+                bool clickMM = e.Button == MouseButtons.Middle && rect.Contains(e.Location); // rueda media cierra
+
+                if (clickX || clickMM)
+                {
+                    var page = tabControl.TabPages[i];
+
+                    // Si guardas índice por tipo en un diccionario:
+                    if (page.Tag is Type t) _tabsPorTipo.Remove(t);
+
+                    // 1) Quitar del TabControl
+                    tabControl.TabPages.Remove(page);
+                    // 2) Disponer la página (libera también sus controles/form embebido)
+                    page.Dispose();
+
+                    break;
+                }
+            }
+        }
+
+        ////////////////////////
 
         private void frmPrincipal2_Resize(object sender, EventArgs e)
         {

@@ -141,16 +141,16 @@
     <Compile Include="Vista\Sala\frmSala.Designer.cs">
       <DependentUpon>frmSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Tipo de Movimiento\frmTipoMovimiento.cs">
+    <Compile Include="Vista\TipoMovimiento\frmTipoMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Tipo de Movimiento\frmTipoMovimiento.Designer.cs">
+    <Compile Include="Vista\TipoMovimiento\frmTipoMovimiento.Designer.cs">
       <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Unidad de Medida\frmUnidadMedida.cs">
+    <Compile Include="Vista\UnidadMedida\frmUnidadMedida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Unidad de Medida\frmUnidadMedida.Designer.cs">
+    <Compile Include="Vista\UnidadMedida\frmUnidadMedida.Designer.cs">
       <DependentUpon>frmUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Prueba\frmPrueba.cs">
@@ -203,10 +203,10 @@
     <EmbeddedResource Include="Vista\Sala\frmSala.resx">
       <DependentUpon>frmSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Tipo de Movimiento\frmTipoMovimiento.resx">
+    <EmbeddedResource Include="Vista\TipoMovimiento\frmTipoMovimiento.resx">
       <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Unidad de Medida\frmUnidadMedida.resx">
+    <EmbeddedResource Include="Vista\UnidadMedida\frmUnidadMedida.resx">
       <DependentUpon>frmUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Prueba\frmPrueba.resx">
@@ -253,8 +253,8 @@
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
     <Folder Include="Vista\Rol\ConfiguracionRol\" />
     <Folder Include="Vista\Sala\ConfiguracionSala\" />
-    <Folder Include="Vista\Tipo de Movimiento\ConfiguracionTipoMovimiento\" />
-    <Folder Include="Vista\Unidad de Medida\ConfiguracionUnidadMedida\" />
+    <Folder Include="Vista\TipoMovimiento\ConfiguracionTipoMovimiento\" />
+    <Folder Include="Vista\UnidadMedida\ConfiguracionUnidadMedida\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />

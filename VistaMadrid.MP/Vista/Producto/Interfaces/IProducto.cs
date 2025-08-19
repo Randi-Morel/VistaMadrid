@@ -6,6 +6,6 @@ namespace VistaMadrid.MP
         string Usuario { get; set; }
         string Password { get; set; }
 
-        PresentadorLogin Presentador { get; set; }
+        PresentadorProducto Presentador { get; set; }
     }
 }

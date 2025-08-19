@@ -311,12 +311,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUsuario;
+        internal System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnEntrar;
+        internal System.Windows.Forms.TextBox txtPassword;
+        internal System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Panel pnBorder;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.LinkLabel lkbForgotPassword;

@@ -8,6 +8,7 @@ namespace VistaMadrid
     public partial class frmLogin : Form, ILogin
     {
         public PresentadorLogin Presentador { get; set; }
+        private ConfiguracionControlesLogin _ConfiguracionControlesLogin;
 
         private Point lastLocation;
         private bool mouseDown;
@@ -16,6 +17,8 @@ namespace VistaMadrid
         {
             InitializeComponent();
             Presentador = new PresentadorLogin(this);
+            _ConfiguracionControlesLogin = new ConfiguracionControlesLogin(this, Presentador);
+            _ConfiguracionControlesLogin.Configurar();
 
             this.txtUsuario.AutoSize = false;
             this.txtUsuario.Size = new Size(309, 32);
@@ -97,19 +100,15 @@ namespace VistaMadrid
             }
         }
 
-
-
-        #endregion
-
         private void btnSalir_MouseClick(object sender, MouseEventArgs e)
         {
             this.Close();
-           
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        #endregion
     }
 }
