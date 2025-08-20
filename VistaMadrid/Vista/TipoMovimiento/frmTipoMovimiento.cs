@@ -16,5 +16,19 @@ namespace VistaMadrid.Vista.Mantenimientos.Tipo_de_Movimiento
         {
             InitializeComponent();
         }
+
+        private void frmTipoMovimiento_Resize(object sender, EventArgs e)
+        {
+            if (this.Width <= 900)
+            {
+                rbInactivo.Location = new System.Drawing.Point(rbActivo.Location.X, rbActivo.Location.Y + 30);
+                rbNo.Location = new System.Drawing.Point(rbSi.Location.X, rbSi.Location.Y + 30);
+            }
+            else
+            {
+                rbInactivo.Location = new System.Drawing.Point(123, 61);
+                rbNo.Location = new System.Drawing.Point(193, 56);
+            }
+        }
     }
 }

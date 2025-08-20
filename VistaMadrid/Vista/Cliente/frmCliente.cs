@@ -28,5 +28,10 @@ namespace VistaMadrid.Vista.Mantenimientos.Cliente
             lblInfo.Location = new Point(tblInfoEmpleado.Location.X, lblInfo.Location.Y);
             lblAccesibilidad.Location = new Point(tblAccesibilidad.Location.X, lblAccesibilidad.Location.Y);
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

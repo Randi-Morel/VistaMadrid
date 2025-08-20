@@ -70,6 +70,7 @@
             this.pnSeparadorInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
@@ -659,6 +660,7 @@
             // pnPanelInferior
             // 
             this.pnPanelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnPanelInferior.Controls.Add(this.btnLimpiar);
             this.pnPanelInferior.Controls.Add(this.btnBorrar);
             this.pnPanelInferior.Controls.Add(this.btnGuardar);
             this.pnPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -666,6 +668,30 @@
             this.pnPanelInferior.Name = "pnPanelInferior";
             this.pnPanelInferior.Size = new System.Drawing.Size(958, 66);
             this.pnPanelInferior.TabIndex = 11;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnLimpiar.ButtonImage = global::VistaMadrid.Properties.Resources.Delete1;
+            this.btnLimpiar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnLimpiar.ButtonText = "Limpiar";
+            this.btnLimpiar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnLimpiar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnLimpiar.CornerRadius = 5;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLimpiar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnLimpiar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnLimpiar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnLimpiar.Location = new System.Drawing.Point(540, 13);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(128, 47);
+            this.btnLimpiar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnLimpiar.TabIndex = 4;
+            this.btnLimpiar.TextColor = System.Drawing.Color.Black;
+            this.btnLimpiar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.btnLimpiar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btnBorrar
             // 
@@ -682,7 +708,7 @@
             this.btnBorrar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnBorrar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnBorrar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnBorrar.Location = new System.Drawing.Point(482, 10);
+            this.btnBorrar.Location = new System.Drawing.Point(406, 11);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(128, 47);
             this.btnBorrar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -690,7 +716,6 @@
             this.btnBorrar.TextColor = System.Drawing.Color.Black;
             this.btnBorrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.btnBorrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnBorrar.Visible = false;
             // 
             // btnGuardar
             // 
@@ -707,7 +732,7 @@
             this.btnGuardar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnGuardar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnGuardar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnGuardar.Location = new System.Drawing.Point(343, 10);
+            this.btnGuardar.Location = new System.Drawing.Point(267, 11);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(128, 47);
             this.btnGuardar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -715,7 +740,6 @@
             this.btnGuardar.TextColor = System.Drawing.Color.Black;
             this.btnGuardar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnGuardar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnGuardar.Visible = false;
             // 
             // pnSeparadorPanelInferior
             // 
@@ -739,10 +763,13 @@
             this.Controls.Add(this.spLateral);
             this.Controls.Add(this.pnLateral);
             this.Controls.Add(this.pnSuperior);
+            this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(840, 540);
             this.Name = "frmPrincipal";
             this.Text = "Vista Madrid";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ResizeBegin += new System.EventHandler(this.frmPrincipal_ResizeBegin);
+            this.ResizeEnd += new System.EventHandler(this.frmPrincipal_ResizeEnd);
             this.Resize += new System.EventHandler(this.frmPrincipal2_Resize);
             this.pnLateral.ResumeLayout(false);
             this.pnContenedorLateral.ResumeLayout(false);
@@ -806,5 +833,6 @@
         private System.Windows.Forms.Splitter spSubBotones;
         private ReaLTaiizor.Controls.ParrotButton btnGuardar;
         private ReaLTaiizor.Controls.ParrotButton btnBorrar;
+        private ReaLTaiizor.Controls.ParrotButton btnLimpiar;
     }
 }

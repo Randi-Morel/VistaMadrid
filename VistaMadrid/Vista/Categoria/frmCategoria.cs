@@ -16,5 +16,16 @@ namespace VistaMadrid.Vista.Mantenimientos.Categoria
         {
             InitializeComponent();
         }
+
+        #region Cambios del size del form
+        private void frmCategoria_Resize(object sender, EventArgs e)
+        {
+            pnDescripcion.Location = new System.Drawing.Point((int)(tblCentral.Width * 0.17), 31);
+            pnDescripcion.Size = new System.Drawing.Size((int)(tblCentral.Width * 0.34), pnDescripcion.Height);
+            pnEstado.Location = new System.Drawing.Point((int)(pnDescripcion.Location.X * 3.19), 31);
+
+        }
+
+        #endregion
     }
 }

@@ -35,6 +35,7 @@ namespace VistaMadrid
 
         int[] alturas = new int[8];
         bool abierto = false;
+        bool charged = false;
         
         private bool SplitterMoved = false;
 
@@ -77,11 +78,13 @@ namespace VistaMadrid
             pnLateral.Size = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.10), 0);
             pnLateral.MinimumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.12), 0);
             pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height-34);
+            
 
             tabControl.DrawMode = TabDrawMode.OwnerDrawFixed;
             tabControl.Padding = new Point(18, 4); // deja espacio para la X
             tabControl.DrawItem += tabControlMain_DrawItem;
             tabControl.MouseDown += tabControlMain_MouseDown;
+
         }
 
         /// Abre un Form embebido como TabPage. Si ya existe, solo enfoca la pestaña.
@@ -196,17 +199,7 @@ namespace VistaMadrid
 
         ////////////////////////
 
-        private void frmPrincipal2_Resize(object sender, EventArgs e)
-        {
-            if (!SplitterMoved) {
-                pnLateral.Width = Convert.ToInt32(pnSuperior.Width * 0.15);
-            }
-            pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.35), 0);
-            pnSubBotones.MaximumSize = new System.Drawing.Size(0, pnSeparadorLateral.Height - 269);
-            pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
-
-            //pnSubBotones.Height = pnLateral.Height - 242;
-        }
+        
 
         private void spLateral_SplitterMoved(object sender, SplitterEventArgs e)
         {
@@ -298,5 +291,40 @@ namespace VistaMadrid
             this.alturas[2] = pnReportes.Height;
         }
 
+        #region Cambios del size del form
+        private void frmPrincipal2_Resize(object sender, EventArgs e)
+        {
+            if (!SplitterMoved) {
+                pnLateral.Width = Convert.ToInt32(pnSuperior.Width * 0.15);
+                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+            }
+            if (!charged)
+            {
+                
+                pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.35), 0);
+                pnSubBotones.MaximumSize = new System.Drawing.Size(0, pnSeparadorLateral.Height - 269);
+                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+            }
+            charged = true;
+        }
+
+        private void frmPrincipal_ResizeBegin(object sender, EventArgs e)
+        {
+            SuspendLayout();
+        }
+
+        private void frmPrincipal_ResizeEnd(object sender, EventArgs e)
+        {
+            ResumeLayout();
+            if (!SplitterMoved)
+            {
+                pnLateral.Width = Convert.ToInt32(this.Width * 0.15);
+            }
+            pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(this.Width * 0.35), 0);
+            pnSubBotones.MaximumSize = new System.Drawing.Size(0, this.Height - 269);
+            pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+            
+        }
+        #endregion
     }
 }
