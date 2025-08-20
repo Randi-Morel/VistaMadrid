@@ -62,7 +62,6 @@
             this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
-            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -70,10 +69,13 @@
             this.pnSeparadorInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
-            this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
-            this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
-            this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
+            this.tblInferior = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
+            this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
+            this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
+            this.ptbUsuario = new System.Windows.Forms.PictureBox();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
@@ -82,9 +84,10 @@
             this.pnMantenimientos.SuspendLayout();
             this.pnProcesos.SuspendLayout();
             this.pnUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.tabControl.SuspendLayout();
             this.pnPanelInferior.SuspendLayout();
+            this.tblInferior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -120,6 +123,7 @@
             // 
             // pnContenedorLateral
             // 
+            this.pnContenedorLateral.Controls.Add(this.btnCerrarSesion);
             this.pnContenedorLateral.Controls.Add(this.pnLatBotones);
             this.pnContenedorLateral.Controls.Add(this.spSubBotones);
             this.pnContenedorLateral.Controls.Add(this.pnSubBotones);
@@ -588,16 +592,6 @@
             this.pnUsuario.Size = new System.Drawing.Size(162, 60);
             this.pnUsuario.TabIndex = 0;
             // 
-            // ptbUsuario
-            // 
-            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
-            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
-            this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
-            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbUsuario.TabIndex = 0;
-            this.ptbUsuario.TabStop = false;
-            // 
             // spLateral
             // 
             this.spLateral.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -660,62 +654,67 @@
             // pnPanelInferior
             // 
             this.pnPanelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.pnPanelInferior.Controls.Add(this.btnLimpiar);
-            this.pnPanelInferior.Controls.Add(this.btnBorrar);
-            this.pnPanelInferior.Controls.Add(this.btnGuardar);
+            this.pnPanelInferior.Controls.Add(this.tblInferior);
             this.pnPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnPanelInferior.Location = new System.Drawing.Point(164, 636);
             this.pnPanelInferior.Name = "pnPanelInferior";
             this.pnPanelInferior.Size = new System.Drawing.Size(958, 66);
             this.pnPanelInferior.TabIndex = 11;
             // 
+            // pnSeparadorPanelInferior
+            // 
+            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
+            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
+            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
+            this.pnSeparadorPanelInferior.TabIndex = 12;
+            // 
+            // tblInferior
+            // 
+            this.tblInferior.ColumnCount = 5;
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.51F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.51F));
+            this.tblInferior.Controls.Add(this.btnLimpiar, 3, 1);
+            this.tblInferior.Controls.Add(this.btnGuardar, 1, 1);
+            this.tblInferior.Controls.Add(this.btnBorrar, 2, 1);
+            this.tblInferior.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblInferior.Location = new System.Drawing.Point(0, 0);
+            this.tblInferior.Name = "tblInferior";
+            this.tblInferior.RowCount = 3;
+            this.tblInferior.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInferior.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tblInferior.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInferior.Size = new System.Drawing.Size(958, 66);
+            this.tblInferior.TabIndex = 0;
+            // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnLimpiar.ButtonImage = global::VistaMadrid.Properties.Resources.Delete1;
+            this.btnLimpiar.ButtonImage = global::VistaMadrid.Properties.Resources.Clear;
             this.btnLimpiar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
             this.btnLimpiar.ButtonText = "Limpiar";
             this.btnLimpiar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnLimpiar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnLimpiar.CornerRadius = 5;
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLimpiar.Horizontal_Alignment = System.Drawing.StringAlignment.Near;
             this.btnLimpiar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnLimpiar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnLimpiar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnLimpiar.Location = new System.Drawing.Point(540, 13);
+            this.btnLimpiar.Location = new System.Drawing.Point(545, 9);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(128, 47);
+            this.btnLimpiar.Size = new System.Drawing.Size(124, 46);
             this.btnLimpiar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.TextColor = System.Drawing.Color.Black;
             this.btnLimpiar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.btnLimpiar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBorrar.ButtonImage = global::VistaMadrid.Properties.Resources.Delete1;
-            this.btnBorrar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnBorrar.ButtonText = "Borrar";
-            this.btnBorrar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBorrar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBorrar.CornerRadius = 5;
-            this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBorrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnBorrar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBorrar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBorrar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnBorrar.Location = new System.Drawing.Point(406, 11);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(128, 47);
-            this.btnBorrar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnBorrar.TabIndex = 3;
-            this.btnBorrar.TextColor = System.Drawing.Color.Black;
-            this.btnBorrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            this.btnBorrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btnGuardar
             // 
@@ -727,28 +726,74 @@
             this.btnGuardar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnGuardar.CornerRadius = 5;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnGuardar.Horizontal_Alignment = System.Drawing.StringAlignment.Near;
             this.btnGuardar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnGuardar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnGuardar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnGuardar.Location = new System.Drawing.Point(267, 11);
+            this.btnGuardar.Location = new System.Drawing.Point(285, 9);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(128, 47);
+            this.btnGuardar.Size = new System.Drawing.Size(124, 46);
             this.btnGuardar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.TextColor = System.Drawing.Color.Black;
             this.btnGuardar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnGuardar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // pnSeparadorPanelInferior
+            // btnBorrar
             // 
-            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
-            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
-            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
-            this.pnSeparadorPanelInferior.TabIndex = 12;
+            this.btnBorrar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBorrar.ButtonImage = global::VistaMadrid.Properties.Resources.Delete1;
+            this.btnBorrar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnBorrar.ButtonText = "Borrar";
+            this.btnBorrar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBorrar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBorrar.CornerRadius = 5;
+            this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBorrar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Horizontal_Alignment = System.Drawing.StringAlignment.Near;
+            this.btnBorrar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBorrar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBorrar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnBorrar.Location = new System.Drawing.Point(415, 9);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(124, 46);
+            this.btnBorrar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.TextColor = System.Drawing.Color.Black;
+            this.btnBorrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.btnBorrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // ptbUsuario
+            // 
+            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
+            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
+            this.ptbUsuario.Name = "ptbUsuario";
+            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
+            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbUsuario.TabIndex = 0;
+            this.ptbUsuario.TabStop = false;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.AutoSize = true;
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnCerrarSesion.CausesValidation = false;
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 576);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(144, 40);
+            this.btnCerrarSesion.TabIndex = 11;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             // 
             // frmPrincipal
             // 
@@ -773,6 +818,7 @@
             this.Resize += new System.EventHandler(this.frmPrincipal2_Resize);
             this.pnLateral.ResumeLayout(false);
             this.pnContenedorLateral.ResumeLayout(false);
+            this.pnContenedorLateral.PerformLayout();
             this.pnLatBotones.ResumeLayout(false);
             this.pnLatBotones.PerformLayout();
             this.pnSubBotones.ResumeLayout(false);
@@ -781,9 +827,10 @@
             this.pnProcesos.ResumeLayout(false);
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.pnPanelInferior.ResumeLayout(false);
+            this.tblInferior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -834,5 +881,7 @@
         private ReaLTaiizor.Controls.ParrotButton btnGuardar;
         private ReaLTaiizor.Controls.ParrotButton btnBorrar;
         private ReaLTaiizor.Controls.ParrotButton btnLimpiar;
+        private System.Windows.Forms.TableLayoutPanel tblInferior;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

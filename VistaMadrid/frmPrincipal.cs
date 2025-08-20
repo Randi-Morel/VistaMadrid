@@ -296,16 +296,17 @@ namespace VistaMadrid
         {
             if (!SplitterMoved) {
                 pnLateral.Width = Convert.ToInt32(pnSuperior.Width * 0.15);
-                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, (int)(pnLateral.Height * 0.87));
             }
             if (!charged)
             {
                 
                 pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(pnSuperior.Width * 0.35), 0);
-                pnSubBotones.MaximumSize = new System.Drawing.Size(0, pnSeparadorLateral.Height - 269);
-                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+                pnSubBotones.MaximumSize = new System.Drawing.Size(0,(int) (this.Height * 0.58));
+                pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, (int)(pnLateral.Height * 0.87));
             }
             charged = true;
+            Console.WriteLine(pnLateral.Height);
         }
 
         private void frmPrincipal_ResizeBegin(object sender, EventArgs e)
@@ -321,8 +322,8 @@ namespace VistaMadrid
                 pnLateral.Width = Convert.ToInt32(this.Width * 0.15);
             }
             pnLateral.MaximumSize = new System.Drawing.Size(Convert.ToInt32(this.Width * 0.35), 0);
-            pnSubBotones.MaximumSize = new System.Drawing.Size(0, this.Height - 269);
-            pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18, pnLateral.Height - 34);
+            pnSubBotones.MaximumSize = new System.Drawing.Size(0, (int)(this.Height * 0.58));
+            pnContenedorLateral.Size = new System.Drawing.Size(pnLateral.Width - 18,(int) (pnLateral.Height *0.87));
             
         }
         #endregion
