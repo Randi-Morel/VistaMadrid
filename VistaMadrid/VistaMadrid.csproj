@@ -99,6 +99,7 @@
       <DependentUpon>frmEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Login\ConfiguracionControlesLogin\ConfiguracionControlesLogin.cs" />
+    <Compile Include="Vista\Mesa\ConfiguracionControlesMesa\ConfiguracionControlesMesa.cs" />
     <Compile Include="Vista\Mesa\frmMesa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,7 +226,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -243,7 +243,6 @@
     <Folder Include="Vista\Cliente\ConfiguracionCliente\" />
     <Folder Include="Vista\CondicionPago\ConfiguracionCondicionPago\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
-    <Folder Include="Vista\Mesa\ConfiguracionMesa\" />
     <Folder Include="Vista\MetodoPago\ConfiguracionMetodoPago\" />
     <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
     <Folder Include="Vista\Producto\ConfiguracionProducto\" />

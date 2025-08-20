@@ -499,10 +499,20 @@
             0,
             0});
             this.nudDiasCredito.MaximumSize = new System.Drawing.Size(120, 0);
+            this.nudDiasCredito.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             this.nudDiasCredito.MinimumSize = new System.Drawing.Size(110, 0);
             this.nudDiasCredito.Name = "nudDiasCredito";
             this.nudDiasCredito.Size = new System.Drawing.Size(120, 27);
             this.nudDiasCredito.TabIndex = 55;
+            this.nudDiasCredito.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             // 
             // panel4
             // 
