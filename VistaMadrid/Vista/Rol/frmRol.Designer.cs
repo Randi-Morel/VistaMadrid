@@ -375,7 +375,6 @@
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRol";
-            this.Text = "frmRol";
             this.Resize += new System.EventHandler(this.frmRol_Resize);
             this.pnInferior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
