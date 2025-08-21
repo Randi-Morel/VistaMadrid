@@ -18,22 +18,10 @@ namespace VistaMadrid.Vista.Mantenimientos.Empleados
             
         }
 
-        private void frmEmpleado_ResizeBegin(object sender, EventArgs e)
+        private void frmEmpleado_Resize(object sender, EventArgs e)
         {
-            SuspendLayout();
-        }
-
-        private void frmEmpleado_ResizeEnd(object sender, EventArgs e)
-        {
-            ResumeLayout();
             lblInfo.Location = new Point(tblInfoEmpleado.Location.X, lblInfo.Location.Y);
             lblAccesibilidad.Location = new Point(tblAccesibilidad.Location.X, lblAccesibilidad.Location.Y);
         }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

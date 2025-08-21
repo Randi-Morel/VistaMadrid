@@ -17,14 +17,9 @@ namespace VistaMadrid.Vista.Mantenimientos.Producto
             InitializeComponent();
         }
 
-        private void frmProducto_ResizeBegin(object sender, EventArgs e)
-        {
-            SuspendLayout();
-        }
 
-        private void frmProducto_ResizeEnd(object sender, EventArgs e)
+        private void frmProducto_Resize(object sender, EventArgs e)
         {
-            ResumeLayout();
             lblInfo.Location = new Point(tblInfoEmpleado.Location.X, lblInfo.Location.Y);
             lblAccesibilidad.Location = new Point(tblAccesibilidad.Location.X, lblAccesibilidad.Location.Y);
         }

@@ -33,6 +33,7 @@
             this.pnLateral = new System.Windows.Forms.Panel();
             this.pnSeparadorUsuario = new System.Windows.Forms.Panel();
             this.pnContenedorLateral = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.pnLatBotones = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
+            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -69,13 +71,14 @@
             this.pnSeparadorInferior = new System.Windows.Forms.Panel();
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
-            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
             this.tblInferior = new System.Windows.Forms.TableLayoutPanel();
             this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
-            this.ptbUsuario = new System.Windows.Forms.PictureBox();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
+            this.btnSala = new System.Windows.Forms.Button();
+            this.btnRol = new System.Windows.Forms.Button();
+            this.btnPermisos = new System.Windows.Forms.Button();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
@@ -84,10 +87,10 @@
             this.pnMantenimientos.SuspendLayout();
             this.pnProcesos.SuspendLayout();
             this.pnUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.tabControl.SuspendLayout();
             this.pnPanelInferior.SuspendLayout();
             this.tblInferior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -131,6 +134,25 @@
             this.pnContenedorLateral.Name = "pnContenedorLateral";
             this.pnContenedorLateral.Size = new System.Drawing.Size(144, 616);
             this.pnContenedorLateral.TabIndex = 0;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.AutoSize = true;
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnCerrarSesion.CausesValidation = false;
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 576);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(144, 40);
+            this.btnCerrarSesion.TabIndex = 11;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             // 
             // pnLatBotones
             // 
@@ -235,7 +257,7 @@
             this.pnReportes.Controls.Add(this.btnEntradasYSalidas);
             this.pnReportes.Controls.Add(this.btnStockActual);
             this.pnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReportes.Location = new System.Drawing.Point(0, 520);
+            this.pnReportes.Location = new System.Drawing.Point(0, 640);
             this.pnReportes.Name = "pnReportes";
             this.pnReportes.Size = new System.Drawing.Size(123, 240);
             this.pnReportes.TabIndex = 3;
@@ -342,6 +364,9 @@
             // 
             // pnMantenimientos
             // 
+            this.pnMantenimientos.Controls.Add(this.btnPermisos);
+            this.pnMantenimientos.Controls.Add(this.btnRol);
+            this.pnMantenimientos.Controls.Add(this.btnSala);
             this.pnMantenimientos.Controls.Add(this.btnMetodosPago);
             this.pnMantenimientos.Controls.Add(this.btnCondicionesPago);
             this.pnMantenimientos.Controls.Add(this.btnClientes);
@@ -355,7 +380,7 @@
             this.pnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnMantenimientos.Location = new System.Drawing.Point(0, 120);
             this.pnMantenimientos.Name = "pnMantenimientos";
-            this.pnMantenimientos.Size = new System.Drawing.Size(123, 400);
+            this.pnMantenimientos.Size = new System.Drawing.Size(123, 520);
             this.pnMantenimientos.TabIndex = 0;
             // 
             // btnMetodosPago
@@ -592,6 +617,16 @@
             this.pnUsuario.Size = new System.Drawing.Size(162, 60);
             this.pnUsuario.TabIndex = 0;
             // 
+            // ptbUsuario
+            // 
+            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
+            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
+            this.ptbUsuario.Name = "ptbUsuario";
+            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
+            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbUsuario.TabIndex = 0;
+            this.ptbUsuario.TabStop = false;
+            // 
             // spLateral
             // 
             this.spLateral.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -660,15 +695,6 @@
             this.pnPanelInferior.Name = "pnPanelInferior";
             this.pnPanelInferior.Size = new System.Drawing.Size(958, 66);
             this.pnPanelInferior.TabIndex = 11;
-            // 
-            // pnSeparadorPanelInferior
-            // 
-            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
-            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
-            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
-            this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
             // tblInferior
             // 
@@ -766,34 +792,65 @@
             this.btnBorrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.btnBorrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // ptbUsuario
+            // pnSeparadorPanelInferior
             // 
-            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
-            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
-            this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
-            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbUsuario.TabIndex = 0;
-            this.ptbUsuario.TabStop = false;
+            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
+            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
+            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
+            this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
-            // btnCerrarSesion
+            // btnSala
             // 
-            this.btnCerrarSesion.AutoSize = true;
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnCerrarSesion.CausesValidation = false;
-            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 576);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(144, 40);
-            this.btnCerrarSesion.TabIndex = 11;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnSala.AutoEllipsis = true;
+            this.btnSala.CausesValidation = false;
+            this.btnSala.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSala.FlatAppearance.BorderSize = 0;
+            this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSala.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSala.Location = new System.Drawing.Point(0, 400);
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(123, 40);
+            this.btnSala.TabIndex = 47;
+            this.btnSala.Text = "Sala";
+            this.btnSala.UseVisualStyleBackColor = true;
+            this.btnSala.Visible = false;
+            // 
+            // btnRol
+            // 
+            this.btnRol.AutoEllipsis = true;
+            this.btnRol.CausesValidation = false;
+            this.btnRol.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRol.FlatAppearance.BorderSize = 0;
+            this.btnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRol.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRol.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRol.Location = new System.Drawing.Point(0, 440);
+            this.btnRol.Name = "btnRol";
+            this.btnRol.Size = new System.Drawing.Size(123, 40);
+            this.btnRol.TabIndex = 48;
+            this.btnRol.Text = "Rol";
+            this.btnRol.UseVisualStyleBackColor = true;
+            this.btnRol.Visible = false;
+            // 
+            // btnPermisos
+            // 
+            this.btnPermisos.AutoEllipsis = true;
+            this.btnPermisos.CausesValidation = false;
+            this.btnPermisos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPermisos.FlatAppearance.BorderSize = 0;
+            this.btnPermisos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPermisos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPermisos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPermisos.Location = new System.Drawing.Point(0, 480);
+            this.btnPermisos.Name = "btnPermisos";
+            this.btnPermisos.Size = new System.Drawing.Size(123, 40);
+            this.btnPermisos.TabIndex = 49;
+            this.btnPermisos.Text = "Permisos";
+            this.btnPermisos.UseVisualStyleBackColor = true;
+            this.btnPermisos.Visible = false;
             // 
             // frmPrincipal
             // 
@@ -809,7 +866,7 @@
             this.Controls.Add(this.pnLateral);
             this.Controls.Add(this.pnSuperior);
             this.DoubleBuffered = true;
-            this.MinimumSize = new System.Drawing.Size(840, 540);
+            this.MinimumSize = new System.Drawing.Size(1040, 740);
             this.Name = "frmPrincipal";
             this.Text = "Vista Madrid";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -827,10 +884,10 @@
             this.pnProcesos.ResumeLayout(false);
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.pnPanelInferior.ResumeLayout(false);
             this.tblInferior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -883,5 +940,8 @@
         private ReaLTaiizor.Controls.ParrotButton btnLimpiar;
         private System.Windows.Forms.TableLayoutPanel tblInferior;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnSala;
+        private System.Windows.Forms.Button btnPermisos;
+        private System.Windows.Forms.Button btnRol;
     }
 }
