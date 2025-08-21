@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VistaMadrid.Vista.Mantenimientos.Condicion_de_Pago
+namespace VistaMadrid.Vista.RegistroMovimiento
 {
-    public partial class frmCondicionPago : Form
+    public partial class frmRegistroMovimiento : Form
     {
-        public frmCondicionPago()
+        public frmRegistroMovimiento()
         {
             InitializeComponent();
-        }
-
-        private void frmCondicionPago_Resize(object sender, EventArgs e)
-        {
-            
         }
     }
 }
