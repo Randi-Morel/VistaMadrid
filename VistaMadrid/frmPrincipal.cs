@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VistaMadrid.MP;
+using VistaMadrid.Vista.Facturacion;
 using VistaMadrid.Vista.Mantenimientos.Categoria;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
 using VistaMadrid.Vista.Mantenimientos.CondicionPago;
@@ -65,6 +66,7 @@ namespace VistaMadrid
             btnSala.Click += (s, e) => AbrirTabForm<frmSala>("Salas");
             btnTiposMovimiento.Click += (s, e) => AbrirTabForm<frmTipoMovimiento>("Tipos de Movimientos");
             btnUnidadesMedida.Click += (s, e) => AbrirTabForm<frmUnidadMedida>("Unidades de Medidas");
+            btnFacturacion.Click += (s, e) => AbrirTabForm<frmFacturacion>("Facturación");
 
             btnGuardar.Click += (s, e) => Ejecutar(f => {
                 if (f.Guardar()) MessageBox.Show("Guardado correctamente.");

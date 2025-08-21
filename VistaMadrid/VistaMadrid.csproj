@@ -151,6 +151,7 @@
     <Compile Include="Vista\Rol\frmRol.Designer.cs">
       <DependentUpon>frmRol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Sala\ConfiguracionControlesSala\ConfiguracionControlesSala.cs" />
     <Compile Include="Vista\Sala\frmSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,7 +272,6 @@
     <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
     <Folder Include="Vista\Rol\ConfiguracionRol\" />
-    <Folder Include="Vista\Sala\ConfiguracionSala\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />
