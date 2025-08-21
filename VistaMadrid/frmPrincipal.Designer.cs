@@ -48,6 +48,9 @@
             this.btnEntradasYSalidas = new System.Windows.Forms.Button();
             this.btnStockActual = new System.Windows.Forms.Button();
             this.pnMantenimientos = new System.Windows.Forms.Panel();
+            this.btnPermisos = new System.Windows.Forms.Button();
+            this.btnRol = new System.Windows.Forms.Button();
+            this.btnSala = new System.Windows.Forms.Button();
             this.btnMetodosPago = new System.Windows.Forms.Button();
             this.btnCondicionesPago = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -76,9 +79,6 @@
             this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
             this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
-            this.btnSala = new System.Windows.Forms.Button();
-            this.btnRol = new System.Windows.Forms.Button();
-            this.btnPermisos = new System.Windows.Forms.Button();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
@@ -382,6 +382,57 @@
             this.pnMantenimientos.Name = "pnMantenimientos";
             this.pnMantenimientos.Size = new System.Drawing.Size(123, 520);
             this.pnMantenimientos.TabIndex = 0;
+            // 
+            // btnPermisos
+            // 
+            this.btnPermisos.AutoEllipsis = true;
+            this.btnPermisos.CausesValidation = false;
+            this.btnPermisos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPermisos.FlatAppearance.BorderSize = 0;
+            this.btnPermisos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPermisos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPermisos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPermisos.Location = new System.Drawing.Point(0, 480);
+            this.btnPermisos.Name = "btnPermisos";
+            this.btnPermisos.Size = new System.Drawing.Size(123, 40);
+            this.btnPermisos.TabIndex = 49;
+            this.btnPermisos.Text = "Permisos";
+            this.btnPermisos.UseVisualStyleBackColor = true;
+            this.btnPermisos.Visible = false;
+            // 
+            // btnRol
+            // 
+            this.btnRol.AutoEllipsis = true;
+            this.btnRol.CausesValidation = false;
+            this.btnRol.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRol.FlatAppearance.BorderSize = 0;
+            this.btnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRol.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRol.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRol.Location = new System.Drawing.Point(0, 440);
+            this.btnRol.Name = "btnRol";
+            this.btnRol.Size = new System.Drawing.Size(123, 40);
+            this.btnRol.TabIndex = 48;
+            this.btnRol.Text = "Rol";
+            this.btnRol.UseVisualStyleBackColor = true;
+            this.btnRol.Visible = false;
+            // 
+            // btnSala
+            // 
+            this.btnSala.AutoEllipsis = true;
+            this.btnSala.CausesValidation = false;
+            this.btnSala.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSala.FlatAppearance.BorderSize = 0;
+            this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSala.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSala.Location = new System.Drawing.Point(0, 400);
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(123, 40);
+            this.btnSala.TabIndex = 47;
+            this.btnSala.Text = "Sala";
+            this.btnSala.UseVisualStyleBackColor = true;
+            this.btnSala.Visible = false;
             // 
             // btnMetodosPago
             // 
@@ -800,57 +851,6 @@
             this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
             this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
             this.pnSeparadorPanelInferior.TabIndex = 12;
-            // 
-            // btnSala
-            // 
-            this.btnSala.AutoEllipsis = true;
-            this.btnSala.CausesValidation = false;
-            this.btnSala.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSala.FlatAppearance.BorderSize = 0;
-            this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSala.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSala.Location = new System.Drawing.Point(0, 400);
-            this.btnSala.Name = "btnSala";
-            this.btnSala.Size = new System.Drawing.Size(123, 40);
-            this.btnSala.TabIndex = 47;
-            this.btnSala.Text = "Sala";
-            this.btnSala.UseVisualStyleBackColor = true;
-            this.btnSala.Visible = false;
-            // 
-            // btnRol
-            // 
-            this.btnRol.AutoEllipsis = true;
-            this.btnRol.CausesValidation = false;
-            this.btnRol.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRol.FlatAppearance.BorderSize = 0;
-            this.btnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRol.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRol.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRol.Location = new System.Drawing.Point(0, 440);
-            this.btnRol.Name = "btnRol";
-            this.btnRol.Size = new System.Drawing.Size(123, 40);
-            this.btnRol.TabIndex = 48;
-            this.btnRol.Text = "Rol";
-            this.btnRol.UseVisualStyleBackColor = true;
-            this.btnRol.Visible = false;
-            // 
-            // btnPermisos
-            // 
-            this.btnPermisos.AutoEllipsis = true;
-            this.btnPermisos.CausesValidation = false;
-            this.btnPermisos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPermisos.FlatAppearance.BorderSize = 0;
-            this.btnPermisos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPermisos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPermisos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPermisos.Location = new System.Drawing.Point(0, 480);
-            this.btnPermisos.Name = "btnPermisos";
-            this.btnPermisos.Size = new System.Drawing.Size(123, 40);
-            this.btnPermisos.TabIndex = 49;
-            this.btnPermisos.Text = "Permisos";
-            this.btnPermisos.UseVisualStyleBackColor = true;
-            this.btnPermisos.Visible = false;
             // 
             // frmPrincipal
             // 
