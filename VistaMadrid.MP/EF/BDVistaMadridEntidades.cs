@@ -17,7 +17,7 @@ namespace VistaMadrid.MP.EF
         {
         }
 
-#region "Entidadades"
+#region "Entidades"
         public virtual DbSet<Archivo> Archivo { get; set; }
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Condicion> Condicion { get; set; }
@@ -40,9 +40,21 @@ namespace VistaMadrid.MP.EF
         public virtual DbSet<MovimientoInventario> MovimientoInventario { get; set; }
         #endregion
 
-#region "ModelBuilder"
+        #region "Vistas"
+        public virtual DbSet<C_Mesa> C_Mesa { get; set; }
+        #endregion
+
+        #region "ModelBuilder"
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<C_Mesa>()
+                .Property(e => e.Sala)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Mesa>()
+                .Property(e => e.Mesa)
+                .IsUnicode(false);
+
             modelBuilder.Entity<Usuario>()
                 .Property(e => e.Usuario1)
                 .IsUnicode(false);

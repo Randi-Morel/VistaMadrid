@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VistaMadrid.MP;
 using VistaMadrid.Vista.Mantenimientos.Categoria;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
 using VistaMadrid.Vista.Mantenimientos.Condicion_de_Pago;
@@ -65,6 +66,15 @@ namespace VistaMadrid
             btnTiposMovimiento.Click += (s, e) => AbrirTabForm<frmTipoMovimiento>("Tipos de Movimientos");
             btnUnidadesMedida.Click += (s, e) => AbrirTabForm<frmUnidadMedida>("Unidades de Medidas");
 
+            btnGuardar.Click += (s, e) => Ejecutar(f => {
+                if (f.Guardar()) MessageBox.Show("Guardado correctamente.");
+            });
+
+            btnBorrar.Click += (s, e) => Ejecutar(f => {
+                if (f.Eliminar()) MessageBox.Show("Eliminado.");
+            });
+
+            btnLimpiar.Click += (s, e) => Ejecutar(f => f.Limpiar());
 
             //Asigna la altura a 0, para hacer la animacion
             pnMantenimientos.Height = 0;
@@ -197,9 +207,37 @@ namespace VistaMadrid
             }
         }
 
+        private IAccionesMantenimiento GetFormAccionesActivo()
+        {
+            var tab = tabControl.SelectedTab;
+            if (tab == null) return null;
+
+            // Los forms embebidos están dentro del TabPage
+            return tab.Controls
+                      .OfType<Control>()                   // controles en la pestaña
+                      .OfType<IAccionesMantenimiento>()    // el que implemente la interfaz
+                      .FirstOrDefault();
+        }
+
+        private void Ejecutar(Action<IAccionesMantenimiento> accion)
+        {
+            var target = GetFormAccionesActivo();
+            if (target == null)
+            {
+                MessageBox.Show("El formulario activo no soporta estas acciones.");
+                return;
+            }
+
+            try { accion(target); }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
         ////////////////////////
 
-        
+
 
         private void spLateral_SplitterMoved(object sender, SplitterEventArgs e)
         {

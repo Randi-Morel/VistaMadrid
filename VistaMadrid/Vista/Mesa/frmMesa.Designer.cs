@@ -32,12 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnInferior = new System.Windows.Forms.Panel();
-            this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,8 +49,7 @@
             this.cbSala = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnEstado = new System.Windows.Forms.Panel();
-            this.rbInactivo = new ReaLTaiizor.Controls.FoxRadioButton();
-            this.rbActivo = new ReaLTaiizor.Controls.FoxRadioButton();
+            this.CHKActivo = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pnAsientos = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,7 +57,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblMesa = new System.Windows.Forms.Label();
             this.pnInferior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.npConsultaAsientos)).BeginInit();
             this.tblCentral.SuspendLayout();
@@ -78,7 +72,7 @@
             // pnInferior
             // 
             this.pnInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.pnInferior.Controls.Add(this.poisonDataGridView1);
+            this.pnInferior.Controls.Add(this.GRD);
             this.pnInferior.Controls.Add(this.tableLayoutPanel1);
             this.pnInferior.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnInferior.Location = new System.Drawing.Point(0, 279);
@@ -86,14 +80,14 @@
             this.pnInferior.Size = new System.Drawing.Size(1144, 474);
             this.pnInferior.TabIndex = 11;
             // 
-            // poisonDataGridView1
+            // GRD
             // 
-            this.poisonDataGridView1.AllowUserToDeleteRows = false;
-            this.poisonDataGridView1.AllowUserToResizeRows = false;
-            this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,15 +95,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.poisonDataGridView1.ColumnHeadersHeight = 33;
-            this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.poisonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column6,
-            this.Column8,
-            this.Column9});
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,15 +105,15 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.poisonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.poisonDataGridView1.EnableHeadersVisualStyles = false;
-            this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(0, 59);
-            this.poisonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.poisonDataGridView1.Name = "poisonDataGridView1";
-            this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(0, 59);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
@@ -133,48 +121,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.poisonDataGridView1.RowHeadersWidth = 45;
-            this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.poisonDataGridView1.RowTemplate.Height = 35;
-            this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(1144, 415);
-            this.poisonDataGridView1.TabIndex = 56;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(1144, 415);
+            this.GRD.TabIndex = 56;
             // 
             // tableLayoutPanel1
             // 
@@ -403,8 +356,7 @@
             // 
             // pnEstado
             // 
-            this.pnEstado.Controls.Add(this.rbInactivo);
-            this.pnEstado.Controls.Add(this.rbActivo);
+            this.pnEstado.Controls.Add(this.CHKActivo);
             this.pnEstado.Controls.Add(this.label6);
             this.pnEstado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnEstado.Location = new System.Drawing.Point(860, 5);
@@ -412,45 +364,21 @@
             this.pnEstado.Size = new System.Drawing.Size(279, 199);
             this.pnEstado.TabIndex = 1;
             // 
-            // rbInactivo
+            // CHKActivo
             // 
-            this.rbInactivo.BackColor = System.Drawing.Color.Transparent;
-            this.rbInactivo.BorderColor = System.Drawing.Color.DarkGray;
-            this.rbInactivo.Checked = false;
-            this.rbInactivo.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.rbInactivo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbInactivo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.rbInactivo.DisabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.rbInactivo.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
-            this.rbInactivo.EnabledCalc = true;
-            this.rbInactivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbInactivo.ForeColor = System.Drawing.Color.Black;
-            this.rbInactivo.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.rbInactivo.Location = new System.Drawing.Point(123, 61);
-            this.rbInactivo.Name = "rbInactivo";
-            this.rbInactivo.Size = new System.Drawing.Size(106, 27);
-            this.rbInactivo.TabIndex = 50;
-            this.rbInactivo.Text = "Inactivo";
-            // 
-            // rbActivo
-            // 
-            this.rbActivo.BackColor = System.Drawing.Color.Transparent;
-            this.rbActivo.BorderColor = System.Drawing.Color.DarkGray;
-            this.rbActivo.Checked = false;
-            this.rbActivo.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.rbActivo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbActivo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.rbActivo.DisabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.rbActivo.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(178)))), ((int)(((byte)(190)))));
-            this.rbActivo.EnabledCalc = true;
-            this.rbActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbActivo.ForeColor = System.Drawing.Color.Black;
-            this.rbActivo.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.rbActivo.Location = new System.Drawing.Point(13, 61);
-            this.rbActivo.Name = "rbActivo";
-            this.rbActivo.Size = new System.Drawing.Size(89, 27);
-            this.rbActivo.TabIndex = 49;
-            this.rbActivo.Text = "Activo";
+            this.CHKActivo.AutoSize = true;
+            this.CHKActivo.BackColor = System.Drawing.Color.Transparent;
+            this.CHKActivo.Checked = true;
+            this.CHKActivo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
+            this.CHKActivo.Location = new System.Drawing.Point(17, 55);
+            this.CHKActivo.MaximumSize = new System.Drawing.Size(0, 40);
+            this.CHKActivo.MinimumSize = new System.Drawing.Size(70, 40);
+            this.CHKActivo.Name = "CHKActivo";
+            this.CHKActivo.Size = new System.Drawing.Size(82, 40);
+            this.CHKActivo.TabIndex = 50;
+            this.CHKActivo.Text = "Activo";
+            this.CHKActivo.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -549,7 +477,7 @@
             this.Text = "frmMesa";
             this.Resize += new System.EventHandler(this.frmMesa_Resize);
             this.pnInferior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.npConsultaAsientos)).EndInit();
@@ -578,22 +506,15 @@
         private System.Windows.Forms.NumericUpDown nudDiasCredito;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.CyberRichTextBox txtDescripcion;
-        private ReaLTaiizor.Controls.FoxRadioButton rbInactivo;
-        private ReaLTaiizor.Controls.FoxRadioButton rbActivo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblMesa;
-        private System.Windows.Forms.ComboBox cbSala;
+        internal System.Windows.Forms.ComboBox cbSala;
         private System.Windows.Forms.Panel pnSala;
         private System.Windows.Forms.Panel pnAsientos;
         private System.Windows.Forms.Panel pnEstado;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewImageColumn Column9;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
@@ -602,5 +523,6 @@
         private System.Windows.Forms.TextBox txtConsultaSala;
         private System.Windows.Forms.TextBox txtConsultaDescripcion;
         private System.Windows.Forms.NumericUpDown npConsultaAsientos;
+        private System.Windows.Forms.CheckBox CHKActivo;
     }
 }
