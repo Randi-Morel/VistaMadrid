@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using VistaMadrid.MP;
 using VistaMadrid.Vista.Mantenimientos.Categoria;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
-using VistaMadrid.Vista.Mantenimientos.Condicion_de_Pago;
+using VistaMadrid.Vista.Mantenimientos.CondicionPago;
 using VistaMadrid.Vista.Mantenimientos.Empleados;
 using VistaMadrid.Vista.Mantenimientos.Mesa;
 using VistaMadrid.Vista.Mantenimientos.Metodo_de_Pago;
@@ -61,8 +61,8 @@ namespace VistaMadrid
             //btnPermisos.Click += (s, e) => AbrirTabForm<frmPermiso>("Permisos");
             btnProductos.Click += (s, e) => AbrirTabForm<frmProducto>("Productos");
             btnProveedores.Click += (s, e) => AbrirTabForm<frmProveedor>("Proveedores");
-            //btnRol.Click += (s, e) => AbrirTabForm<frmRol>("Roles");
-            //btnSalas.Click += (s, e) => AbrirTabForm<frmSala>("Salas");
+            btnRol.Click += (s, e) => AbrirTabForm<frmRol>("Roles");
+            btnSala.Click += (s, e) => AbrirTabForm<frmSala>("Salas");
             btnTiposMovimiento.Click += (s, e) => AbrirTabForm<frmTipoMovimiento>("Tipos de Movimientos");
             btnUnidadesMedida.Click += (s, e) => AbrirTabForm<frmUnidadMedida>("Unidades de Medidas");
 

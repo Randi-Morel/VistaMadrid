@@ -34,34 +34,29 @@
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.tblAccesibilidad = new System.Windows.Forms.TableLayoutPanel();
             this.pn3 = new System.Windows.Forms.Panel();
-            this.ckActivo = new System.Windows.Forms.CheckBox();
-            this.cbCondicion = new System.Windows.Forms.ComboBox();
+            this.CHKActivo = new System.Windows.Forms.CheckBox();
+            this.CID_Condicion = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tblInfoEmpleado = new System.Windows.Forms.TableLayoutPanel();
             this.pn2 = new System.Windows.Forms.Panel();
-            this.txtDireccion = new ReaLTaiizor.Controls.CyberRichTextBox();
+            this.TDireccion = new ReaLTaiizor.Controls.CyberRichTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.TTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pn1 = new System.Windows.Forms.Panel();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.TID_Cliente = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.TEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.TNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblAccesibilidad = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
             this.pnInferior = new System.Windows.Forms.Panel();
-            this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.txtConsulta1 = new System.Windows.Forms.TextBox();
@@ -79,7 +74,7 @@
             this.pn1.SuspendLayout();
             this.pnSuperior.SuspendLayout();
             this.pnInferior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,8 +113,8 @@
             // pn3
             // 
             this.pn3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pn3.Controls.Add(this.ckActivo);
-            this.pn3.Controls.Add(this.cbCondicion);
+            this.pn3.Controls.Add(this.CHKActivo);
+            this.pn3.Controls.Add(this.CID_Condicion);
             this.pn3.Controls.Add(this.label8);
             this.pn3.Controls.Add(this.label6);
             this.pn3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -128,26 +123,28 @@
             this.pn3.Size = new System.Drawing.Size(557, 255);
             this.pn3.TabIndex = 0;
             // 
-            // ckActivo
+            // CHKActivo
             // 
-            this.ckActivo.AutoSize = true;
-            this.ckActivo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.ckActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
-            this.ckActivo.Location = new System.Drawing.Point(157, 41);
-            this.ckActivo.Name = "ckActivo";
-            this.ckActivo.Size = new System.Drawing.Size(82, 26);
-            this.ckActivo.TabIndex = 60;
-            this.ckActivo.Text = "Activo";
-            this.ckActivo.UseVisualStyleBackColor = true;
+            this.CHKActivo.AutoSize = true;
+            this.CHKActivo.Checked = true;
+            this.CHKActivo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHKActivo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
+            this.CHKActivo.Location = new System.Drawing.Point(157, 41);
+            this.CHKActivo.Name = "CHKActivo";
+            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
+            this.CHKActivo.TabIndex = 60;
+            this.CHKActivo.Text = "Activo";
+            this.CHKActivo.UseVisualStyleBackColor = true;
             // 
-            // cbCondicion
+            // CID_Condicion
             // 
-            this.cbCondicion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCondicion.FormattingEnabled = true;
-            this.cbCondicion.Location = new System.Drawing.Point(157, 159);
-            this.cbCondicion.Name = "cbCondicion";
-            this.cbCondicion.Size = new System.Drawing.Size(255, 28);
-            this.cbCondicion.TabIndex = 59;
+            this.CID_Condicion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Condicion.FormattingEnabled = true;
+            this.CID_Condicion.Location = new System.Drawing.Point(157, 159);
+            this.CID_Condicion.Name = "CID_Condicion";
+            this.CID_Condicion.Size = new System.Drawing.Size(255, 28);
+            this.CID_Condicion.TabIndex = 59;
             // 
             // label8
             // 
@@ -160,7 +157,6 @@
             this.label8.Size = new System.Drawing.Size(93, 23);
             this.label8.TabIndex = 38;
             this.label8.Text = "Condición";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label6
             // 
@@ -193,46 +189,46 @@
             // pn2
             // 
             this.pn2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pn2.Controls.Add(this.txtDireccion);
+            this.pn2.Controls.Add(this.TDireccion);
             this.pn2.Controls.Add(this.label5);
-            this.pn2.Controls.Add(this.txtTelefono);
+            this.pn2.Controls.Add(this.TTelefono);
             this.pn2.Controls.Add(this.label3);
             this.pn2.Location = new System.Drawing.Point(284, 3);
             this.pn2.Name = "pn2";
             this.pn2.Size = new System.Drawing.Size(276, 255);
             this.pn2.TabIndex = 1;
             // 
-            // txtDireccion
+            // TDireccion
             // 
-            this.txtDireccion.Alpha = 20;
-            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TDireccion.Alpha = 20;
+            this.TDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDireccion.BackColor = System.Drawing.Color.Transparent;
-            this.txtDireccion.Background_WidthPen = 1F;
-            this.txtDireccion.BackgroundPen = true;
-            this.txtDireccion.ColorBackground = System.Drawing.SystemColors.Window;
-            this.txtDireccion.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtDireccion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtDireccion.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtDireccion.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.txtDireccion.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.ForeColor = System.Drawing.Color.Black;
-            this.txtDireccion.Lighting = false;
-            this.txtDireccion.LinearGradientPen = false;
-            this.txtDireccion.Location = new System.Drawing.Point(13, 142);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.PenWidth = 10;
-            this.txtDireccion.RGB = false;
-            this.txtDireccion.Rounding = true;
-            this.txtDireccion.RoundingInt = 20;
-            this.txtDireccion.Size = new System.Drawing.Size(255, 101);
-            this.txtDireccion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtDireccion.TabIndex = 0;
-            this.txtDireccion.Tag = "Cyber";
-            this.txtDireccion.TextButton = "";
-            this.txtDireccion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtDireccion.Timer_RGB = 300;
+            this.TDireccion.BackColor = System.Drawing.Color.Transparent;
+            this.TDireccion.Background_WidthPen = 1F;
+            this.TDireccion.BackgroundPen = true;
+            this.TDireccion.ColorBackground = System.Drawing.SystemColors.Window;
+            this.TDireccion.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.TDireccion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.TDireccion.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.TDireccion.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.TDireccion.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.TDireccion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TDireccion.ForeColor = System.Drawing.Color.Black;
+            this.TDireccion.Lighting = false;
+            this.TDireccion.LinearGradientPen = false;
+            this.TDireccion.Location = new System.Drawing.Point(13, 142);
+            this.TDireccion.Name = "TDireccion";
+            this.TDireccion.PenWidth = 10;
+            this.TDireccion.RGB = false;
+            this.TDireccion.Rounding = true;
+            this.TDireccion.RoundingInt = 20;
+            this.TDireccion.Size = new System.Drawing.Size(255, 101);
+            this.TDireccion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.TDireccion.TabIndex = 0;
+            this.TDireccion.Tag = "Cyber";
+            this.TDireccion.TextButton = "";
+            this.TDireccion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TDireccion.Timer_RGB = 300;
             // 
             // label5
             // 
@@ -246,15 +242,15 @@
             this.label5.TabIndex = 43;
             this.label5.Text = "Dirección";
             // 
-            // txtTelefono
+            // TTelefono
             // 
-            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(13, 41);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(255, 27);
-            this.txtTelefono.TabIndex = 42;
+            this.TTelefono.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TTelefono.Location = new System.Drawing.Point(13, 41);
+            this.TTelefono.Name = "TTelefono";
+            this.TTelefono.Size = new System.Drawing.Size(255, 27);
+            this.TTelefono.TabIndex = 42;
             // 
             // label3
             // 
@@ -271,26 +267,26 @@
             // pn1
             // 
             this.pn1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pn1.Controls.Add(this.txtId);
+            this.pn1.Controls.Add(this.TID_Cliente);
             this.pn1.Controls.Add(this.label11);
-            this.pn1.Controls.Add(this.txtEmail);
+            this.pn1.Controls.Add(this.TEmail);
             this.pn1.Controls.Add(this.label4);
-            this.pn1.Controls.Add(this.txtNombre);
+            this.pn1.Controls.Add(this.TNombre);
             this.pn1.Controls.Add(this.label2);
             this.pn1.Location = new System.Drawing.Point(3, 3);
             this.pn1.Name = "pn1";
             this.pn1.Size = new System.Drawing.Size(275, 255);
             this.pn1.TabIndex = 0;
             // 
-            // txtId
+            // TID_Cliente
             // 
-            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtId.Enabled = false;
-            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(13, 41);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(106, 27);
-            this.txtId.TabIndex = 55;
+            this.TID_Cliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TID_Cliente.Enabled = false;
+            this.TID_Cliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TID_Cliente.Location = new System.Drawing.Point(13, 41);
+            this.TID_Cliente.Name = "TID_Cliente";
+            this.TID_Cliente.Size = new System.Drawing.Size(106, 27);
+            this.TID_Cliente.TabIndex = 55;
             // 
             // label11
             // 
@@ -304,15 +300,15 @@
             this.label11.TabIndex = 54;
             this.label11.Text = "Id";
             // 
-            // txtEmail
+            // TEmail
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(9, 217);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(255, 27);
-            this.txtEmail.TabIndex = 35;
+            this.TEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TEmail.Location = new System.Drawing.Point(9, 217);
+            this.TEmail.Name = "TEmail";
+            this.TEmail.Size = new System.Drawing.Size(255, 27);
+            this.TEmail.TabIndex = 35;
             // 
             // label4
             // 
@@ -326,15 +322,15 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "Email";
             // 
-            // txtNombre
+            // TNombre
             // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(9, 116);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(255, 27);
-            this.txtNombre.TabIndex = 33;
+            this.TNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TNombre.Location = new System.Drawing.Point(9, 116);
+            this.TNombre.Name = "TNombre";
+            this.TNombre.Size = new System.Drawing.Size(255, 27);
+            this.TNombre.TabIndex = 33;
             // 
             // label2
             // 
@@ -402,7 +398,7 @@
             // pnInferior
             // 
             this.pnInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.pnInferior.Controls.Add(this.poisonDataGridView1);
+            this.pnInferior.Controls.Add(this.GRD);
             this.pnInferior.Controls.Add(this.tableLayoutPanel1);
             this.pnInferior.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnInferior.Location = new System.Drawing.Point(0, 364);
@@ -410,14 +406,14 @@
             this.pnInferior.Size = new System.Drawing.Size(1144, 389);
             this.pnInferior.TabIndex = 7;
             // 
-            // poisonDataGridView1
+            // GRD
             // 
-            this.poisonDataGridView1.AllowUserToDeleteRows = false;
-            this.poisonDataGridView1.AllowUserToResizeRows = false;
-            this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -425,15 +421,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.poisonDataGridView1.ColumnHeadersHeight = 33;
-            this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.poisonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column6,
-            this.Column8,
-            this.Column9});
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -441,15 +431,15 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.poisonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.poisonDataGridView1.EnableHeadersVisualStyles = false;
-            this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(0, 72);
-            this.poisonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.poisonDataGridView1.Name = "poisonDataGridView1";
-            this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(0, 72);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
@@ -457,48 +447,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.poisonDataGridView1.RowHeadersWidth = 45;
-            this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.poisonDataGridView1.RowTemplate.Height = 35;
-            this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(1144, 317);
-            this.poisonDataGridView1.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(1144, 317);
+            this.GRD.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
@@ -659,7 +614,7 @@
             this.pnSuperior.ResumeLayout(false);
             this.pnSuperior.PerformLayout();
             this.pnInferior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -676,37 +631,32 @@
         private System.Windows.Forms.TableLayoutPanel tblInfoEmpleado;
         private System.Windows.Forms.Panel pn2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTelefono;
+        internal System.Windows.Forms.TextBox TTelefono;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pn1;
-        private System.Windows.Forms.TextBox txtEmail;
+        internal System.Windows.Forms.TextBox TEmail;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNombre;
+        internal System.Windows.Forms.TextBox TNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnSuperior;
         private System.Windows.Forms.Label lblAccesibilidad;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Panel pnInferior;
-        private ReaLTaiizor.Controls.CyberRichTextBox txtDireccion;
-        private System.Windows.Forms.ComboBox cbCondicion;
+        internal ReaLTaiizor.Controls.CyberRichTextBox TDireccion;
+        internal System.Windows.Forms.ComboBox CID_Condicion;
         private System.Windows.Forms.TextBox txtConsulta1;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewImageColumn Column9;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         private System.Windows.Forms.TextBox txtConsulta3;
         private System.Windows.Forms.TextBox txtConsulta2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.CheckBox ckActivo;
+        internal System.Windows.Forms.CheckBox CHKActivo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private ReaLTaiizor.Controls.ParrotButton btnBuscar;
-        private System.Windows.Forms.TextBox txtId;
+        internal System.Windows.Forms.TextBox TID_Cliente;
         private System.Windows.Forms.Label label11;
     }
 }

@@ -81,12 +81,14 @@
     <Compile Include="Vista\Categoria\frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Cliente\ConfiguracionControlesCliente\ConfiguracionControlesCliente.cs" />
     <Compile Include="Vista\Cliente\frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Cliente\frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\CondicionPago\ConfiguracionControlesCondicionPago\ConfiguracionControlesCondicionPago.cs" />
     <Compile Include="Vista\CondicionPago\frmCondicionPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,8 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />
-    <Folder Include="Vista\Cliente\ConfiguracionCliente\" />
-    <Folder Include="Vista\CondicionPago\ConfiguracionCondicionPago\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
     <Folder Include="Vista\Facturacion\ConfiguracionFacturacion\" />
     <Folder Include="Vista\MetodoPago\ConfiguracionMetodoPago\" />

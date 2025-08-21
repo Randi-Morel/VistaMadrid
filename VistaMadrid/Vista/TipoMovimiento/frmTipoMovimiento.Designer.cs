@@ -239,6 +239,8 @@
             // CHKActivo
             // 
             this.CHKActivo.AutoSize = true;
+            this.CHKActivo.Checked = true;
+            this.CHKActivo.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHKActivo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(87, 57);

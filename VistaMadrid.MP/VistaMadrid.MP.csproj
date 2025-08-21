@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Vistas\C_Cliente.cs" />
     <Compile Include="EF\Vistas\C_Mesa.cs" />
     <Compile Include="EF\Entidades\Archivo.cs" />
     <Compile Include="EF\Entidades\Cliente.cs" />
@@ -117,6 +118,8 @@
     <Compile Include="Modelo\Producto\ModeloProducto.cs" />
     <Compile Include="Modelo\RepositorioBase\RepositorioBase.cs" />
     <Compile Include="Modelo\RepositorioBase\IRepositorioBase.cs" />
+    <Compile Include="Presentador\PresentadorCliente.cs" />
+    <Compile Include="Presentador\PresentadorCondicionPago.cs" />
     <Compile Include="Presentador\PresentadorTipoMovimiento.cs" />
     <Compile Include="Presentador\PresentadorUnidadMedida.cs" />
     <Compile Include="Presentador\PresentadorCategoria.cs" />
@@ -125,6 +128,8 @@
     <Compile Include="Presentador\PresentadorLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\AccionesMantenimiento\Interfaces\IAccionesMantenimiento.cs" />
+    <Compile Include="Vista\Cliente\Interfaces\ICliente.cs" />
+    <Compile Include="Vista\CondicionPago\Interfaces\ICondicionPago.cs" />
     <Compile Include="Vista\TipoMovimiento\Interfaces\ITipoMovimiento.cs" />
     <Compile Include="Vista\UnidadMedida\Interfaces\IUnidadMedida.cs" />
     <Compile Include="Vista\Categoria\Interfaces\ICategoria.cs" />

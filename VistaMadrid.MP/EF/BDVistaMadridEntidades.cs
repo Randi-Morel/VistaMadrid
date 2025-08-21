@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using VistaMadrid.MP.EF.Vistas;
 
 namespace VistaMadrid.MP.EF
 {
@@ -41,12 +42,33 @@ namespace VistaMadrid.MP.EF
         #endregion
 
         #region "Vistas"
+        public virtual DbSet<C_Cliente> C_Cliente { get; set; }
         public virtual DbSet<C_Mesa> C_Mesa { get; set; }
         #endregion
 
         #region "ModelBuilder"
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<C_Cliente>()
+              .Property(e => e.Nombre)
+              .IsUnicode(false);
+
+            modelBuilder.Entity<C_Cliente>()
+                .Property(e => e.Telefono)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Cliente>()
+                .Property(e => e.Email)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Cliente>()
+                .Property(e => e.Direccion)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Cliente>()
+                .Property(e => e.Condicion)
+                .IsUnicode(false);
+
             modelBuilder.Entity<C_Mesa>()
                 .Property(e => e.Sala)
                 .IsUnicode(false);

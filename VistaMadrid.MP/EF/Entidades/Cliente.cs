@@ -31,8 +31,8 @@ namespace VistaMadrid.MP.EF
         public string Email { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        public byte[] Direccion { get; set; }
+        [MaxLength(150)]
+        public string Direccion { get; set; }
 
         public int ID_Condicion { get; set; }
 
