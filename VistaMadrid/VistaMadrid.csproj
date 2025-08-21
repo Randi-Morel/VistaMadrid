@@ -74,6 +74,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Categoria\ConfiguracionControlesCategoria\ConfiguracionControlesCategoria.cs" />
     <Compile Include="Vista\Categoria\frmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +137,12 @@
     <Compile Include="Vista\Proveedor\frmProveedor.Designer.cs">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.Designer.cs">
+      <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Rol\frmRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,12 +155,14 @@
     <Compile Include="Vista\Sala\frmSala.Designer.cs">
       <DependentUpon>frmSala.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\TipoMovimiento\ConfiguracionControlesTipoMovimiento\ConfiguracionControlesTipoMovimiento.cs" />
     <Compile Include="Vista\TipoMovimiento\frmTipoMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\TipoMovimiento\frmTipoMovimiento.Designer.cs">
       <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\UnidadMedida\ConfiguracionControlesUnidadMedida\ConfiguracionControlesUnidadMedida.cs" />
     <Compile Include="Vista\UnidadMedida\frmUnidadMedida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +216,9 @@
     <EmbeddedResource Include="Vista\Proveedor\frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroMovimiento\frmRegistroMovimiento.resx">
+      <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Rol\frmRol.resx">
       <DependentUpon>frmRol.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,7 +261,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />
-    <Folder Include="Vista\Categoria\ConfiguracionCategoria\" />
     <Folder Include="Vista\Cliente\ConfiguracionCliente\" />
     <Folder Include="Vista\CondicionPago\ConfiguracionCondicionPago\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
@@ -261,8 +272,6 @@
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
     <Folder Include="Vista\Rol\ConfiguracionRol\" />
     <Folder Include="Vista\Sala\ConfiguracionSala\" />
-    <Folder Include="Vista\TipoMovimiento\ConfiguracionTipoMovimiento\" />
-    <Folder Include="Vista\UnidadMedida\ConfiguracionUnidadMedida\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />

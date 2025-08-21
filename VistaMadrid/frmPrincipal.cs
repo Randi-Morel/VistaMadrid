@@ -19,8 +19,8 @@ using VistaMadrid.Vista.Mantenimientos.Producto;
 using VistaMadrid.Vista.Mantenimientos.Proveedor;
 using VistaMadrid.Vista.Mantenimientos.Rol;
 using VistaMadrid.Vista.Mantenimientos.Sala;
-using VistaMadrid.Vista.Mantenimientos.Tipo_de_Movimiento;
-using VistaMadrid.Vista.Mantenimientos.Unidad_de_Medida;
+using VistaMadrid.Vista.Mantenimientos.TipoMovimiento;
+using VistaMadrid.Vista.Mantenimientos.UnidadMedida;
 
 namespace VistaMadrid
 {
