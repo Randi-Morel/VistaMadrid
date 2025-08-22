@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.pnLateral = new System.Windows.Forms.Panel();
             this.pnSeparadorUsuario = new System.Windows.Forms.Panel();
@@ -65,6 +68,7 @@
             this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
+            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -73,12 +77,23 @@
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
             this.tblInferior = new System.Windows.Forms.TableLayoutPanel();
-            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
             this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnActualizar = new ReaLTaiizor.Controls.ParrotButton();
-            this.ptbUsuario = new System.Windows.Forms.PictureBox();
+            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cbSala = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbMesa = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CHKActivo = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
@@ -87,10 +102,17 @@
             this.pnMantenimientos.SuspendLayout();
             this.pnProcesos.SuspendLayout();
             this.pnUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.tabControl.SuspendLayout();
+            this.tabMenu.SuspendLayout();
             this.pnPanelInferior.SuspendLayout();
             this.tblInferior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -651,6 +673,16 @@
             this.pnUsuario.Size = new System.Drawing.Size(162, 60);
             this.pnUsuario.TabIndex = 0;
             // 
+            // ptbUsuario
+            // 
+            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
+            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
+            this.ptbUsuario.Name = "ptbUsuario";
+            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
+            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbUsuario.TabIndex = 0;
+            this.ptbUsuario.TabStop = false;
+            // 
             // spLateral
             // 
             this.spLateral.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -684,6 +716,8 @@
             // tabMenu
             // 
             this.tabMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabMenu.Controls.Add(this.tableLayoutPanel2);
+            this.tabMenu.Controls.Add(this.tableLayoutPanel1);
             this.tabMenu.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabMenu.Location = new System.Drawing.Point(4, 36);
             this.tabMenu.Name = "tabMenu";
@@ -742,15 +776,6 @@
             this.tblInferior.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tblInferior.Size = new System.Drawing.Size(958, 66);
             this.tblInferior.TabIndex = 0;
-            // 
-            // pnSeparadorPanelInferior
-            // 
-            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
-            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
-            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
-            this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
             // btnLimpiar
             // 
@@ -852,15 +877,201 @@
             this.btnActualizar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnActualizar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // ptbUsuario
+            // pnSeparadorPanelInferior
             // 
-            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
-            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
-            this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
-            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbUsuario.TabIndex = 0;
-            this.ptbUsuario.TabStop = false;
+            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
+            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
+            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
+            this.pnSeparadorPanelInferior.TabIndex = 12;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.79747F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.21519F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.98734F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(948, 67);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cbSala);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(267, 61);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cbMesa);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(276, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(252, 61);
+            this.panel2.TabIndex = 1;
+            // 
+            // cbSala
+            // 
+            this.cbSala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSala.FormattingEnabled = true;
+            this.cbSala.Location = new System.Drawing.Point(12, 30);
+            this.cbSala.MaximumSize = new System.Drawing.Size(255, 0);
+            this.cbSala.Name = "cbSala";
+            this.cbSala.Size = new System.Drawing.Size(214, 28);
+            this.cbSala.TabIndex = 60;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 23);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Sala";
+            // 
+            // cbMesa
+            // 
+            this.cbMesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbMesa.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMesa.FormattingEnabled = true;
+            this.cbMesa.Location = new System.Drawing.Point(5, 31);
+            this.cbMesa.Name = "cbMesa";
+            this.cbMesa.Size = new System.Drawing.Size(201, 28);
+            this.cbMesa.TabIndex = 28;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label6.Location = new System.Drawing.Point(7, 2);
+            this.label6.Margin = new System.Windows.Forms.Padding(5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 23);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Mesa";
+            // 
+            // CHKActivo
+            // 
+            this.CHKActivo.AutoSize = true;
+            this.CHKActivo.Checked = true;
+            this.CHKActivo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHKActivo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
+            this.CHKActivo.Location = new System.Drawing.Point(14, 28);
+            this.CHKActivo.Name = "CHKActivo";
+            this.CHKActivo.Size = new System.Drawing.Size(46, 26);
+            this.CHKActivo.TabIndex = 52;
+            this.CHKActivo.Text = "Si";
+            this.CHKActivo.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label2.Location = new System.Drawing.Point(10, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 23);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Disponible";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.CHKActivo);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(534, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(411, 61);
+            this.panel3.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.Controls.Add(this.GRD, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 70);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(948, 593);
+            this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // GRD
+            // 
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle8;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(16, 16);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(916, 561);
+            this.GRD.TabIndex = 6;
             // 
             // frmPrincipal
             // 
@@ -894,10 +1105,20 @@
             this.pnProcesos.ResumeLayout(false);
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.tabControl.ResumeLayout(false);
+            this.tabMenu.ResumeLayout(false);
             this.pnPanelInferior.ResumeLayout(false);
             this.tblInferior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -953,5 +1174,17 @@
         private System.Windows.Forms.Button btnSala;
         private System.Windows.Forms.Button btnRol;
         private ReaLTaiizor.Controls.ParrotButton btnActualizar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        internal System.Windows.Forms.ComboBox cbSala;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbMesa;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel3;
+        internal System.Windows.Forms.CheckBox CHKActivo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
     }
 }
