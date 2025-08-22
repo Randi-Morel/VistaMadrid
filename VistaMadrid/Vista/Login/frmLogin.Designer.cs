@@ -43,8 +43,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.lkbCuenta = new System.Windows.Forms.LinkLabel();
-            this.lkbForgotPassword = new System.Windows.Forms.LinkLabel();
             this.pnSuperiorDerecha = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -194,8 +192,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.pbLogo);
-            this.panel2.Controls.Add(this.lkbCuenta);
-            this.panel2.Controls.Add(this.lkbForgotPassword);
             this.panel2.Controls.Add(this.pnSuperiorDerecha);
             this.panel2.Location = new System.Drawing.Point(400, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -213,30 +209,6 @@
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 5;
             this.pbLogo.TabStop = false;
-            // 
-            // lkbCuenta
-            // 
-            this.lkbCuenta.AutoSize = true;
-            this.lkbCuenta.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lkbCuenta.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.lkbCuenta.Location = new System.Drawing.Point(19, 354);
-            this.lkbCuenta.Name = "lkbCuenta";
-            this.lkbCuenta.Size = new System.Drawing.Size(135, 17);
-            this.lkbCuenta.TabIndex = 4;
-            this.lkbCuenta.TabStop = true;
-            this.lkbCuenta.Text = "No tiene una cuenta?";
-            // 
-            // lkbForgotPassword
-            // 
-            this.lkbForgotPassword.AutoSize = true;
-            this.lkbForgotPassword.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lkbForgotPassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.lkbForgotPassword.Location = new System.Drawing.Point(19, 388);
-            this.lkbForgotPassword.Name = "lkbForgotPassword";
-            this.lkbForgotPassword.Size = new System.Drawing.Size(138, 17);
-            this.lkbForgotPassword.TabIndex = 3;
-            this.lkbForgotPassword.TabStop = true;
-            this.lkbForgotPassword.Text = "Contraseña olvidada?";
             // 
             // pnSuperiorDerecha
             // 
@@ -298,7 +270,6 @@
             this.pnData.ResumeLayout(false);
             this.pnData.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnSuperiorDerecha.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -319,8 +290,6 @@
         internal System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Panel pnBorder;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.LinkLabel lkbForgotPassword;
-        private System.Windows.Forms.LinkLabel lkbCuenta;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Panel pnSuperiorIzquierda;
         private System.Windows.Forms.Button btnSalir;

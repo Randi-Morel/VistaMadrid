@@ -37,7 +37,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtConsulta1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.txtConsulta2 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtConsulta3 = new System.Windows.Forms.TextBox();
@@ -74,6 +73,7 @@
             this.lblAccesibilidad = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
+            this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.pnInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -154,9 +154,9 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 260F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.Controls.Add(this.label10, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtConsulta1, 1, 2);
@@ -183,7 +183,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label10.Location = new System.Drawing.Point(672, 5);
+            this.label10.Location = new System.Drawing.Point(716, 5);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 23);
             this.label10.TabIndex = 61;
@@ -194,7 +194,7 @@
             this.txtConsulta1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtConsulta1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta1.Location = new System.Drawing.Point(132, 36);
+            this.txtConsulta1.Location = new System.Drawing.Point(76, 36);
             this.txtConsulta1.MaximumSize = new System.Drawing.Size(255, 27);
             this.txtConsulta1.MinimumSize = new System.Drawing.Size(185, 27);
             this.txtConsulta1.Name = "txtConsulta1";
@@ -207,46 +207,22 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label11.Location = new System.Drawing.Point(412, 5);
+            this.label11.Location = new System.Drawing.Point(396, 5);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 23);
             this.label11.TabIndex = 60;
             this.label11.Text = "Campo 2 ";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnBuscar.ButtonImage = global::VistaMadrid.Properties.Resources.Search;
-            this.btnBuscar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnBuscar.ButtonText = "Buscar";
-            this.btnBuscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBuscar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBuscar.CornerRadius = 2;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnBuscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBuscar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBuscar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnBuscar.Location = new System.Drawing.Point(952, 36);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(165, 26);
-            this.btnBuscar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnBuscar.TabIndex = 62;
-            this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // txtConsulta2
             // 
             this.txtConsulta2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtConsulta2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta2.Location = new System.Drawing.Point(412, 36);
+            this.txtConsulta2.Location = new System.Drawing.Point(396, 36);
             this.txtConsulta2.MaximumSize = new System.Drawing.Size(255, 27);
             this.txtConsulta2.MinimumSize = new System.Drawing.Size(185, 27);
             this.txtConsulta2.Name = "txtConsulta2";
-            this.txtConsulta2.Size = new System.Drawing.Size(254, 27);
+            this.txtConsulta2.Size = new System.Drawing.Size(255, 27);
             this.txtConsulta2.TabIndex = 53;
             // 
             // label12
@@ -255,7 +231,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label12.Location = new System.Drawing.Point(132, 5);
+            this.label12.Location = new System.Drawing.Point(76, 5);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 23);
             this.label12.TabIndex = 59;
@@ -266,7 +242,7 @@
             this.txtConsulta3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtConsulta3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta3.Location = new System.Drawing.Point(672, 36);
+            this.txtConsulta3.Location = new System.Drawing.Point(716, 36);
             this.txtConsulta3.MaximumSize = new System.Drawing.Size(255, 27);
             this.txtConsulta3.MinimumSize = new System.Drawing.Size(185, 27);
             this.txtConsulta3.Name = "txtConsulta3";
@@ -282,7 +258,7 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label13.Location = new System.Drawing.Point(3, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 23);
+            this.label13.Size = new System.Drawing.Size(63, 28);
             this.label13.TabIndex = 58;
             this.label13.Text = "Buscar por:";
             // 
@@ -711,6 +687,32 @@
             this.lblProducto.TabIndex = 17;
             this.lblProducto.Text = "Mantenimiento de Producto";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnBuscar.ButtonImage = global::VistaMadrid.Properties.Resources.Search;
+            this.btnBuscar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnBuscar.ButtonText = "Buscar";
+            this.btnBuscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBuscar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBuscar.CornerRadius = 2;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnBuscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBuscar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBuscar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnBuscar.Location = new System.Drawing.Point(1036, 36);
+            this.btnBuscar.MaximumSize = new System.Drawing.Size(150, 26);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(105, 26);
+            this.btnBuscar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnBuscar.TabIndex = 62;
+            this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // frmProducto
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -781,7 +783,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtConsulta1;
         private System.Windows.Forms.Label label11;
-        private ReaLTaiizor.Controls.ParrotButton btnBuscar;
         private System.Windows.Forms.TextBox txtConsulta2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtConsulta3;
@@ -791,5 +792,6 @@
         private ReaLTaiizor.Controls.CyberRichTextBox txtDescripcion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbImagen;
+        private ReaLTaiizor.Controls.ParrotButton btnBuscar;
     }
 }

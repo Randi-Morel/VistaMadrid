@@ -65,7 +65,6 @@
             this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.pnUsuario = new System.Windows.Forms.Panel();
-            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.spLateral = new System.Windows.Forms.Splitter();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -74,10 +73,12 @@
             this.pnSeparadorLateral = new System.Windows.Forms.Panel();
             this.pnPanelInferior = new System.Windows.Forms.Panel();
             this.tblInferior = new System.Windows.Forms.TableLayoutPanel();
+            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
             this.btnLimpiar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnGuardar = new ReaLTaiizor.Controls.ParrotButton();
             this.btnBorrar = new ReaLTaiizor.Controls.ParrotButton();
-            this.pnSeparadorPanelInferior = new System.Windows.Forms.Panel();
+            this.btnActualizar = new ReaLTaiizor.Controls.ParrotButton();
+            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.pnLateral.SuspendLayout();
             this.pnContenedorLateral.SuspendLayout();
             this.pnLatBotones.SuspendLayout();
@@ -86,10 +87,10 @@
             this.pnMantenimientos.SuspendLayout();
             this.pnProcesos.SuspendLayout();
             this.pnUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.tabControl.SuspendLayout();
             this.pnPanelInferior.SuspendLayout();
             this.tblInferior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -650,16 +651,6 @@
             this.pnUsuario.Size = new System.Drawing.Size(162, 60);
             this.pnUsuario.TabIndex = 0;
             // 
-            // ptbUsuario
-            // 
-            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
-            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
-            this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
-            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbUsuario.TabIndex = 0;
-            this.ptbUsuario.TabStop = false;
-            // 
             // spLateral
             // 
             this.spLateral.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -731,15 +722,17 @@
             // 
             // tblInferior
             // 
-            this.tblInferior.ColumnCount = 5;
-            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.51F));
-            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
-            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
-            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.66F));
-            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.51F));
+            this.tblInferior.ColumnCount = 6;
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tblInferior.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblInferior.Controls.Add(this.btnLimpiar, 3, 1);
             this.tblInferior.Controls.Add(this.btnGuardar, 1, 1);
             this.tblInferior.Controls.Add(this.btnBorrar, 2, 1);
+            this.tblInferior.Controls.Add(this.btnActualizar, 4, 1);
             this.tblInferior.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblInferior.Location = new System.Drawing.Point(0, 0);
             this.tblInferior.Name = "tblInferior";
@@ -749,6 +742,15 @@
             this.tblInferior.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tblInferior.Size = new System.Drawing.Size(958, 66);
             this.tblInferior.TabIndex = 0;
+            // 
+            // pnSeparadorPanelInferior
+            // 
+            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
+            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
+            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
+            this.pnSeparadorPanelInferior.TabIndex = 12;
             // 
             // btnLimpiar
             // 
@@ -766,9 +768,9 @@
             this.btnLimpiar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnLimpiar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnLimpiar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnLimpiar.Location = new System.Drawing.Point(545, 9);
+            this.btnLimpiar.Location = new System.Drawing.Point(482, 9);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(124, 46);
+            this.btnLimpiar.Size = new System.Drawing.Size(141, 46);
             this.btnLimpiar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.TextColor = System.Drawing.Color.Black;
@@ -791,9 +793,9 @@
             this.btnGuardar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnGuardar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnGuardar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnGuardar.Location = new System.Drawing.Point(285, 9);
+            this.btnGuardar.Location = new System.Drawing.Point(188, 9);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(124, 46);
+            this.btnGuardar.Size = new System.Drawing.Size(141, 46);
             this.btnGuardar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.TextColor = System.Drawing.Color.Black;
@@ -816,23 +818,49 @@
             this.btnBorrar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
             this.btnBorrar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.btnBorrar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnBorrar.Location = new System.Drawing.Point(415, 9);
+            this.btnBorrar.Location = new System.Drawing.Point(335, 9);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(124, 46);
+            this.btnBorrar.Size = new System.Drawing.Size(141, 46);
             this.btnBorrar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btnBorrar.TabIndex = 3;
             this.btnBorrar.TextColor = System.Drawing.Color.Black;
             this.btnBorrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.btnBorrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // pnSeparadorPanelInferior
+            // btnActualizar
             // 
-            this.pnSeparadorPanelInferior.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnSeparadorPanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSeparadorPanelInferior.Location = new System.Drawing.Point(164, 635);
-            this.pnSeparadorPanelInferior.Name = "pnSeparadorPanelInferior";
-            this.pnSeparadorPanelInferior.Size = new System.Drawing.Size(958, 1);
-            this.pnSeparadorPanelInferior.TabIndex = 12;
+            this.btnActualizar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnActualizar.ButtonImage = global::VistaMadrid.Properties.Resources.Reload;
+            this.btnActualizar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnActualizar.ButtonText = "Actualizar";
+            this.btnActualizar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnActualizar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnActualizar.CornerRadius = 5;
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnActualizar.Horizontal_Alignment = System.Drawing.StringAlignment.Near;
+            this.btnActualizar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnActualizar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnActualizar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnActualizar.Location = new System.Drawing.Point(629, 9);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(141, 46);
+            this.btnActualizar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnActualizar.TabIndex = 5;
+            this.btnActualizar.TextColor = System.Drawing.SystemColors.ControlText;
+            this.btnActualizar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnActualizar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // ptbUsuario
+            // 
+            this.ptbUsuario.Image = global::VistaMadrid.Properties.Resources.usericon;
+            this.ptbUsuario.Location = new System.Drawing.Point(12, 12);
+            this.ptbUsuario.Name = "ptbUsuario";
+            this.ptbUsuario.Size = new System.Drawing.Size(38, 34);
+            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbUsuario.TabIndex = 0;
+            this.ptbUsuario.TabStop = false;
             // 
             // frmPrincipal
             // 
@@ -866,10 +894,10 @@
             this.pnProcesos.ResumeLayout(false);
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.pnPanelInferior.ResumeLayout(false);
             this.tblInferior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -924,5 +952,6 @@
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnSala;
         private System.Windows.Forms.Button btnRol;
+        private ReaLTaiizor.Controls.ParrotButton btnActualizar;
     }
 }
