@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnInferior = new System.Windows.Forms.Panel();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,6 +41,7 @@
             this.txtConsultaSala = new System.Windows.Forms.TextBox();
             this.txtConsultaDescripcion = new System.Windows.Forms.TextBox();
             this.npConsultaAsientos = new System.Windows.Forms.NumericUpDown();
+            this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.pnDescripcion = new System.Windows.Forms.Panel();
             this.txtDescripcion = new ReaLTaiizor.Controls.CyberRichTextBox();
@@ -56,7 +57,8 @@
             this.nudDiasCredito = new System.Windows.Forms.NumericUpDown();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblMesa = new System.Windows.Forms.Label();
-            this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
+            this.TID_Condicion = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.pnInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -89,24 +91,24 @@
             this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.GRD.ColumnHeadersHeight = 33;
             this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRD.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle17;
             this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GRD.EnableHeadersVisualStyles = false;
             this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -115,14 +117,14 @@
             this.GRD.Margin = new System.Windows.Forms.Padding(4);
             this.GRD.Name = "GRD";
             this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.GRD.RowHeadersWidth = 45;
             this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRD.RowTemplate.Height = 35;
@@ -246,15 +248,41 @@
             this.npConsultaAsientos.Size = new System.Drawing.Size(120, 27);
             this.npConsultaAsientos.TabIndex = 58;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnBuscar.ButtonImage = global::VistaMadrid.Properties.Resources.Search;
+            this.btnBuscar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnBuscar.ButtonText = "Buscar";
+            this.btnBuscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBuscar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBuscar.CornerRadius = 2;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnBuscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnBuscar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnBuscar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnBuscar.Location = new System.Drawing.Point(1055, 32);
+            this.btnBuscar.MaximumSize = new System.Drawing.Size(150, 26);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 24);
+            this.btnBuscar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnBuscar.TabIndex = 63;
+            this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // tblCentral
             // 
             this.tblCentral.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tblCentral.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tblCentral.ColumnCount = 4;
-            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.12498F));
+            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.59891F));
+            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.85405F));
+            this.tblCentral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.42206F));
             this.tblCentral.Controls.Add(this.pnDescripcion, 0, 0);
             this.tblCentral.Controls.Add(this.pnSala, 1, 0);
             this.tblCentral.Controls.Add(this.pnEstado, 3, 0);
@@ -270,12 +298,14 @@
             // pnDescripcion
             // 
             this.pnDescripcion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnDescripcion.Controls.Add(this.TID_Condicion);
+            this.pnDescripcion.Controls.Add(this.label11);
             this.pnDescripcion.Controls.Add(this.txtDescripcion);
             this.pnDescripcion.Controls.Add(this.label7);
             this.pnDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnDescripcion.Location = new System.Drawing.Point(5, 5);
             this.pnDescripcion.Name = "pnDescripcion";
-            this.pnDescripcion.Size = new System.Drawing.Size(277, 199);
+            this.pnDescripcion.Size = new System.Drawing.Size(471, 199);
             this.pnDescripcion.TabIndex = 2;
             // 
             // txtDescripcion
@@ -296,7 +326,7 @@
             this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
             this.txtDescripcion.Lighting = false;
             this.txtDescripcion.LinearGradientPen = false;
-            this.txtDescripcion.Location = new System.Drawing.Point(13, 61);
+            this.txtDescripcion.Location = new System.Drawing.Point(177, 59);
             this.txtDescripcion.MaximumSize = new System.Drawing.Size(255, 101);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PenWidth = 10;
@@ -317,7 +347,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label7.Location = new System.Drawing.Point(13, 31);
+            this.label7.Location = new System.Drawing.Point(179, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 23);
             this.label7.TabIndex = 45;
@@ -328,9 +358,9 @@
             this.pnSala.Controls.Add(this.cbSala);
             this.pnSala.Controls.Add(this.label1);
             this.pnSala.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnSala.Location = new System.Drawing.Point(290, 5);
+            this.pnSala.Location = new System.Drawing.Point(484, 5);
             this.pnSala.Name = "pnSala";
-            this.pnSala.Size = new System.Drawing.Size(277, 199);
+            this.pnSala.Size = new System.Drawing.Size(216, 199);
             this.pnSala.TabIndex = 1;
             // 
             // cbSala
@@ -342,7 +372,7 @@
             this.cbSala.Location = new System.Drawing.Point(13, 61);
             this.cbSala.MaximumSize = new System.Drawing.Size(255, 0);
             this.cbSala.Name = "cbSala";
-            this.cbSala.Size = new System.Drawing.Size(255, 28);
+            this.cbSala.Size = new System.Drawing.Size(194, 28);
             this.cbSala.TabIndex = 58;
             // 
             // label1
@@ -362,9 +392,9 @@
             this.pnEstado.Controls.Add(this.CHKActivo);
             this.pnEstado.Controls.Add(this.label6);
             this.pnEstado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnEstado.Location = new System.Drawing.Point(860, 5);
+            this.pnEstado.Location = new System.Drawing.Point(901, 5);
             this.pnEstado.Name = "pnEstado";
-            this.pnEstado.Size = new System.Drawing.Size(279, 199);
+            this.pnEstado.Size = new System.Drawing.Size(238, 199);
             this.pnEstado.TabIndex = 1;
             // 
             // CHKActivo
@@ -400,9 +430,9 @@
             this.pnAsientos.Controls.Add(this.label2);
             this.pnAsientos.Controls.Add(this.nudDiasCredito);
             this.pnAsientos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnAsientos.Location = new System.Drawing.Point(575, 5);
+            this.pnAsientos.Location = new System.Drawing.Point(708, 5);
             this.pnAsientos.Name = "pnAsientos";
-            this.pnAsientos.Size = new System.Drawing.Size(277, 199);
+            this.pnAsientos.Size = new System.Drawing.Size(185, 199);
             this.pnAsientos.TabIndex = 1;
             // 
             // label2
@@ -437,7 +467,7 @@
             0});
             this.nudDiasCredito.MinimumSize = new System.Drawing.Size(110, 0);
             this.nudDiasCredito.Name = "nudDiasCredito";
-            this.nudDiasCredito.Size = new System.Drawing.Size(120, 27);
+            this.nudDiasCredito.Size = new System.Drawing.Size(110, 27);
             this.nudDiasCredito.TabIndex = 55;
             this.nudDiasCredito.Value = new decimal(new int[] {
             2,
@@ -468,31 +498,28 @@
             this.lblMesa.TabIndex = 17;
             this.lblMesa.Text = "Mantenimiento de Mesa";
             // 
-            // btnBuscar
+            // TID_Condicion
             // 
-            this.btnBuscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnBuscar.ButtonImage = global::VistaMadrid.Properties.Resources.Search;
-            this.btnBuscar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnBuscar.ButtonText = "Buscar";
-            this.btnBuscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBuscar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBuscar.CornerRadius = 2;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnBuscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnBuscar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnBuscar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnBuscar.Location = new System.Drawing.Point(1055, 32);
-            this.btnBuscar.MaximumSize = new System.Drawing.Size(150, 26);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 24);
-            this.btnBuscar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnBuscar.TabIndex = 63;
-            this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
-            this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.TID_Condicion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TID_Condicion.Enabled = false;
+            this.TID_Condicion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TID_Condicion.Location = new System.Drawing.Point(9, 59);
+            this.TID_Condicion.Name = "TID_Condicion";
+            this.TID_Condicion.ReadOnly = true;
+            this.TID_Condicion.Size = new System.Drawing.Size(106, 27);
+            this.TID_Condicion.TabIndex = 59;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label11.Location = new System.Drawing.Point(9, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 23);
+            this.label11.TabIndex = 58;
+            this.label11.Text = "Id";
             // 
             // frmMesa
             // 
@@ -554,5 +581,7 @@
         private System.Windows.Forms.NumericUpDown npConsultaAsientos;
         private System.Windows.Forms.CheckBox CHKActivo;
         private ReaLTaiizor.Controls.ParrotButton btnBuscar;
+        internal System.Windows.Forms.TextBox TID_Condicion;
+        private System.Windows.Forms.Label label11;
     }
 }
