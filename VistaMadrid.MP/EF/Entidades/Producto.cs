@@ -5,6 +5,7 @@ namespace VistaMadrid.MP.EF
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using VistaMadrid.MP.EF.Entidades;
 
     [Table("Producto")]
     public partial class Producto
@@ -13,7 +14,6 @@ namespace VistaMadrid.MP.EF
         public Producto()
         {
             OrdenDetalle = new HashSet<OrdenDetalle>();
-            MovimientoInventario = new HashSet<MovimientoInventario>();
             ProductoArchivo = new HashSet<ProductoArchivo>();
         }
 
@@ -44,9 +44,6 @@ namespace VistaMadrid.MP.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrdenDetalle> OrdenDetalle { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MovimientoInventario> MovimientoInventario { get; set; }
 
         public virtual ProductoCategoria ProductoCategoria { get; set; }
 

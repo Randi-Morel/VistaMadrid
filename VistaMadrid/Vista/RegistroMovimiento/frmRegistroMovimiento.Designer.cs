@@ -28,46 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblEmpleado = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnProducto = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnProcesarOrden = new System.Windows.Forms.Button();
+            this.btnProcesarMovimiento = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnCliente = new System.Windows.Forms.Panel();
-            this.txtDescripcion = new ReaLTaiizor.Controls.CyberRichTextBox();
+            this.TObservaciones = new ReaLTaiizor.Controls.CyberRichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbTipoMovimiento = new System.Windows.Forms.ComboBox();
+            this.CID_MovimientoTipo = new System.Windows.Forms.ComboBox();
             this.pnMesa = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.NUMCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.cbProducto = new System.Windows.Forms.ComboBox();
+            this.CID_Producto = new System.Windows.Forms.ComboBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.pnSuperior.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnProducto.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.pnCliente.SuspendLayout();
             this.pnMesa.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // pnSuperior
@@ -139,7 +137,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel4.Controls.Add(this.poisonDataGridView1, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.GRD, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -150,54 +148,54 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1090, 338);
             this.tableLayoutPanel4.TabIndex = 62;
             // 
-            // poisonDataGridView1
+            // GRD
             // 
-            this.poisonDataGridView1.AllowUserToDeleteRows = false;
-            this.poisonDataGridView1.AllowUserToResizeRows = false;
-            this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.poisonDataGridView1.ColumnHeadersHeight = 33;
-            this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.poisonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.poisonDataGridView1.EnableHeadersVisualStyles = false;
-            this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(16, 16);
-            this.poisonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.poisonDataGridView1.Name = "poisonDataGridView1";
-            this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.poisonDataGridView1.RowHeadersWidth = 45;
-            this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.poisonDataGridView1.RowTemplate.Height = 35;
-            this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(1058, 306);
-            this.poisonDataGridView1.TabIndex = 59;
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle8;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(16, 16);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(1058, 306);
+            this.GRD.TabIndex = 59;
             // 
             // tableLayoutPanel3
             // 
@@ -205,7 +203,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.btnProcesarOrden, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnProcesarMovimiento, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 338);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -214,24 +212,25 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1090, 49);
             this.tableLayoutPanel3.TabIndex = 61;
             // 
-            // btnProcesarOrden
+            // btnProcesarMovimiento
             // 
-            this.btnProcesarOrden.AutoSize = true;
-            this.btnProcesarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.btnProcesarOrden.CausesValidation = false;
-            this.btnProcesarOrden.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProcesarOrden.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnProcesarOrden.FlatAppearance.BorderSize = 0;
-            this.btnProcesarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcesarOrden.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcesarOrden.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnProcesarOrden.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProcesarOrden.Location = new System.Drawing.Point(448, 3);
-            this.btnProcesarOrden.Name = "btnProcesarOrden";
-            this.btnProcesarOrden.Size = new System.Drawing.Size(194, 43);
-            this.btnProcesarOrden.TabIndex = 62;
-            this.btnProcesarOrden.Text = "Registrar Movimiento";
-            this.btnProcesarOrden.UseVisualStyleBackColor = false;
+            this.btnProcesarMovimiento.AutoSize = true;
+            this.btnProcesarMovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.btnProcesarMovimiento.CausesValidation = false;
+            this.btnProcesarMovimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProcesarMovimiento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProcesarMovimiento.FlatAppearance.BorderSize = 0;
+            this.btnProcesarMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcesarMovimiento.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcesarMovimiento.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnProcesarMovimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProcesarMovimiento.Location = new System.Drawing.Point(448, 3);
+            this.btnProcesarMovimiento.Name = "btnProcesarMovimiento";
+            this.btnProcesarMovimiento.Size = new System.Drawing.Size(194, 43);
+            this.btnProcesarMovimiento.TabIndex = 62;
+            this.btnProcesarMovimiento.Text = "Registrar Movimiento";
+            this.btnProcesarMovimiento.UseVisualStyleBackColor = false;
+            this.btnProcesarMovimiento.Click += new System.EventHandler(this.btnProcesarMovimiento_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -253,47 +252,47 @@
             // pnCliente
             // 
             this.pnCliente.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnCliente.Controls.Add(this.txtDescripcion);
+            this.pnCliente.Controls.Add(this.TObservaciones);
             this.pnCliente.Controls.Add(this.label7);
             this.pnCliente.Controls.Add(this.label1);
-            this.pnCliente.Controls.Add(this.cbTipoMovimiento);
+            this.pnCliente.Controls.Add(this.CID_MovimientoTipo);
             this.pnCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnCliente.Location = new System.Drawing.Point(549, 6);
             this.pnCliente.Name = "pnCliente";
             this.pnCliente.Size = new System.Drawing.Size(535, 254);
             this.pnCliente.TabIndex = 1;
             // 
-            // txtDescripcion
+            // TObservaciones
             // 
-            this.txtDescripcion.Alpha = 20;
-            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TObservaciones.Alpha = 20;
+            this.TObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.txtDescripcion.Background_WidthPen = 1F;
-            this.txtDescripcion.BackgroundPen = true;
-            this.txtDescripcion.ColorBackground = System.Drawing.SystemColors.Window;
-            this.txtDescripcion.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtDescripcion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtDescripcion.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtDescripcion.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.txtDescripcion.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.txtDescripcion.Lighting = false;
-            this.txtDescripcion.LinearGradientPen = false;
-            this.txtDescripcion.Location = new System.Drawing.Point(10, 141);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PenWidth = 10;
-            this.txtDescripcion.RGB = false;
-            this.txtDescripcion.Rounding = true;
-            this.txtDescripcion.RoundingInt = 20;
-            this.txtDescripcion.Size = new System.Drawing.Size(512, 84);
-            this.txtDescripcion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtDescripcion.TabIndex = 53;
-            this.txtDescripcion.Tag = "Cyber";
-            this.txtDescripcion.TextButton = "";
-            this.txtDescripcion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtDescripcion.Timer_RGB = 300;
+            this.TObservaciones.BackColor = System.Drawing.Color.Transparent;
+            this.TObservaciones.Background_WidthPen = 1F;
+            this.TObservaciones.BackgroundPen = true;
+            this.TObservaciones.ColorBackground = System.Drawing.SystemColors.Window;
+            this.TObservaciones.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.TObservaciones.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.TObservaciones.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.TObservaciones.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.TObservaciones.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.TObservaciones.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TObservaciones.ForeColor = System.Drawing.Color.Black;
+            this.TObservaciones.Lighting = false;
+            this.TObservaciones.LinearGradientPen = false;
+            this.TObservaciones.Location = new System.Drawing.Point(10, 141);
+            this.TObservaciones.Name = "TObservaciones";
+            this.TObservaciones.PenWidth = 10;
+            this.TObservaciones.RGB = false;
+            this.TObservaciones.Rounding = true;
+            this.TObservaciones.RoundingInt = 20;
+            this.TObservaciones.Size = new System.Drawing.Size(512, 84);
+            this.TObservaciones.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.TObservaciones.TabIndex = 53;
+            this.TObservaciones.Tag = "Cyber";
+            this.TObservaciones.TextButton = "";
+            this.TObservaciones.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.TObservaciones.Timer_RGB = 300;
             // 
             // label7
             // 
@@ -324,24 +323,24 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Tipo de Movimiento*";
             // 
-            // cbTipoMovimiento
+            // CID_MovimientoTipo
             // 
-            this.cbTipoMovimiento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_MovimientoTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbTipoMovimiento.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoMovimiento.FormattingEnabled = true;
-            this.cbTipoMovimiento.Location = new System.Drawing.Point(10, 74);
-            this.cbTipoMovimiento.Name = "cbTipoMovimiento";
-            this.cbTipoMovimiento.Size = new System.Drawing.Size(512, 28);
-            this.cbTipoMovimiento.TabIndex = 30;
+            this.CID_MovimientoTipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_MovimientoTipo.FormattingEnabled = true;
+            this.CID_MovimientoTipo.Location = new System.Drawing.Point(10, 74);
+            this.CID_MovimientoTipo.Name = "CID_MovimientoTipo";
+            this.CID_MovimientoTipo.Size = new System.Drawing.Size(512, 28);
+            this.CID_MovimientoTipo.TabIndex = 30;
             // 
             // pnMesa
             // 
             this.pnMesa.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnMesa.Controls.Add(this.tableLayoutPanel9);
-            this.pnMesa.Controls.Add(this.btnCerrarSesion);
+            this.pnMesa.Controls.Add(this.btnAgregarProducto);
             this.pnMesa.Controls.Add(this.label6);
-            this.pnMesa.Controls.Add(this.cbProducto);
+            this.pnMesa.Controls.Add(this.CID_Producto);
             this.pnMesa.Controls.Add(this.lblInfo);
             this.pnMesa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMesa.Location = new System.Drawing.Point(6, 6);
@@ -358,9 +357,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.dateTimePicker1, 2, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.nudCantidad, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.NUMCantidad, 0, 1);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(10, 116);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 2;
@@ -382,75 +379,51 @@
             this.label11.TabIndex = 59;
             this.label11.Text = "Cantidad";
             // 
-            // dateTimePicker1
+            // NUMCantidad
             // 
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(291, 33);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 27);
-            this.dateTimePicker1.TabIndex = 34;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(293, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 20);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Fecha*";
-            // 
-            // nudCantidad
-            // 
-            this.nudCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nudCantidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nudCantidad.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudCantidad.Location = new System.Drawing.Point(3, 33);
-            this.nudCantidad.Maximum = new decimal(new int[] {
+            this.NUMCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NUMCantidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NUMCantidad.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMCantidad.Location = new System.Drawing.Point(3, 33);
+            this.NUMCantidad.Maximum = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.nudCantidad.MaximumSize = new System.Drawing.Size(120, 0);
-            this.nudCantidad.Minimum = new decimal(new int[] {
+            this.NUMCantidad.MaximumSize = new System.Drawing.Size(120, 0);
+            this.NUMCantidad.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nudCantidad.MinimumSize = new System.Drawing.Size(110, 0);
-            this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(120, 27);
-            this.nudCantidad.TabIndex = 58;
-            this.nudCantidad.Value = new decimal(new int[] {
+            this.NUMCantidad.MinimumSize = new System.Drawing.Size(110, 0);
+            this.NUMCantidad.Name = "NUMCantidad";
+            this.NUMCantidad.Size = new System.Drawing.Size(120, 27);
+            this.NUMCantidad.TabIndex = 58;
+            this.NUMCantidad.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // btnCerrarSesion
+            // btnAgregarProducto
             // 
-            this.btnCerrarSesion.AutoSize = true;
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.btnCerrarSesion.CausesValidation = false;
-            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(10, 199);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(173, 40);
-            this.btnCerrarSesion.TabIndex = 60;
-            this.btnCerrarSesion.Text = "Agregar Producto";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnAgregarProducto.AutoSize = true;
+            this.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
+            this.btnAgregarProducto.CausesValidation = false;
+            this.btnAgregarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(10, 199);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(173, 40);
+            this.btnAgregarProducto.TabIndex = 60;
+            this.btnAgregarProducto.Text = "Agregar Producto";
+            this.btnAgregarProducto.UseVisualStyleBackColor = false;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // label6
             // 
@@ -467,16 +440,16 @@
             this.label6.TabIndex = 29;
             this.label6.Text = "Producto*";
             // 
-            // cbProducto
+            // CID_Producto
             // 
-            this.cbProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_Producto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbProducto.FormattingEnabled = true;
-            this.cbProducto.Location = new System.Drawing.Point(10, 74);
-            this.cbProducto.Name = "cbProducto";
-            this.cbProducto.Size = new System.Drawing.Size(512, 28);
-            this.cbProducto.TabIndex = 28;
+            this.CID_Producto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Producto.FormattingEnabled = true;
+            this.CID_Producto.Location = new System.Drawing.Point(10, 74);
+            this.CID_Producto.Name = "CID_Producto";
+            this.CID_Producto.Size = new System.Drawing.Size(512, 28);
+            this.CID_Producto.TabIndex = 28;
             // 
             // lblInfo
             // 
@@ -507,7 +480,7 @@
             this.panel1.ResumeLayout(false);
             this.pnProducto.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -517,7 +490,7 @@
             this.pnMesa.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -534,21 +507,19 @@
         private System.Windows.Forms.Panel pnMesa;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbProducto;
+        internal System.Windows.Forms.ComboBox CID_Producto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown nudCantidad;
+        private System.Windows.Forms.NumericUpDown NUMCantidad;
         private System.Windows.Forms.Panel pnCliente;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbTipoMovimiento;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private ReaLTaiizor.Controls.CyberRichTextBox txtDescripcion;
+        internal System.Windows.Forms.ComboBox CID_MovimientoTipo;
+        internal ReaLTaiizor.Controls.CyberRichTextBox TObservaciones;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button btnProcesarOrden;
-        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnProcesarMovimiento;
+        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
     }
 }

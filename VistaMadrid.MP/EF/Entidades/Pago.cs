@@ -9,10 +9,14 @@ namespace VistaMadrid.MP.EF
     [Table("Pago")]
     public partial class Pago
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Pago()
+        {
+            OrdenPago = new HashSet<OrdenPago>();
+        }
+
         [Key]
         public int ID_Pago { get; set; }
-
-        public int ID_Orden { get; set; }
 
         public int ID_MetodoPago { get; set; }
 
@@ -26,8 +30,7 @@ namespace VistaMadrid.MP.EF
 
         public bool Activo { get; set; }
 
-        public virtual MetodoPago MetodoPago { get; set; }
-
-        public virtual Orden Orden { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrdenPago> OrdenPago { get; set; }
     }
 }

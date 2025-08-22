@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblEmpleado = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.LTotal = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.LSubtotal = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.NUMCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.cbProducto = new System.Windows.Forms.ComboBox();
+            this.CID_Producto = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -61,41 +61,35 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtCondicion = new ReaLTaiizor.Controls.CyberTextBox();
-            this.txtDiasCredito = new ReaLTaiizor.Controls.CyberTextBox();
+            this.LCondicion = new ReaLTaiizor.Controls.CyberTextBox();
+            this.LDiasCredito = new ReaLTaiizor.Controls.CyberTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtAutoPago = new ReaLTaiizor.Controls.CyberTextBox();
+            this.LAutoPago = new ReaLTaiizor.Controls.CyberTextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.CID_Cliente = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pnMesa = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbMesa = new System.Windows.Forms.ComboBox();
+            this.CID_Mesa = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.cbSala = new System.Windows.Forms.ComboBox();
+            this.CID_Sala = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lblOrden = new System.Windows.Forms.Label();
-            this.lblAsientos = new System.Windows.Forms.Label();
-            this.lblSala = new System.Windows.Forms.Label();
+            this.LID_Orden = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.panel7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMCantidad)).BeginInit();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -166,7 +160,7 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.poisonDataGridView1, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.GRD, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.panel7, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.panel3, 0, 1);
@@ -179,54 +173,54 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1090, 387);
             this.tableLayoutPanel8.TabIndex = 64;
             // 
-            // poisonDataGridView1
+            // GRD
             // 
-            this.poisonDataGridView1.AllowUserToDeleteRows = false;
-            this.poisonDataGridView1.AllowUserToResizeRows = false;
-            this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.poisonDataGridView1.ColumnHeadersHeight = 33;
-            this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.poisonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.poisonDataGridView1.EnableHeadersVisualStyles = false;
-            this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.poisonDataGridView1.Location = new System.Drawing.Point(549, 4);
-            this.poisonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.poisonDataGridView1.Name = "poisonDataGridView1";
-            this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.poisonDataGridView1.RowHeadersWidth = 45;
-            this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.poisonDataGridView1.RowTemplate.Height = 35;
-            this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(537, 243);
-            this.poisonDataGridView1.TabIndex = 60;
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(549, 4);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(537, 243);
+            this.GRD.TabIndex = 60;
             // 
             // panel7
             // 
@@ -243,9 +237,9 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.label17, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.LTotal, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.label16, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label15, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.LSubtotal, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label14, 0, 2);
@@ -259,18 +253,18 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(539, 130);
             this.tableLayoutPanel5.TabIndex = 63;
             // 
-            // label17
+            // LTotal
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label17.Location = new System.Drawing.Point(274, 91);
-            this.label17.Margin = new System.Windows.Forms.Padding(5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 24);
-            this.label17.TabIndex = 26;
-            this.label17.Text = "0.00";
+            this.LTotal.AutoSize = true;
+            this.LTotal.BackColor = System.Drawing.Color.Transparent;
+            this.LTotal.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.LTotal.Location = new System.Drawing.Point(274, 91);
+            this.LTotal.Margin = new System.Windows.Forms.Padding(5);
+            this.LTotal.Name = "LTotal";
+            this.LTotal.Size = new System.Drawing.Size(45, 24);
+            this.LTotal.TabIndex = 26;
+            this.LTotal.Text = "0.00";
             // 
             // label16
             // 
@@ -285,18 +279,18 @@
             this.label16.TabIndex = 25;
             this.label16.Text = "0.00";
             // 
-            // label15
+            // LSubtotal
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label15.Location = new System.Drawing.Point(274, 5);
-            this.label15.Margin = new System.Windows.Forms.Padding(5);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(44, 23);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "0.00";
+            this.LSubtotal.AutoSize = true;
+            this.LSubtotal.BackColor = System.Drawing.Color.Transparent;
+            this.LSubtotal.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.LSubtotal.Location = new System.Drawing.Point(274, 5);
+            this.LSubtotal.Margin = new System.Windows.Forms.Padding(5);
+            this.LSubtotal.Name = "LSubtotal";
+            this.LSubtotal.Size = new System.Drawing.Size(44, 23);
+            this.LSubtotal.TabIndex = 24;
+            this.LSubtotal.Text = "0.00";
             // 
             // label12
             // 
@@ -342,7 +336,7 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.tableLayoutPanel9);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.cbProducto);
+            this.panel2.Controls.Add(this.CID_Producto);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
@@ -359,8 +353,8 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.53F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.47F));
-            this.tableLayoutPanel9.Controls.Add(this.nudCantidad, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.btnCerrarSesion, 2, 1);
+            this.tableLayoutPanel9.Controls.Add(this.NUMCantidad, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.btnAgregarProducto, 2, 1);
             this.tableLayoutPanel9.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(18, 129);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -370,52 +364,53 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(511, 75);
             this.tableLayoutPanel9.TabIndex = 65;
             // 
-            // nudCantidad
+            // NUMCantidad
             // 
-            this.nudCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NUMCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nudCantidad.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudCantidad.Location = new System.Drawing.Point(3, 31);
-            this.nudCantidad.Maximum = new decimal(new int[] {
+            this.NUMCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NUMCantidad.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMCantidad.Location = new System.Drawing.Point(3, 31);
+            this.NUMCantidad.Maximum = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.nudCantidad.MaximumSize = new System.Drawing.Size(120, 0);
-            this.nudCantidad.Minimum = new decimal(new int[] {
+            this.NUMCantidad.MaximumSize = new System.Drawing.Size(120, 0);
+            this.NUMCantidad.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nudCantidad.MinimumSize = new System.Drawing.Size(110, 0);
-            this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(114, 27);
-            this.nudCantidad.TabIndex = 62;
-            this.nudCantidad.Value = new decimal(new int[] {
+            this.NUMCantidad.MinimumSize = new System.Drawing.Size(110, 0);
+            this.NUMCantidad.Name = "NUMCantidad";
+            this.NUMCantidad.Size = new System.Drawing.Size(114, 27);
+            this.NUMCantidad.TabIndex = 62;
+            this.NUMCantidad.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // btnCerrarSesion
+            // btnAgregarProducto
             // 
-            this.btnCerrarSesion.AutoSize = true;
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
-            this.btnCerrarSesion.CausesValidation = false;
-            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(242, 31);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(154, 37);
-            this.btnCerrarSesion.TabIndex = 64;
-            this.btnCerrarSesion.Text = "Agregar Producto";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnAgregarProducto.AutoSize = true;
+            this.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(175)))), ((int)(((byte)(55)))));
+            this.btnAgregarProducto.CausesValidation = false;
+            this.btnAgregarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(242, 31);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(154, 37);
+            this.btnAgregarProducto.TabIndex = 64;
+            this.btnAgregarProducto.Text = "Agregar Producto";
+            this.btnAgregarProducto.UseVisualStyleBackColor = false;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // label11
             // 
@@ -443,16 +438,16 @@
             this.label10.TabIndex = 61;
             this.label10.Text = "Seleccionar Producto";
             // 
-            // cbProducto
+            // CID_Producto
             // 
-            this.cbProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_Producto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbProducto.FormattingEnabled = true;
-            this.cbProducto.Location = new System.Drawing.Point(19, 70);
-            this.cbProducto.Name = "cbProducto";
-            this.cbProducto.Size = new System.Drawing.Size(393, 28);
-            this.cbProducto.TabIndex = 60;
+            this.CID_Producto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Producto.FormattingEnabled = true;
+            this.CID_Producto.Location = new System.Drawing.Point(19, 70);
+            this.CID_Producto.Name = "CID_Producto";
+            this.CID_Producto.Size = new System.Drawing.Size(393, 28);
+            this.CID_Producto.TabIndex = 60;
             // 
             // label9
             // 
@@ -552,10 +547,10 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel4.Controls.Add(this.label20, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.label19, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCondicion, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.txtDiasCredito, 4, 1);
+            this.tableLayoutPanel4.Controls.Add(this.LCondicion, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.LDiasCredito, 4, 1);
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtAutoPago, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.LAutoPago, 2, 1);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(10, 123);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
@@ -590,69 +585,69 @@
             this.label19.TabIndex = 37;
             this.label19.Text = "AutoPago";
             // 
-            // txtCondicion
+            // LCondicion
             // 
-            this.txtCondicion.Alpha = 20;
-            this.txtCondicion.BackColor = System.Drawing.Color.Transparent;
-            this.txtCondicion.Background_WidthPen = 3F;
-            this.txtCondicion.BackgroundPen = true;
-            this.txtCondicion.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtCondicion.ColorBackground_Pen = System.Drawing.Color.Transparent;
-            this.txtCondicion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtCondicion.ColorPen_1 = System.Drawing.Color.Transparent;
-            this.txtCondicion.ColorPen_2 = System.Drawing.Color.Transparent;
-            this.txtCondicion.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtCondicion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCondicion.Enabled = false;
-            this.txtCondicion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.txtCondicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.txtCondicion.Lighting = false;
-            this.txtCondicion.LinearGradientPen = false;
-            this.txtCondicion.Location = new System.Drawing.Point(3, 38);
-            this.txtCondicion.Name = "txtCondicion";
-            this.txtCondicion.PenWidth = 15;
-            this.txtCondicion.RGB = false;
-            this.txtCondicion.Rounding = true;
-            this.txtCondicion.RoundingInt = 50;
-            this.txtCondicion.Size = new System.Drawing.Size(182, 38);
-            this.txtCondicion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtCondicion.TabIndex = 29;
-            this.txtCondicion.Tag = "Cyber";
-            this.txtCondicion.TextButton = "Example";
-            this.txtCondicion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtCondicion.Timer_RGB = 300;
+            this.LCondicion.Alpha = 20;
+            this.LCondicion.BackColor = System.Drawing.Color.Transparent;
+            this.LCondicion.Background_WidthPen = 3F;
+            this.LCondicion.BackgroundPen = true;
+            this.LCondicion.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.LCondicion.ColorBackground_Pen = System.Drawing.Color.Transparent;
+            this.LCondicion.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.LCondicion.ColorPen_1 = System.Drawing.Color.Transparent;
+            this.LCondicion.ColorPen_2 = System.Drawing.Color.Transparent;
+            this.LCondicion.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.LCondicion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LCondicion.Enabled = false;
+            this.LCondicion.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.LCondicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.LCondicion.Lighting = false;
+            this.LCondicion.LinearGradientPen = false;
+            this.LCondicion.Location = new System.Drawing.Point(3, 38);
+            this.LCondicion.Name = "LCondicion";
+            this.LCondicion.PenWidth = 15;
+            this.LCondicion.RGB = false;
+            this.LCondicion.Rounding = true;
+            this.LCondicion.RoundingInt = 50;
+            this.LCondicion.Size = new System.Drawing.Size(182, 38);
+            this.LCondicion.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.LCondicion.TabIndex = 29;
+            this.LCondicion.Tag = "Cyber";
+            this.LCondicion.TextButton = "Example";
+            this.LCondicion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.LCondicion.Timer_RGB = 300;
             // 
-            // txtDiasCredito
+            // LDiasCredito
             // 
-            this.txtDiasCredito.Alpha = 20;
-            this.txtDiasCredito.BackColor = System.Drawing.Color.Transparent;
-            this.txtDiasCredito.Background_WidthPen = 3F;
-            this.txtDiasCredito.BackgroundPen = true;
-            this.txtDiasCredito.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtDiasCredito.ColorBackground_Pen = System.Drawing.Color.Transparent;
-            this.txtDiasCredito.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtDiasCredito.ColorPen_1 = System.Drawing.Color.Transparent;
-            this.txtDiasCredito.ColorPen_2 = System.Drawing.Color.Transparent;
-            this.txtDiasCredito.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtDiasCredito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDiasCredito.Enabled = false;
-            this.txtDiasCredito.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.txtDiasCredito.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.txtDiasCredito.Lighting = false;
-            this.txtDiasCredito.LinearGradientPen = false;
-            this.txtDiasCredito.Location = new System.Drawing.Point(372, 38);
-            this.txtDiasCredito.Name = "txtDiasCredito";
-            this.txtDiasCredito.PenWidth = 15;
-            this.txtDiasCredito.RGB = false;
-            this.txtDiasCredito.Rounding = true;
-            this.txtDiasCredito.RoundingInt = 50;
-            this.txtDiasCredito.Size = new System.Drawing.Size(137, 38);
-            this.txtDiasCredito.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtDiasCredito.TabIndex = 35;
-            this.txtDiasCredito.Tag = "Cyber";
-            this.txtDiasCredito.TextButton = "Example";
-            this.txtDiasCredito.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtDiasCredito.Timer_RGB = 300;
+            this.LDiasCredito.Alpha = 20;
+            this.LDiasCredito.BackColor = System.Drawing.Color.Transparent;
+            this.LDiasCredito.Background_WidthPen = 3F;
+            this.LDiasCredito.BackgroundPen = true;
+            this.LDiasCredito.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.LDiasCredito.ColorBackground_Pen = System.Drawing.Color.Transparent;
+            this.LDiasCredito.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.LDiasCredito.ColorPen_1 = System.Drawing.Color.Transparent;
+            this.LDiasCredito.ColorPen_2 = System.Drawing.Color.Transparent;
+            this.LDiasCredito.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.LDiasCredito.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LDiasCredito.Enabled = false;
+            this.LDiasCredito.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.LDiasCredito.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.LDiasCredito.Lighting = false;
+            this.LDiasCredito.LinearGradientPen = false;
+            this.LDiasCredito.Location = new System.Drawing.Point(372, 38);
+            this.LDiasCredito.Name = "LDiasCredito";
+            this.LDiasCredito.PenWidth = 15;
+            this.LDiasCredito.RGB = false;
+            this.LDiasCredito.Rounding = true;
+            this.LDiasCredito.RoundingInt = 50;
+            this.LDiasCredito.Size = new System.Drawing.Size(137, 38);
+            this.LDiasCredito.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.LDiasCredito.TabIndex = 35;
+            this.LDiasCredito.Tag = "Cyber";
+            this.LDiasCredito.TextButton = "0";
+            this.LDiasCredito.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.LDiasCredito.Timer_RGB = 300;
             // 
             // label8
             // 
@@ -667,37 +662,37 @@
             this.label8.TabIndex = 26;
             this.label8.Text = "Condición de Pago:";
             // 
-            // txtAutoPago
+            // LAutoPago
             // 
-            this.txtAutoPago.Alpha = 20;
-            this.txtAutoPago.BackColor = System.Drawing.Color.Transparent;
-            this.txtAutoPago.Background_WidthPen = 3F;
-            this.txtAutoPago.BackgroundPen = true;
-            this.txtAutoPago.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
-            this.txtAutoPago.ColorBackground_Pen = System.Drawing.Color.Transparent;
-            this.txtAutoPago.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.txtAutoPago.ColorPen_1 = System.Drawing.Color.Transparent;
-            this.txtAutoPago.ColorPen_2 = System.Drawing.Color.Transparent;
-            this.txtAutoPago.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.txtAutoPago.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtAutoPago.Enabled = false;
-            this.txtAutoPago.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.txtAutoPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.txtAutoPago.Lighting = false;
-            this.txtAutoPago.LinearGradientPen = false;
-            this.txtAutoPago.Location = new System.Drawing.Point(211, 38);
-            this.txtAutoPago.Name = "txtAutoPago";
-            this.txtAutoPago.PenWidth = 15;
-            this.txtAutoPago.RGB = false;
-            this.txtAutoPago.Rounding = true;
-            this.txtAutoPago.RoundingInt = 50;
-            this.txtAutoPago.Size = new System.Drawing.Size(135, 38);
-            this.txtAutoPago.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.txtAutoPago.TabIndex = 33;
-            this.txtAutoPago.Tag = "Cyber";
-            this.txtAutoPago.TextButton = "Example";
-            this.txtAutoPago.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.txtAutoPago.Timer_RGB = 300;
+            this.LAutoPago.Alpha = 20;
+            this.LAutoPago.BackColor = System.Drawing.Color.Transparent;
+            this.LAutoPago.Background_WidthPen = 3F;
+            this.LAutoPago.BackgroundPen = true;
+            this.LAutoPago.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(42)))));
+            this.LAutoPago.ColorBackground_Pen = System.Drawing.Color.Transparent;
+            this.LAutoPago.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.LAutoPago.ColorPen_1 = System.Drawing.Color.Transparent;
+            this.LAutoPago.ColorPen_2 = System.Drawing.Color.Transparent;
+            this.LAutoPago.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.LAutoPago.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LAutoPago.Enabled = false;
+            this.LAutoPago.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.LAutoPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.LAutoPago.Lighting = false;
+            this.LAutoPago.LinearGradientPen = false;
+            this.LAutoPago.Location = new System.Drawing.Point(211, 38);
+            this.LAutoPago.Name = "LAutoPago";
+            this.LAutoPago.PenWidth = 15;
+            this.LAutoPago.RGB = false;
+            this.LAutoPago.Rounding = true;
+            this.LAutoPago.RoundingInt = 50;
+            this.LAutoPago.Size = new System.Drawing.Size(135, 38);
+            this.LAutoPago.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.LAutoPago.TabIndex = 33;
+            this.LAutoPago.Tag = "Cyber";
+            this.LAutoPago.TextButton = "Si";
+            this.LAutoPago.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.LAutoPago.Timer_RGB = 300;
             // 
             // tableLayoutPanel6
             // 
@@ -705,11 +700,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel6.Controls.Add(this.txtId, 2, 1);
-            this.tableLayoutPanel6.Controls.Add(this.cbCliente, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label7, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.CID_Cliente, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(10, 32);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -719,39 +712,16 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(518, 67);
             this.tableLayoutPanel6.TabIndex = 32;
             // 
-            // txtId
+            // CID_Cliente
             // 
-            this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.txtId.Location = new System.Drawing.Point(371, 34);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(144, 27);
-            this.txtId.TabIndex = 27;
-            // 
-            // cbCliente
-            // 
-            this.cbCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbCliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCliente.FormattingEnabled = true;
-            this.cbCliente.Location = new System.Drawing.Point(3, 34);
-            this.cbCliente.Name = "cbCliente";
-            this.cbCliente.Size = new System.Drawing.Size(342, 28);
-            this.cbCliente.TabIndex = 22;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label7.Location = new System.Drawing.Point(373, 5);
-            this.label7.Margin = new System.Windows.Forms.Padding(5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 21);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Id";
+            this.CID_Cliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Cliente.FormattingEnabled = true;
+            this.CID_Cliente.Location = new System.Drawing.Point(3, 34);
+            this.CID_Cliente.Name = "CID_Cliente";
+            this.CID_Cliente.Size = new System.Drawing.Size(340, 28);
+            this.CID_Cliente.TabIndex = 22;
             // 
             // label5
             // 
@@ -799,10 +769,10 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.cbMesa, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.CID_Mesa, 2, 1);
             this.tableLayoutPanel7.Controls.Add(this.label6, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.cbSala, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.CID_Sala, 0, 1);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 33);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -811,16 +781,16 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(518, 67);
             this.tableLayoutPanel7.TabIndex = 31;
             // 
-            // cbMesa
+            // CID_Mesa
             // 
-            this.cbMesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_Mesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbMesa.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMesa.FormattingEnabled = true;
-            this.cbMesa.Location = new System.Drawing.Point(272, 34);
-            this.cbMesa.Name = "cbMesa";
-            this.cbMesa.Size = new System.Drawing.Size(243, 28);
-            this.cbMesa.TabIndex = 20;
+            this.CID_Mesa.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Mesa.FormattingEnabled = true;
+            this.CID_Mesa.Location = new System.Drawing.Point(272, 34);
+            this.CID_Mesa.Name = "CID_Mesa";
+            this.CID_Mesa.Size = new System.Drawing.Size(243, 28);
+            this.CID_Mesa.TabIndex = 20;
             // 
             // label6
             // 
@@ -848,16 +818,16 @@
             this.label18.TabIndex = 29;
             this.label18.Text = "Sala";
             // 
-            // cbSala
+            // CID_Sala
             // 
-            this.cbSala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CID_Sala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSala.FormattingEnabled = true;
-            this.cbSala.Location = new System.Drawing.Point(3, 34);
-            this.cbSala.Name = "cbSala";
-            this.cbSala.Size = new System.Drawing.Size(243, 28);
-            this.cbSala.TabIndex = 28;
+            this.CID_Sala.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CID_Sala.FormattingEnabled = true;
+            this.CID_Sala.Location = new System.Drawing.Point(3, 34);
+            this.CID_Sala.Name = "CID_Sala";
+            this.CID_Sala.Size = new System.Drawing.Size(243, 28);
+            this.CID_Sala.TabIndex = 28;
             // 
             // tableLayoutPanel3
             // 
@@ -878,56 +848,26 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.panel6.Controls.Add(this.lblOrden);
-            this.panel6.Controls.Add(this.lblAsientos);
-            this.panel6.Controls.Add(this.lblSala);
+            this.panel6.Controls.Add(this.LID_Orden);
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.label1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(15, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(504, 127);
             this.panel6.TabIndex = 0;
             // 
-            // lblOrden
+            // LID_Orden
             // 
-            this.lblOrden.AutoSize = true;
-            this.lblOrden.BackColor = System.Drawing.Color.Transparent;
-            this.lblOrden.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.lblOrden.Location = new System.Drawing.Point(78, 94);
-            this.lblOrden.Margin = new System.Windows.Forms.Padding(5);
-            this.lblOrden.Name = "lblOrden";
-            this.lblOrden.Size = new System.Drawing.Size(79, 23);
-            this.lblOrden.TabIndex = 25;
-            this.lblOrden.Text = "Example";
-            // 
-            // lblAsientos
-            // 
-            this.lblAsientos.AutoSize = true;
-            this.lblAsientos.BackColor = System.Drawing.Color.Transparent;
-            this.lblAsientos.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsientos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.lblAsientos.Location = new System.Drawing.Point(103, 52);
-            this.lblAsientos.Margin = new System.Windows.Forms.Padding(5);
-            this.lblAsientos.Name = "lblAsientos";
-            this.lblAsientos.Size = new System.Drawing.Size(79, 23);
-            this.lblAsientos.TabIndex = 24;
-            this.lblAsientos.Text = "Example";
-            // 
-            // lblSala
-            // 
-            this.lblSala.AutoSize = true;
-            this.lblSala.BackColor = System.Drawing.Color.Transparent;
-            this.lblSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.lblSala.Location = new System.Drawing.Point(59, 11);
-            this.lblSala.Margin = new System.Windows.Forms.Padding(5);
-            this.lblSala.Name = "lblSala";
-            this.lblSala.Size = new System.Drawing.Size(79, 23);
-            this.lblSala.TabIndex = 23;
-            this.lblSala.Text = "Example";
+            this.LID_Orden.AutoSize = true;
+            this.LID_Orden.BackColor = System.Drawing.Color.Transparent;
+            this.LID_Orden.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LID_Orden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.LID_Orden.Location = new System.Drawing.Point(83, 17);
+            this.LID_Orden.Margin = new System.Windows.Forms.Padding(5);
+            this.LID_Orden.Name = "LID_Orden";
+            this.LID_Orden.Size = new System.Drawing.Size(20, 23);
+            this.LID_Orden.TabIndex = 25;
+            this.LID_Orden.Text = "0";
             // 
             // label3
             // 
@@ -935,38 +875,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(5, 93);
+            this.label3.Location = new System.Drawing.Point(5, 16);
             this.label3.Margin = new System.Windows.Forms.Padding(5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 24);
             this.label3.TabIndex = 22;
             this.label3.Text = "Orden:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(5, 51);
-            this.label2.Margin = new System.Windows.Forms.Padding(5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 24);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Asientos:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(5, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 24);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Sala:";
             // 
             // lblInfo
             // 
@@ -995,7 +909,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.panel7.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
@@ -1003,7 +917,7 @@
             this.panel2.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMCantidad)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
@@ -1036,47 +950,41 @@
         private System.Windows.Forms.Panel pnCliente;
         private System.Windows.Forms.Panel pnMesa;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ComboBox cbMesa;
+        internal System.Windows.Forms.ComboBox CID_Mesa;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblOrden;
-        private System.Windows.Forms.Label lblAsientos;
-        private System.Windows.Forms.Label lblSala;
+        internal System.Windows.Forms.Label LID_Orden;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbCliente;
+        internal System.Windows.Forms.ComboBox CID_Cliente;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label8;
-        private ReaLTaiizor.Controls.CyberTextBox txtCondicion;
+        internal ReaLTaiizor.Controls.CyberTextBox LCondicion;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox cbSala;
+        internal System.Windows.Forms.ComboBox CID_Sala;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private ReaLTaiizor.Controls.CyberTextBox txtDiasCredito;
-        private ReaLTaiizor.Controls.CyberTextBox txtAutoPago;
+        internal ReaLTaiizor.Controls.CyberTextBox LDiasCredito;
+        internal ReaLTaiizor.Controls.CyberTextBox LAutoPago;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown nudCantidad;
+        internal System.Windows.Forms.NumericUpDown NUMCantidad;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cbProducto;
+        internal System.Windows.Forms.ComboBox CID_Producto;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnProcesarOrden;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        internal System.Windows.Forms.Button btnProcesarOrden;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label LTotal;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label LSubtotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;

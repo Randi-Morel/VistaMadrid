@@ -14,13 +14,24 @@ using VistaMadrid.MP;
 
 namespace VistaMadrid.Vista.StockActual
 {
-    public partial class frmStockActual : Form
+    public partial class frmStockActual : Form, IStockActual
     {
+        public PresentadorStockActual Presentador { get; set; }
+        private ConfiguracionControlesStockActual _ConfiguracionControlesStockActual;
 
         public frmStockActual()
         {
             InitializeComponent();
+            Presentador = new PresentadorStockActual(this);
+            _ConfiguracionControlesStockActual = new ConfiguracionControlesStockActual(this, Presentador);
+            _ConfiguracionControlesStockActual.Configuracion();
+
             btnGenerarReporte.Click += btnGenerarReporte_Click;
+        }
+
+        public object GRD_DataSourceStockActual
+        {
+            set => GRD.DataSource = value;
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)

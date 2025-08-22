@@ -35,20 +35,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnProducto = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnGenerarReporte = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblEmpleado = new System.Windows.Forms.Label();
-            this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnProducto.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -106,6 +106,55 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1090, 430);
             this.tableLayoutPanel3.TabIndex = 60;
+            // 
+            // GRD
+            // 
+            this.GRD.AllowUserToDeleteRows = false;
+            this.GRD.AllowUserToResizeRows = false;
+            this.GRD.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GRD.ColumnHeadersHeight = 33;
+            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GRD.EnableHeadersVisualStyles = false;
+            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GRD.Location = new System.Drawing.Point(16, 16);
+            this.GRD.Margin = new System.Windows.Forms.Padding(4);
+            this.GRD.Name = "GRD";
+            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GRD.RowHeadersWidth = 45;
+            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GRD.RowTemplate.Height = 35;
+            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRD.Size = new System.Drawing.Size(1058, 398);
+            this.GRD.TabIndex = 64;
             // 
             // panel2
             // 
@@ -171,58 +220,9 @@
             this.lblEmpleado.Location = new System.Drawing.Point(5, 10);
             this.lblEmpleado.Margin = new System.Windows.Forms.Padding(5);
             this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(287, 40);
+            this.lblEmpleado.Size = new System.Drawing.Size(349, 50);
             this.lblEmpleado.TabIndex = 18;
-            this.lblEmpleado.Text = "Entradas y Salidas";
-            // 
-            // GRD
-            // 
-            this.GRD.AllowUserToDeleteRows = false;
-            this.GRD.AllowUserToResizeRows = false;
-            this.GRD.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.GRD.ColumnHeadersHeight = 33;
-            this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GRD.EnableHeadersVisualStyles = false;
-            this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.GRD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GRD.Location = new System.Drawing.Point(16, 16);
-            this.GRD.Margin = new System.Windows.Forms.Padding(4);
-            this.GRD.Name = "GRD";
-            this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.GRD.RowHeadersWidth = 45;
-            this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.GRD.RowTemplate.Height = 35;
-            this.GRD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GRD.Size = new System.Drawing.Size(1058, 398);
-            this.GRD.TabIndex = 64;
+            this.lblEmpleado.Text = "Cuentas Vencidas";
             // 
             // frmCuentasVencidas
             // 
@@ -238,12 +238,12 @@
             this.panel1.ResumeLayout(false);
             this.pnProducto.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

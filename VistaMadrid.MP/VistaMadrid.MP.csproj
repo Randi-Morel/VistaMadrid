@@ -51,6 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EF\EntidadesPersonalizadas\ItemOrdenPago.cs" />
+    <Compile Include="EF\EntidadesPersonalizadas\ItemFactura.cs" />
+    <Compile Include="EF\Entidades\MovimientoProducto.cs" />
+    <Compile Include="EF\Entidades\OrdenPago.cs" />
     <Compile Include="EF\Vistas\C_Cliente.cs" />
     <Compile Include="EF\Vistas\C_Mesa.cs" />
     <Compile Include="EF\Entidades\Archivo.cs" />
@@ -74,13 +78,18 @@
     <Compile Include="EF\Entidades\Sala.cs" />
     <Compile Include="EF\Entidades\UnidadMedida.cs" />
     <Compile Include="EF\Entidades\Usuario.cs" />
+    <Compile Include="EF\Vistas\C_Orden.cs" />
     <Compile Include="EF\Vistas\C_Producto.cs" />
     <Compile Include="EF\Vistas\C_Usuario.cs" />
     <Compile Include="Modelo\BaseModelo.cs" />
     <Compile Include="Modelo\MovimientoInventario\IMovimientoInventarioRepositorio.cs" />
     <Compile Include="Modelo\MovimientoInventario\ModeloMovimientoInventario.cs" />
+    <Compile Include="Modelo\MovimientoProducto\IMovimientoProductoRepositorio.cs" />
+    <Compile Include="Modelo\MovimientoProducto\ModeloMovimientoProducto.cs" />
     <Compile Include="Modelo\MovimientoTipo\IMovimientoTipoRepositorio.cs" />
     <Compile Include="Modelo\MovimientoTipo\ModeloMovimientoTipo.cs" />
+    <Compile Include="Modelo\OrdenPago\IOrdenPagoRepositorio.cs" />
+    <Compile Include="Modelo\OrdenPago\ModeloOrdenPago.cs" />
     <Compile Include="Modelo\Orden\IOrdenRepositorio.cs" />
     <Compile Include="Modelo\Orden\ModeloOrden.cs" />
     <Compile Include="Modelo\OrdenDetalle\IOrdenDetalleRepositorio.cs" />
@@ -121,7 +130,13 @@
     <Compile Include="Modelo\Producto\ModeloProducto.cs" />
     <Compile Include="Modelo\RepositorioBase\RepositorioBase.cs" />
     <Compile Include="Modelo\RepositorioBase\IRepositorioBase.cs" />
+    <Compile Include="Presentador\PresentadorCuentasVencidas.cs" />
     <Compile Include="Presentador\PresentadorEmpleado.cs" />
+    <Compile Include="Presentador\PresentadorCuentasPorCobrar.cs" />
+    <Compile Include="Presentador\PresentadorRegistroPagos.cs" />
+    <Compile Include="Presentador\PresentadorRegistroMovimiento.cs" />
+    <Compile Include="Presentador\PresentadorFacturacion.cs" />
+    <Compile Include="Presentador\PresentadorStockActual.cs" />
     <Compile Include="Presentador\PresentadorProveedor.cs" />
     <Compile Include="Presentador\PresentadorCliente.cs" />
     <Compile Include="Presentador\PresentadorCondicionPago.cs" />
@@ -136,7 +151,13 @@
     <Compile Include="Presentador\PresentadorLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\AccionesMantenimiento\Interfaces\IAccionesMantenimiento.cs" />
+    <Compile Include="Vista\RegistroPagos\Interfaces\IRegistroPagos.cs" />
+    <Compile Include="Vista\RegistroMovimiento\Interfaces\IRegistroMovimiento.cs" />
+    <Compile Include="Vista\Facturacion\Interfaces\IFacturacion.cs" />
+    <Compile Include="Vista\CuentasVencidas\Interfaces\ICuentasVencidas.cs" />
     <Compile Include="Vista\Empleado\Interfaces\IEmpleado.cs" />
+    <Compile Include="Vista\CuentasPorCobrar\Interfaces\ICuentasPorCobrar.cs" />
+    <Compile Include="Vista\StockActual\Interfaces\IStockActual.cs" />
     <Compile Include="Vista\Proveedor\Interfaces\IProveedor.cs" />
     <Compile Include="Vista\Cliente\Interfaces\ICliente.cs" />
     <Compile Include="Vista\CondicionPago\Interfaces\ICondicionPago.cs" />
@@ -151,7 +172,6 @@
     <Compile Include="Vista\Login\Interfaces\ILogin.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EF\Procedimientos\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>

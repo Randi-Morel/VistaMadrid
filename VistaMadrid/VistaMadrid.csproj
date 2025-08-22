@@ -102,12 +102,14 @@
     <Compile Include="Vista\CondicionPago\frmCondicionPago.Designer.cs">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\CuentasPorCobrar\ConfiguracionControlesCuentasPorCobrar\ConfiguracionControlesCuentasPorCobrar.cs" />
     <Compile Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.Designer.cs">
       <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\CuentasVencidas\ConfiguracionControlesCuentasVencidas\ConfiguracionControlesCuentasVencidas.cs" />
     <Compile Include="Vista\CuentasVencidas\frmCuentasVencidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +141,7 @@
     <Compile Include="Vista\EstadoCuenta\frmEstadoCuenta.Designer.cs">
       <DependentUpon>frmEstadoCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Facturacion\ConfiguracionControlesFacturacion\ConfiguracionControlesFacturacion.cs" />
     <Compile Include="Vista\Facturacion\frmFacturacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,12 +177,14 @@
     <Compile Include="Vista\Proveedor\frmProveedor.Designer.cs">
       <DependentUpon>frmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistroMovimiento\ConfiguracionControlesRegistroMovimiento\ConfiguracionControlesRegistroMovimiento.cs" />
     <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.Designer.cs">
       <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistroPagos\ConfiguracionControlesRegistroPagos\ConfiguracionControlesRegistroPagos.cs" />
     <Compile Include="Vista\RegistroPagos\frmRegistroPagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +205,7 @@
     <Compile Include="Vista\Sala\frmSala.Designer.cs">
       <DependentUpon>frmSala.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\StockActual\ConfiguracionControlesStockActual\ConfiguracionControlesStockActual.cs" />
     <Compile Include="Vista\StockActual\frmStockActual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,14 +324,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />
-    <Folder Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\" />
-    <Folder Include="Vista\CuentasVencidas\ConfiguracionCuentasVencidas\" />
     <Folder Include="Vista\DeudaCliente\ConfiguracionDeudaCliente\" />
     <Folder Include="Vista\EntradasSalidas\ConfiguracionEntradasSalidas\" />
     <Folder Include="Vista\EstadoCuenta\ConfiguracionEstadoCuenta\" />
-    <Folder Include="Vista\Facturacion\ConfiguracionFacturacion\" />
-    <Folder Include="Vista\RegistroMovimiento\ConfiguracionRegistroMovimiento\" />
-    <Folder Include="Vista\StockActual\ConfiguracionStockActual\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />

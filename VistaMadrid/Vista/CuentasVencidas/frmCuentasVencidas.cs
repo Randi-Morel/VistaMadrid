@@ -1,5 +1,5 @@
-﻿using iTextSharp.text.pdf;
-using iTextSharp.text;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,15 +10,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VistaMadrid.MP;
 
 namespace VistaMadrid.Vista.CuentasVencidas
 {
-    public partial class frmCuentasVencidas : Form
+    public partial class frmCuentasVencidas : Form, ICuentasVencidas
     {
+        public PresentadorCuentasVencidas Presentador { get; set; }
+        private ConfiguracionControlesCuentasVencidas _ConfiguracionControlesCuentasVencidas;
+
         public frmCuentasVencidas()
         {
             InitializeComponent();
+            Presentador = new PresentadorCuentasVencidas(this);
+            _ConfiguracionControlesCuentasVencidas = new ConfiguracionControlesCuentasVencidas(this, Presentador);
+            _ConfiguracionControlesCuentasVencidas.Configuracion();
+
             btnGenerarReporte.Click += btnGenerarReporte_Click;
+        }
+
+        public object GRD_DataSourceCuentasVencidas
+        {
+            set => GRD.DataSource = value;
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)

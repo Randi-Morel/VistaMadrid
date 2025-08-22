@@ -13,7 +13,6 @@ namespace VistaMadrid.MP.EF
         public Orden()
         {
             OrdenDetalle = new HashSet<OrdenDetalle>();
-            Pago = new HashSet<Pago>();
         }
 
         [Key]
@@ -51,8 +50,5 @@ namespace VistaMadrid.MP.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrdenDetalle> OrdenDetalle { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pago> Pago { get; set; }
     }
 }

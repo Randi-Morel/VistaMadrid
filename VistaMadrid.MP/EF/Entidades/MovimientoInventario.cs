@@ -1,4 +1,4 @@
-namespace VistaMadrid.MP.EF
+namespace VistaMadrid.MP.EF.Entidades
 {
     using System;
     using System.Collections.Generic;
@@ -9,42 +9,30 @@ namespace VistaMadrid.MP.EF
     [Table("MovimientoInventario")]
     public partial class MovimientoInventario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public MovimientoInventario()
+        {
+            MovimientoProducto = new HashSet<MovimientoProducto>();
+        }
+
         [Key]
-        [Column(Order = 0)]
         public int ID_MovimientoInventario { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ID_Producto { get; set; }
-
-        [Key]
-        [Column(Order = 2)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_MovimientoTipo { get; set; }
 
         public decimal? Cantidad { get; set; }
 
-        [Key]
-        [Column(Order = 3, TypeName = "smalldatetime")]
+        [Column(TypeName = "smalldatetime")]
         public DateTime Fecha { get; set; }
 
-        [Key]
-        [Column(Order = 4)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ID_Proveedor { get; set; }
+        public int? ID_Proveedor { get; set; }
 
         [StringLength(255)]
         public string Observaciones { get; set; }
 
-        [Key]
-        [Column(Order = 5)]
         public bool Activo { get; set; }
 
-        public virtual MovimientoTipo MovimientoTipo { get; set; }
-
-        public virtual Producto Producto { get; set; }
-
-        public virtual Proveedor Proveedor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MovimientoProducto> MovimientoProducto { get; set; }
     }
 }

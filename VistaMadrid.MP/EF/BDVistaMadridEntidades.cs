@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using VistaMadrid.MP.EF.Entidades;
 using VistaMadrid.MP.EF.Vistas;
 
 namespace VistaMadrid.MP.EF
@@ -24,9 +25,12 @@ namespace VistaMadrid.MP.EF
         public virtual DbSet<Condicion> Condicion { get; set; }
         public virtual DbSet<Mesa> Mesa { get; set; }
         public virtual DbSet<MetodoPago> MetodoPago { get; set; }
+        public virtual DbSet<MovimientoInventario> MovimientoInventario { get; set; }
+        public virtual DbSet<MovimientoProducto> MovimientoProducto { get; set; }
         public virtual DbSet<MovimientoTipo> MovimientoTipo { get; set; }
         public virtual DbSet<Orden> Orden { get; set; }
         public virtual DbSet<OrdenDetalle> OrdenDetalle { get; set; }
+        public virtual DbSet<OrdenPago> OrdenPago { get; set; }
         public virtual DbSet<Pago> Pago { get; set; }
         public virtual DbSet<Permiso> Permiso { get; set; }
         public virtual DbSet<PermisoUsuario> PermisoUsuario { get; set; }
@@ -38,12 +42,12 @@ namespace VistaMadrid.MP.EF
         public virtual DbSet<Sala> Sala { get; set; }
         public virtual DbSet<UnidadMedida> UnidadMedida { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<MovimientoInventario> MovimientoInventario { get; set; }
         #endregion
 
         #region "Vistas"
         public virtual DbSet<C_Cliente> C_Cliente { get; set; }
         public virtual DbSet<C_Mesa> C_Mesa { get; set; }
+        public virtual DbSet<C_Orden> C_Orden { get; set; }
         public virtual DbSet<C_Producto> C_Producto { get; set; }
         public virtual DbSet<C_Usuario> C_Usuario { get; set; }
         #endregion
@@ -51,6 +55,56 @@ namespace VistaMadrid.MP.EF
         #region "ModelBuilder"
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Pago>()
+                .Property(e => e.MontoTotal)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<Pago>()
+                .Property(e => e.Nota)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Pago>()
+                .HasMany(e => e.OrdenPago)
+                .WithRequired(e => e.Pago)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<MovimientoInventario>()
+                .Property(e => e.Cantidad)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<MovimientoInventario>()
+                .Property(e => e.Observaciones)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<MovimientoInventario>()
+                .HasMany(e => e.MovimientoProducto)
+                .WithRequired(e => e.MovimientoInventario)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.Total)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.SaldoPendiente)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.Nombre)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.Usuario)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.Mesa)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Orden>()
+                .Property(e => e.Condicion)
+                .IsUnicode(false);
+
             modelBuilder.Entity<C_Producto>()
                 .Property(e => e.Nombre)
                 .IsUnicode(false);
@@ -197,19 +251,9 @@ namespace VistaMadrid.MP.EF
                 .Property(e => e.Descripcion)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<MetodoPago>()
-                .HasMany(e => e.Pago)
-                .WithRequired(e => e.MetodoPago)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<MovimientoTipo>()
                 .Property(e => e.Descripcion)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<MovimientoTipo>()
-                .HasMany(e => e.MovimientoInventario)
-                .WithRequired(e => e.MovimientoTipo)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Orden>()
                 .Property(e => e.Total)
@@ -221,11 +265,6 @@ namespace VistaMadrid.MP.EF
 
             modelBuilder.Entity<Orden>()
                 .HasMany(e => e.OrdenDetalle)
-                .WithRequired(e => e.Orden)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Orden>()
-                .HasMany(e => e.Pago)
                 .WithRequired(e => e.Orden)
                 .WillCascadeOnDelete(false);
 
@@ -284,11 +323,6 @@ namespace VistaMadrid.MP.EF
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Producto>()
-                .HasMany(e => e.MovimientoInventario)
-                .WithRequired(e => e.Producto)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Producto>()
                 .HasMany(e => e.ProductoArchivo)
                 .WithRequired(e => e.Producto)
                 .WillCascadeOnDelete(false);
@@ -317,11 +351,6 @@ namespace VistaMadrid.MP.EF
             modelBuilder.Entity<Proveedor>()
                 .Property(e => e.Direccion)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<Proveedor>()
-                .HasMany(e => e.MovimientoInventario)
-                .WithRequired(e => e.Proveedor)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Rol>()
                 .Property(e => e.Descripcion)
