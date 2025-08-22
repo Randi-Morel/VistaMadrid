@@ -24,7 +24,18 @@ namespace VistaMadrid.Vista.Mantenimientos.Mesa
             _ConfiguracionControlesMesa.Configuracion();
         }
 
-        public int ID_Mesa { get; set; }
+        public int ID_Mesa
+        {
+            get
+            {
+                var s = TID_Mesa?.Text?.Trim();
+                return int.TryParse(s, out var n) ? n : 0;
+            }
+            set
+            {
+                TID_Mesa.Text = value.ToString();
+            }
+        }
 
         public int ID_Sala { get => cbSala.SelectedValue == null ? 0 : Convert.ToInt32(cbSala.SelectedValue); set => cbSala.SelectedValue = value; }
 

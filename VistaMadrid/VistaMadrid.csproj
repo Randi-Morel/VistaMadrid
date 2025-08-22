@@ -101,6 +101,7 @@
     <Compile Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.Designer.cs">
       <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Empleado\ConfiguracionControlesEmpleado\ConfiguracionControlesEmpleado.cs" />
     <Compile Include="Vista\Empleado\frmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,12 +135,14 @@
     <Compile Include="Vista\Permiso\frmPermiso.Designer.cs">
       <DependentUpon>frmPermiso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Producto\ConfiguracionControlesProducto\ConfiguracionControlesProducto.cs" />
     <Compile Include="Vista\Producto\frmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Producto\frmProducto.Designer.cs">
       <DependentUpon>frmProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Proveedor\ConfiguracionControlesProveedor\ConfiguracionControlesProveedor.cs" />
     <Compile Include="Vista\Proveedor\frmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,11 +285,8 @@
   <ItemGroup>
     <Folder Include="Style\" />
     <Folder Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\" />
-    <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
     <Folder Include="Vista\Facturacion\ConfiguracionFacturacion\" />
     <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
-    <Folder Include="Vista\Producto\ConfiguracionProducto\" />
-    <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
     <Folder Include="Vista\RegistroMovimiento\ConfiguracionRegistroMovimiento\" />
   </ItemGroup>

@@ -74,6 +74,8 @@
     <Compile Include="EF\Entidades\Sala.cs" />
     <Compile Include="EF\Entidades\UnidadMedida.cs" />
     <Compile Include="EF\Entidades\Usuario.cs" />
+    <Compile Include="EF\Vistas\C_Producto.cs" />
+    <Compile Include="EF\Vistas\C_Usuario.cs" />
     <Compile Include="Modelo\BaseModelo.cs" />
     <Compile Include="Modelo\MovimientoInventario\IMovimientoInventarioRepositorio.cs" />
     <Compile Include="Modelo\MovimientoInventario\ModeloMovimientoInventario.cs" />
@@ -89,6 +91,8 @@
     <Compile Include="Modelo\Permiso\ModeloPermiso.cs" />
     <Compile Include="Modelo\PermisoUsuario\IPermisoUsuarioRepositorio.cs" />
     <Compile Include="Modelo\PermisoUsuario\ModeloPermisoUsuario.cs" />
+    <Compile Include="Modelo\Archivo\IArchivoRepositorio.cs" />
+    <Compile Include="Modelo\Archivo\ModeloArchivo.cs" />
     <Compile Include="Modelo\ProductoArchivo\IProductoArchivoRepositorio.cs" />
     <Compile Include="Modelo\ProductoArchivo\ModeloProductoArchivo.cs" />
     <Compile Include="Modelo\ProductoCategoria\IProductoCategoriaRepositorio.cs" />
@@ -117,6 +121,8 @@
     <Compile Include="Modelo\Producto\ModeloProducto.cs" />
     <Compile Include="Modelo\RepositorioBase\RepositorioBase.cs" />
     <Compile Include="Modelo\RepositorioBase\IRepositorioBase.cs" />
+    <Compile Include="Presentador\PresentadorEmpleado.cs" />
+    <Compile Include="Presentador\PresentadorProveedor.cs" />
     <Compile Include="Presentador\PresentadorCliente.cs" />
     <Compile Include="Presentador\PresentadorCondicionPago.cs" />
     <Compile Include="Presentador\PresentadorRol.cs" />
@@ -130,6 +136,8 @@
     <Compile Include="Presentador\PresentadorLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\AccionesMantenimiento\Interfaces\IAccionesMantenimiento.cs" />
+    <Compile Include="Vista\Empleado\Interfaces\IEmpleado.cs" />
+    <Compile Include="Vista\Proveedor\Interfaces\IProveedor.cs" />
     <Compile Include="Vista\Cliente\Interfaces\ICliente.cs" />
     <Compile Include="Vista\CondicionPago\Interfaces\ICondicionPago.cs" />
     <Compile Include="Vista\Rol\Interfaces\IRol.cs" />

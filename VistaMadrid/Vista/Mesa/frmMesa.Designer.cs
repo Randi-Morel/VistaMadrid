@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnInferior = new System.Windows.Forms.Panel();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -38,12 +38,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtConsultaSala = new System.Windows.Forms.TextBox();
-            this.txtConsultaDescripcion = new System.Windows.Forms.TextBox();
-            this.npConsultaAsientos = new System.Windows.Forms.NumericUpDown();
+            this.TConsultaSala = new System.Windows.Forms.TextBox();
+            this.TConsultaDescripcion = new System.Windows.Forms.TextBox();
+            this.NUMConsultaAsientos = new System.Windows.Forms.NumericUpDown();
             this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.pnDescripcion = new System.Windows.Forms.Panel();
+            this.TID_Mesa = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtDescripcion = new ReaLTaiizor.Controls.CyberRichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pnSala = new System.Windows.Forms.Panel();
@@ -57,12 +59,10 @@
             this.nudDiasCredito = new System.Windows.Forms.NumericUpDown();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblMesa = new System.Windows.Forms.Label();
-            this.TID_Condicion = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.pnInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.npConsultaAsientos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMConsultaAsientos)).BeginInit();
             this.tblCentral.SuspendLayout();
             this.pnDescripcion.SuspendLayout();
             this.pnSala.SuspendLayout();
@@ -91,24 +91,24 @@
             this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GRD.ColumnHeadersHeight = 33;
             this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRD.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
             this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GRD.EnableHeadersVisualStyles = false;
             this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -117,14 +117,14 @@
             this.GRD.Margin = new System.Windows.Forms.Padding(4);
             this.GRD.Name = "GRD";
             this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GRD.RowHeadersWidth = 45;
             this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRD.RowTemplate.Height = 35;
@@ -144,9 +144,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsultaSala, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsultaDescripcion, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.npConsultaAsientos, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.TConsultaSala, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.TConsultaDescripcion, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.NUMConsultaAsientos, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnBuscar, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -165,7 +165,7 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label10.Location = new System.Drawing.Point(735, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 23);
+            this.label10.Size = new System.Drawing.Size(66, 20);
             this.label10.TabIndex = 57;
             this.label10.Text = "Asientos";
             // 
@@ -177,7 +177,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(415, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 23);
+            this.label3.Size = new System.Drawing.Size(37, 20);
             this.label3.TabIndex = 56;
             this.label3.Text = "Sala";
             // 
@@ -189,7 +189,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(95, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 23);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 55;
             this.label4.Text = "Descripción";
             // 
@@ -202,51 +202,51 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 29);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 52;
             this.label9.Text = "Buscar por:";
             // 
-            // txtConsultaSala
+            // TConsultaSala
             // 
-            this.txtConsultaSala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TConsultaSala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsultaSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultaSala.Location = new System.Drawing.Point(415, 32);
-            this.txtConsultaSala.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsultaSala.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsultaSala.Name = "txtConsultaSala";
-            this.txtConsultaSala.Size = new System.Drawing.Size(255, 27);
-            this.txtConsultaSala.TabIndex = 53;
+            this.TConsultaSala.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TConsultaSala.Location = new System.Drawing.Point(415, 32);
+            this.TConsultaSala.MaximumSize = new System.Drawing.Size(255, 27);
+            this.TConsultaSala.MinimumSize = new System.Drawing.Size(185, 27);
+            this.TConsultaSala.Name = "TConsultaSala";
+            this.TConsultaSala.Size = new System.Drawing.Size(255, 27);
+            this.TConsultaSala.TabIndex = 53;
             // 
-            // txtConsultaDescripcion
+            // TConsultaDescripcion
             // 
-            this.txtConsultaDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TConsultaDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsultaDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultaDescripcion.Location = new System.Drawing.Point(95, 32);
-            this.txtConsultaDescripcion.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsultaDescripcion.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsultaDescripcion.Name = "txtConsultaDescripcion";
-            this.txtConsultaDescripcion.Size = new System.Drawing.Size(255, 27);
-            this.txtConsultaDescripcion.TabIndex = 34;
+            this.TConsultaDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TConsultaDescripcion.Location = new System.Drawing.Point(95, 32);
+            this.TConsultaDescripcion.MaximumSize = new System.Drawing.Size(255, 27);
+            this.TConsultaDescripcion.MinimumSize = new System.Drawing.Size(185, 27);
+            this.TConsultaDescripcion.Name = "TConsultaDescripcion";
+            this.TConsultaDescripcion.Size = new System.Drawing.Size(255, 27);
+            this.TConsultaDescripcion.TabIndex = 34;
             // 
-            // npConsultaAsientos
+            // NUMConsultaAsientos
             // 
-            this.npConsultaAsientos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NUMConsultaAsientos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.npConsultaAsientos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.npConsultaAsientos.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.npConsultaAsientos.Location = new System.Drawing.Point(735, 32);
-            this.npConsultaAsientos.Maximum = new decimal(new int[] {
+            this.NUMConsultaAsientos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NUMConsultaAsientos.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMConsultaAsientos.Location = new System.Drawing.Point(735, 32);
+            this.NUMConsultaAsientos.Maximum = new decimal(new int[] {
             16,
             0,
             0,
             0});
-            this.npConsultaAsientos.MaximumSize = new System.Drawing.Size(120, 0);
-            this.npConsultaAsientos.MinimumSize = new System.Drawing.Size(110, 0);
-            this.npConsultaAsientos.Name = "npConsultaAsientos";
-            this.npConsultaAsientos.Size = new System.Drawing.Size(120, 27);
-            this.npConsultaAsientos.TabIndex = 58;
+            this.NUMConsultaAsientos.MaximumSize = new System.Drawing.Size(120, 0);
+            this.NUMConsultaAsientos.MinimumSize = new System.Drawing.Size(110, 0);
+            this.NUMConsultaAsientos.Name = "NUMConsultaAsientos";
+            this.NUMConsultaAsientos.Size = new System.Drawing.Size(120, 23);
+            this.NUMConsultaAsientos.TabIndex = 58;
             // 
             // btnBuscar
             // 
@@ -298,7 +298,7 @@
             // pnDescripcion
             // 
             this.pnDescripcion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnDescripcion.Controls.Add(this.TID_Condicion);
+            this.pnDescripcion.Controls.Add(this.TID_Mesa);
             this.pnDescripcion.Controls.Add(this.label11);
             this.pnDescripcion.Controls.Add(this.txtDescripcion);
             this.pnDescripcion.Controls.Add(this.label7);
@@ -307,6 +307,29 @@
             this.pnDescripcion.Name = "pnDescripcion";
             this.pnDescripcion.Size = new System.Drawing.Size(471, 199);
             this.pnDescripcion.TabIndex = 2;
+            // 
+            // TID_Mesa
+            // 
+            this.TID_Mesa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TID_Mesa.Enabled = false;
+            this.TID_Mesa.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TID_Mesa.Location = new System.Drawing.Point(9, 59);
+            this.TID_Mesa.Name = "TID_Mesa";
+            this.TID_Mesa.ReadOnly = true;
+            this.TID_Mesa.Size = new System.Drawing.Size(106, 23);
+            this.TID_Mesa.TabIndex = 59;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.label11.Location = new System.Drawing.Point(9, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 20);
+            this.label11.TabIndex = 58;
+            this.label11.Text = "Id";
             // 
             // txtDescripcion
             // 
@@ -349,7 +372,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label7.Location = new System.Drawing.Point(179, 33);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 23);
+            this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "Descripción";
             // 
@@ -372,7 +395,7 @@
             this.cbSala.Location = new System.Drawing.Point(13, 61);
             this.cbSala.MaximumSize = new System.Drawing.Size(255, 0);
             this.cbSala.Name = "cbSala";
-            this.cbSala.Size = new System.Drawing.Size(194, 28);
+            this.cbSala.Size = new System.Drawing.Size(194, 25);
             this.cbSala.TabIndex = 58;
             // 
             // label1
@@ -383,7 +406,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(13, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 23);
+            this.label1.Size = new System.Drawing.Size(37, 20);
             this.label1.TabIndex = 52;
             this.label1.Text = "Sala";
             // 
@@ -408,7 +431,7 @@
             this.CHKActivo.MaximumSize = new System.Drawing.Size(0, 40);
             this.CHKActivo.MinimumSize = new System.Drawing.Size(70, 40);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(82, 40);
+            this.CHKActivo.Size = new System.Drawing.Size(70, 40);
             this.CHKActivo.TabIndex = 50;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = false;
@@ -421,7 +444,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(13, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.Size = new System.Drawing.Size(54, 20);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -443,7 +466,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(13, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 23);
+            this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 56;
             this.label2.Text = "Asientos";
             // 
@@ -467,7 +490,7 @@
             0});
             this.nudDiasCredito.MinimumSize = new System.Drawing.Size(110, 0);
             this.nudDiasCredito.Name = "nudDiasCredito";
-            this.nudDiasCredito.Size = new System.Drawing.Size(110, 27);
+            this.nudDiasCredito.Size = new System.Drawing.Size(110, 23);
             this.nudDiasCredito.TabIndex = 55;
             this.nudDiasCredito.Value = new decimal(new int[] {
             2,
@@ -494,32 +517,9 @@
             this.lblMesa.Location = new System.Drawing.Point(5, 10);
             this.lblMesa.Margin = new System.Windows.Forms.Padding(5);
             this.lblMesa.Name = "lblMesa";
-            this.lblMesa.Size = new System.Drawing.Size(382, 40);
+            this.lblMesa.Size = new System.Drawing.Size(312, 31);
             this.lblMesa.TabIndex = 17;
             this.lblMesa.Text = "Mantenimiento de Mesa";
-            // 
-            // TID_Condicion
-            // 
-            this.TID_Condicion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TID_Condicion.Enabled = false;
-            this.TID_Condicion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TID_Condicion.Location = new System.Drawing.Point(9, 59);
-            this.TID_Condicion.Name = "TID_Condicion";
-            this.TID_Condicion.ReadOnly = true;
-            this.TID_Condicion.Size = new System.Drawing.Size(106, 27);
-            this.TID_Condicion.TabIndex = 59;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label11.Location = new System.Drawing.Point(9, 33);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 23);
-            this.label11.TabIndex = 58;
-            this.label11.Text = "Id";
             // 
             // frmMesa
             // 
@@ -536,7 +536,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.npConsultaAsientos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMConsultaAsientos)).EndInit();
             this.tblCentral.ResumeLayout(false);
             this.pnDescripcion.ResumeLayout(false);
             this.pnDescripcion.PerformLayout();
@@ -576,12 +576,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtConsultaSala;
-        private System.Windows.Forms.TextBox txtConsultaDescripcion;
-        private System.Windows.Forms.NumericUpDown npConsultaAsientos;
+        private System.Windows.Forms.TextBox TConsultaSala;
+        private System.Windows.Forms.TextBox TConsultaDescripcion;
+        private System.Windows.Forms.NumericUpDown NUMConsultaAsientos;
         private System.Windows.Forms.CheckBox CHKActivo;
         private ReaLTaiizor.Controls.ParrotButton btnBuscar;
-        internal System.Windows.Forms.TextBox TID_Condicion;
+        internal System.Windows.Forms.TextBox TID_Mesa;
         private System.Windows.Forms.Label label11;
     }
 }

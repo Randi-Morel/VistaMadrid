@@ -44,11 +44,63 @@ namespace VistaMadrid.MP.EF
         #region "Vistas"
         public virtual DbSet<C_Cliente> C_Cliente { get; set; }
         public virtual DbSet<C_Mesa> C_Mesa { get; set; }
+        public virtual DbSet<C_Producto> C_Producto { get; set; }
+        public virtual DbSet<C_Usuario> C_Usuario { get; set; }
         #endregion
 
         #region "ModelBuilder"
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.Nombre)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.Descripcion)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.StockActual)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.StockMinimo)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.PrecioCosto)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.PrecioVenta)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.Categoria)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Producto>()
+                .Property(e => e.UnidadMedida)
+                .IsUnicode(false);
+            modelBuilder.Entity<C_Usuario>()
+               .Property(e => e.Usuario)
+               .IsUnicode(false);
+
+            modelBuilder.Entity<C_Usuario>()
+                .Property(e => e.Contrasena)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Usuario>()
+                .Property(e => e.Nombre)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Usuario>()
+                .Property(e => e.Apellidos)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<C_Usuario>()
+                .Property(e => e.Rol)
+                .IsUnicode(false);
             modelBuilder.Entity<C_Cliente>()
               .Property(e => e.Nombre)
               .IsUnicode(false);

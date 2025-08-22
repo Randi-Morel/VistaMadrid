@@ -177,7 +177,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label11.Location = new System.Drawing.Point(3, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.Size = new System.Drawing.Size(83, 20);
             this.label11.TabIndex = 58;
             this.label11.Text = "Buscar por:";
             // 
@@ -189,7 +189,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(142, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 23);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 61;
             this.label4.Text = "Descripción";
             // 
@@ -245,7 +245,7 @@
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(87, 57);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
+            this.CHKActivo.Size = new System.Drawing.Size(69, 22);
             this.CHKActivo.TabIndex = 51;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = true;
@@ -258,7 +258,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(83, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.Size = new System.Drawing.Size(54, 20);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -280,7 +280,7 @@
             this.CHKAfectaStock.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKAfectaStock.Location = new System.Drawing.Point(17, 60);
             this.CHKAfectaStock.Name = "CHKAfectaStock";
-            this.CHKAfectaStock.Size = new System.Drawing.Size(46, 26);
+            this.CHKAfectaStock.Size = new System.Drawing.Size(39, 22);
             this.CHKAfectaStock.TabIndex = 52;
             this.CHKAfectaStock.Text = "Si";
             this.CHKAfectaStock.UseVisualStyleBackColor = true;
@@ -293,7 +293,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(13, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 52;
             this.label1.Text = "Afecta a Stock?";
             // 
@@ -317,7 +317,8 @@
             this.TID_MovimientoTipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TID_MovimientoTipo.Location = new System.Drawing.Point(7, 60);
             this.TID_MovimientoTipo.Name = "TID_MovimientoTipo";
-            this.TID_MovimientoTipo.Size = new System.Drawing.Size(106, 27);
+            this.TID_MovimientoTipo.ReadOnly = true;
+            this.TID_MovimientoTipo.Size = new System.Drawing.Size(106, 23);
             this.TID_MovimientoTipo.TabIndex = 59;
             // 
             // label2
@@ -328,7 +329,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(7, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 23);
+            this.label2.Size = new System.Drawing.Size(22, 20);
             this.label2.TabIndex = 58;
             this.label2.Text = "Id";
             // 
@@ -340,7 +341,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label7.Location = new System.Drawing.Point(187, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 23);
+            this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "Descripción*";
             // 
@@ -396,7 +397,7 @@
             this.lblTipoMovimiento.Location = new System.Drawing.Point(5, 10);
             this.lblTipoMovimiento.Margin = new System.Windows.Forms.Padding(5);
             this.lblTipoMovimiento.Name = "lblTipoMovimiento";
-            this.lblTipoMovimiento.Size = new System.Drawing.Size(608, 40);
+            this.lblTipoMovimiento.Size = new System.Drawing.Size(494, 31);
             this.lblTipoMovimiento.TabIndex = 17;
             this.lblTipoMovimiento.Text = "Mantenimiento de Tipo de Movimiento";
             // 

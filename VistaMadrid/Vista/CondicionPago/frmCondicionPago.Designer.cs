@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnInferior = new System.Windows.Forms.Panel();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -89,24 +89,24 @@
             this.GRD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GRD.ColumnHeadersHeight = 33;
             this.GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRD.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRD.DefaultCellStyle = dataGridViewCellStyle2;
             this.GRD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GRD.EnableHeadersVisualStyles = false;
             this.GRD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -115,14 +115,14 @@
             this.GRD.Margin = new System.Windows.Forms.Padding(4);
             this.GRD.Name = "GRD";
             this.GRD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRD.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GRD.RowHeadersWidth = 45;
             this.GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRD.RowTemplate.Height = 35;
@@ -163,7 +163,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(420, 5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 23);
+            this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 59;
             this.label3.Text = "Días de crédito";
             // 
@@ -175,7 +175,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(140, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 23);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 58;
             this.label4.Text = "Descripción";
             // 
@@ -200,7 +200,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label9.Location = new System.Drawing.Point(3, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 57;
             this.label9.Text = "Buscar por:";
             // 
@@ -223,7 +223,7 @@
             0,
             0});
             this.NUMConsultaDias.Name = "NUMConsultaDias";
-            this.NUMConsultaDias.Size = new System.Drawing.Size(120, 27);
+            this.NUMConsultaDias.Size = new System.Drawing.Size(120, 23);
             this.NUMConsultaDias.TabIndex = 57;
             this.NUMConsultaDias.Value = new decimal(new int[] {
             1,
@@ -263,7 +263,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(9, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 23);
+            this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 56;
             this.label2.Text = "Días de crédito";
             // 
@@ -275,7 +275,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(13, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.Size = new System.Drawing.Size(54, 20);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -298,7 +298,7 @@
             0,
             0});
             this.NUMDiasCredito.Name = "NUMDiasCredito";
-            this.NUMDiasCredito.Size = new System.Drawing.Size(120, 27);
+            this.NUMDiasCredito.Size = new System.Drawing.Size(120, 23);
             this.NUMDiasCredito.TabIndex = 55;
             this.NUMDiasCredito.Value = new decimal(new int[] {
             1,
@@ -346,7 +346,7 @@
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(17, 57);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
+            this.CHKActivo.Size = new System.Drawing.Size(69, 22);
             this.CHKActivo.TabIndex = 51;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = true;
@@ -382,7 +382,7 @@
             this.TID_Condicion.Location = new System.Drawing.Point(9, 59);
             this.TID_Condicion.Name = "TID_Condicion";
             this.TID_Condicion.ReadOnly = true;
-            this.TID_Condicion.Size = new System.Drawing.Size(106, 27);
+            this.TID_Condicion.Size = new System.Drawing.Size(106, 23);
             this.TID_Condicion.TabIndex = 57;
             // 
             // label11
@@ -393,7 +393,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label11.Location = new System.Drawing.Point(9, 33);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 23);
+            this.label11.Size = new System.Drawing.Size(22, 20);
             this.label11.TabIndex = 56;
             this.label11.Text = "Id";
             // 
@@ -405,7 +405,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label7.Location = new System.Drawing.Point(179, 33);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 23);
+            this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "Descripción*";
             // 
@@ -459,7 +459,7 @@
             this.CHKAutoPago.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKAutoPago.Location = new System.Drawing.Point(17, 60);
             this.CHKAutoPago.Name = "CHKAutoPago";
-            this.CHKAutoPago.Size = new System.Drawing.Size(46, 26);
+            this.CHKAutoPago.Size = new System.Drawing.Size(39, 22);
             this.CHKAutoPago.TabIndex = 53;
             this.CHKAutoPago.Text = "Si";
             this.CHKAutoPago.UseVisualStyleBackColor = true;
@@ -472,7 +472,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(13, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 52;
             this.label1.Text = "Auto Pago";
             // 
@@ -495,7 +495,7 @@
             this.lblCondicion.Location = new System.Drawing.Point(5, 10);
             this.lblCondicion.Margin = new System.Windows.Forms.Padding(5);
             this.lblCondicion.Name = "lblCondicion";
-            this.lblCondicion.Size = new System.Drawing.Size(586, 40);
+            this.lblCondicion.Size = new System.Drawing.Size(475, 31);
             this.lblCondicion.TabIndex = 17;
             this.lblCondicion.Text = "Mantenimiento de Condición de Pago";
             // 

@@ -44,7 +44,7 @@ namespace VistaMadrid.MP
                 Activo = _view.Activo
             };
             var ok = _modeloCliente.Guardar(registro);
-            _view.ID_Condicion = registro.ID_Condicion;
+            _view.ID_Cliente = registro.ID_Cliente;
             return ok;
         }
 

@@ -12,7 +12,7 @@ using VistaMadrid.Vista.Facturacion;
 using VistaMadrid.Vista.Mantenimientos.Categoria;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
 using VistaMadrid.Vista.Mantenimientos.CondicionPago;
-using VistaMadrid.Vista.Mantenimientos.Empleados;
+using VistaMadrid.Vista.Mantenimientos.Empleado;
 using VistaMadrid.Vista.Mantenimientos.Mesa;
 using VistaMadrid.Vista.Mantenimientos.MetodoPago;
 using VistaMadrid.Vista.Mantenimientos.Permiso;
