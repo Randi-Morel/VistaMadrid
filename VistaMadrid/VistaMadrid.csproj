@@ -95,10 +95,10 @@
     <Compile Include="Vista\CondicionPago\frmCondicionPago.Designer.cs">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.cs">
+    <Compile Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.Designer.cs">
+    <Compile Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.Designer.cs">
       <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Empleado\frmEmpleado.cs">
@@ -151,6 +151,12 @@
     </Compile>
     <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.Designer.cs">
       <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\RegistroPagos\frmRegistroPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroPagos\frmRegistroPagos.Designer.cs">
+      <DependentUpon>frmRegistroPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Rol\ConfiguracionControlesRol\ConfiguracionControlesRol.cs" />
     <Compile Include="Vista\Rol\frmRol.cs">
@@ -206,7 +212,7 @@
     <EmbeddedResource Include="Vista\CondicionPago\frmCondicionPago.resx">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.resx">
+    <EmbeddedResource Include="Vista\CuentasPorCobrar\frmCuentasPorCobrar.resx">
       <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Empleado\frmEmpleado.resx">
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RegistroMovimiento\frmRegistroMovimiento.resx">
       <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroPagos\frmRegistroPagos.resx">
+      <DependentUpon>frmRegistroPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Rol\frmRol.resx">
       <DependentUpon>frmRol.cs</DependentUpon>
@@ -275,6 +284,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />
+    <Folder Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
     <Folder Include="Vista\Facturacion\ConfiguracionFacturacion\" />
     <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
