@@ -121,6 +121,7 @@
     <Compile Include="Vista\Mesa\frmMesa.Designer.cs">
       <DependentUpon>frmMesa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\MetodoPago\ConfiguracionControlesMetodoPago\ConfiguracionControlesMetodoPago.cs" />
     <Compile Include="Vista\MetodoPago\frmMetodoPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,7 +277,6 @@
     <Folder Include="Style\" />
     <Folder Include="Vista\Empleado\ConfiguracionEmpleado\" />
     <Folder Include="Vista\Facturacion\ConfiguracionFacturacion\" />
-    <Folder Include="Vista\MetodoPago\ConfiguracionMetodoPago\" />
     <Folder Include="Vista\Permiso\ConfiguracionPermiso\" />
     <Folder Include="Vista\Producto\ConfiguracionProducto\" />
     <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />

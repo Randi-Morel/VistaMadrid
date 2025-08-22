@@ -1,4 +1,4 @@
-﻿namespace VistaMadrid.Vista.Mantenimientos.Metodo_de_Pago
+﻿namespace VistaMadrid.Vista.Mantenimientos.MetodoPago
 {
     partial class frmMetodoPago
     {
@@ -37,7 +37,7 @@
             this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtConsultaDescripcion = new System.Windows.Forms.TextBox();
+            this.TConsultaDescripcion = new System.Windows.Forms.TextBox();
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.pnEstado = new System.Windows.Forms.Panel();
             this.CHKActivo = new System.Windows.Forms.CheckBox();
@@ -132,7 +132,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnBuscar, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.label11, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsultaDescripcion, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.TConsultaDescripcion, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 209);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -192,17 +192,17 @@
             this.label4.TabIndex = 61;
             this.label4.Text = "Descripción";
             // 
-            // txtConsultaDescripcion
+            // TConsultaDescripcion
             // 
-            this.txtConsultaDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TConsultaDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsultaDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultaDescripcion.Location = new System.Drawing.Point(142, 36);
-            this.txtConsultaDescripcion.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsultaDescripcion.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsultaDescripcion.Name = "txtConsultaDescripcion";
-            this.txtConsultaDescripcion.Size = new System.Drawing.Size(254, 27);
-            this.txtConsultaDescripcion.TabIndex = 59;
+            this.TConsultaDescripcion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TConsultaDescripcion.Location = new System.Drawing.Point(142, 36);
+            this.TConsultaDescripcion.MaximumSize = new System.Drawing.Size(255, 27);
+            this.TConsultaDescripcion.MinimumSize = new System.Drawing.Size(185, 27);
+            this.TConsultaDescripcion.Name = "TConsultaDescripcion";
+            this.TConsultaDescripcion.Size = new System.Drawing.Size(254, 27);
+            this.TConsultaDescripcion.TabIndex = 59;
             // 
             // tblCentral
             // 
@@ -400,21 +400,21 @@
         private System.Windows.Forms.Panel pnInferior;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblMesa;
-        private ReaLTaiizor.Controls.PoisonDataGridView GRD;
+        internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private ReaLTaiizor.Controls.ParrotButton btnBuscar;
+        internal ReaLTaiizor.Controls.ParrotButton btnBuscar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtConsultaDescripcion;
+        internal System.Windows.Forms.TextBox TConsultaDescripcion;
         private System.Windows.Forms.TableLayoutPanel tblCentral;
         private System.Windows.Forms.Panel pnEstado;
-        private System.Windows.Forms.CheckBox CHKActivo;
+        internal System.Windows.Forms.CheckBox CHKActivo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox TID_MetodoPago;
+        internal System.Windows.Forms.TextBox TID_MetodoPago;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnDescripcion;
-        private ReaLTaiizor.Controls.CyberRichTextBox TDescripcion;
+        internal ReaLTaiizor.Controls.CyberRichTextBox TDescripcion;
         private System.Windows.Forms.Label label7;
     }
 }

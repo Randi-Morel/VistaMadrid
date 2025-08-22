@@ -14,7 +14,7 @@ using VistaMadrid.Vista.Mantenimientos.Cliente;
 using VistaMadrid.Vista.Mantenimientos.CondicionPago;
 using VistaMadrid.Vista.Mantenimientos.Empleados;
 using VistaMadrid.Vista.Mantenimientos.Mesa;
-using VistaMadrid.Vista.Mantenimientos.Metodo_de_Pago;
+using VistaMadrid.Vista.Mantenimientos.MetodoPago;
 using VistaMadrid.Vista.Mantenimientos.Permiso;
 using VistaMadrid.Vista.Mantenimientos.Producto;
 using VistaMadrid.Vista.Mantenimientos.Proveedor;
