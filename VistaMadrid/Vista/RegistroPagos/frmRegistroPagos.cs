@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VistaMadrid.Vista.Facturacion
+namespace VistaMadrid.Vista.RegistroPagos
 {
-    public partial class frmFacturacion : Form
+    public partial class frmRegistroPagos : Form
     {
-        public frmFacturacion()
+        public frmRegistroPagos()
         {
             InitializeComponent();
         }
-
     }
 }
