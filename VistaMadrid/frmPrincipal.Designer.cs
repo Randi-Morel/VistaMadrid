@@ -48,7 +48,6 @@
             this.btnEntradasYSalidas = new System.Windows.Forms.Button();
             this.btnStockActual = new System.Windows.Forms.Button();
             this.pnMantenimientos = new System.Windows.Forms.Panel();
-            this.btnPermisos = new System.Windows.Forms.Button();
             this.btnRol = new System.Windows.Forms.Button();
             this.btnSala = new System.Windows.Forms.Button();
             this.btnMetodosPago = new System.Windows.Forms.Button();
@@ -153,6 +152,7 @@
             this.btnCerrarSesion.TabIndex = 11;
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // pnLatBotones
             // 
@@ -257,7 +257,7 @@
             this.pnReportes.Controls.Add(this.btnEntradasYSalidas);
             this.pnReportes.Controls.Add(this.btnStockActual);
             this.pnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReportes.Location = new System.Drawing.Point(0, 640);
+            this.pnReportes.Location = new System.Drawing.Point(0, 600);
             this.pnReportes.Name = "pnReportes";
             this.pnReportes.Size = new System.Drawing.Size(123, 240);
             this.pnReportes.TabIndex = 3;
@@ -364,7 +364,6 @@
             // 
             // pnMantenimientos
             // 
-            this.pnMantenimientos.Controls.Add(this.btnPermisos);
             this.pnMantenimientos.Controls.Add(this.btnRol);
             this.pnMantenimientos.Controls.Add(this.btnSala);
             this.pnMantenimientos.Controls.Add(this.btnMetodosPago);
@@ -380,25 +379,8 @@
             this.pnMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnMantenimientos.Location = new System.Drawing.Point(0, 120);
             this.pnMantenimientos.Name = "pnMantenimientos";
-            this.pnMantenimientos.Size = new System.Drawing.Size(123, 520);
+            this.pnMantenimientos.Size = new System.Drawing.Size(123, 480);
             this.pnMantenimientos.TabIndex = 0;
-            // 
-            // btnPermisos
-            // 
-            this.btnPermisos.AutoEllipsis = true;
-            this.btnPermisos.CausesValidation = false;
-            this.btnPermisos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPermisos.FlatAppearance.BorderSize = 0;
-            this.btnPermisos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPermisos.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPermisos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPermisos.Location = new System.Drawing.Point(0, 480);
-            this.btnPermisos.Name = "btnPermisos";
-            this.btnPermisos.Size = new System.Drawing.Size(123, 40);
-            this.btnPermisos.TabIndex = 49;
-            this.btnPermisos.Text = "Permisos";
-            this.btnPermisos.UseVisualStyleBackColor = true;
-            this.btnPermisos.Visible = false;
             // 
             // btnRol
             // 
@@ -941,7 +923,6 @@
         private System.Windows.Forms.TableLayoutPanel tblInferior;
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnSala;
-        private System.Windows.Forms.Button btnPermisos;
         private System.Windows.Forms.Button btnRol;
     }
 }

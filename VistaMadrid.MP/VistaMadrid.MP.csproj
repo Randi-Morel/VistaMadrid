@@ -119,6 +119,7 @@
     <Compile Include="Modelo\RepositorioBase\IRepositorioBase.cs" />
     <Compile Include="Presentador\PresentadorCliente.cs" />
     <Compile Include="Presentador\PresentadorCondicionPago.cs" />
+    <Compile Include="Presentador\PresentadorRol.cs" />
     <Compile Include="Presentador\PresentadorTipoMovimiento.cs" />
     <Compile Include="Presentador\PresentadorSala.cs" />
     <Compile Include="Presentador\PresentadorUnidadMedida.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Vista\AccionesMantenimiento\Interfaces\IAccionesMantenimiento.cs" />
     <Compile Include="Vista\Cliente\Interfaces\ICliente.cs" />
     <Compile Include="Vista\CondicionPago\Interfaces\ICondicionPago.cs" />
+    <Compile Include="Vista\Rol\Interfaces\IRol.cs" />
     <Compile Include="Vista\TipoMovimiento\Interfaces\ITipoMovimiento.cs" />
     <Compile Include="Vista\Sala\Interfaces\ISala.cs" />
     <Compile Include="Vista\UnidadMedida\Interfaces\IUnidadMedida.cs" />

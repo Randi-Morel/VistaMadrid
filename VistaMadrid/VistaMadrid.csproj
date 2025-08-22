@@ -95,6 +95,12 @@
     <Compile Include="Vista\CondicionPago\frmCondicionPago.Designer.cs">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.Designer.cs">
+      <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Empleado\frmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,7 @@
     <Compile Include="Vista\RegistroMovimiento\frmRegistroMovimiento.Designer.cs">
       <DependentUpon>frmRegistroMovimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Rol\ConfiguracionControlesRol\ConfiguracionControlesRol.cs" />
     <Compile Include="Vista\Rol\frmRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\CondicionPago\frmCondicionPago.resx">
       <DependentUpon>frmCondicionPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\CuentasPorCobrar\ConfiguracionCuentasPorCobrar\frmCuentasPorCobrar.resx">
+      <DependentUpon>frmCuentasPorCobrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Empleado\frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
@@ -271,7 +281,7 @@
     <Folder Include="Vista\Producto\ConfiguracionProducto\" />
     <Folder Include="Vista\Proveedor\ConfiguracionProveedor\" />
     <Folder Include="Vista\Prueba\ConfiguracionPrueba\" />
-    <Folder Include="Vista\Rol\ConfiguracionRol\" />
+    <Folder Include="Vista\RegistroMovimiento\ConfiguracionRegistroMovimiento\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />

@@ -42,10 +42,13 @@ namespace VistaMadrid
         private bool SplitterMoved = false;
 
         private readonly Dictionary<Type, TabPage> _tabsPorTipo = new Dictionary<Type, TabPage>();
+        private TabPage _menuTab;
 
         public frmPrincipal()
         {
             InitializeComponent();
+
+            _menuTab = tabControl.TabPages.Count > 0 ? tabControl.TabPages[0] : null;
 
             //Guarda la altura desplegada de los subpaneles
             AddHeight();
@@ -161,14 +164,18 @@ namespace VistaMadrid
                 TextFormatFlags.EndEllipsis
             );
 
-            // rectángulo de la X (14x14, pegado a la derecha)
-            var close = GetCloseRect(rect);
-            // dibuja la X simple
-            using (var pen = new Pen(Color.DimGray, 1.6f))
+            bool esMenu = (_menuTab != null && tab == _menuTab);
+            if (!esMenu)
             {
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                e.Graphics.DrawLine(pen, close.Left, close.Top, close.Right, close.Bottom);
-                e.Graphics.DrawLine(pen, close.Right, close.Top, close.Left, close.Bottom);
+                // rectángulo de la X (14x14, pegado a la derecha)
+                var close = GetCloseRect(rect);
+                // dibuja la X simple
+                using (var pen = new Pen(Color.DimGray, 1.6f))
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    e.Graphics.DrawLine(pen, close.Left, close.Top, close.Right, close.Bottom);
+                    e.Graphics.DrawLine(pen, close.Right, close.Top, close.Left, close.Bottom);
+                }
             }
 
             e.DrawFocusRectangle();
@@ -192,13 +199,14 @@ namespace VistaMadrid
                 bool clickX = e.Button == MouseButtons.Left && close.Contains(e.Location);
                 bool clickMM = e.Button == MouseButtons.Middle && rect.Contains(e.Location); // rueda media cierra
 
+                var page = tabControl.TabPages[i];
+                bool esMenu = (_menuTab != null && page == _menuTab);
+                if (esMenu) continue;
+
                 if (clickX || clickMM)
                 {
-                    var page = tabControl.TabPages[i];
-
-                    // Si guardas índice por tipo en un diccionario:
+                    // Si se guarda el índice por tipo en un diccionario:
                     if (page.Tag is Type t) _tabsPorTipo.Remove(t);
-
                     // 1) Quitar del TabControl
                     tabControl.TabPages.Remove(page);
                     // 2) Disponer la página (libera también sus controles/form embebido)
@@ -249,6 +257,14 @@ namespace VistaMadrid
 
 
         //Muestra los paneles que contienen categorias, ejemplo: Mantenimientos, Procesos,etc
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            var frm= new frmLogin();
+            frm.FormClosed += (s, args) => this.Close();
+            frm.Show();
+            this.Hide();
+        }
+
         private void btnMantenimientos_Click(object sender, EventArgs e)
         {
             
