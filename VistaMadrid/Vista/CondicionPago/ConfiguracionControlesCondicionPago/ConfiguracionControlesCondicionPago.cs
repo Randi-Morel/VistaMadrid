@@ -135,8 +135,10 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
+
             // Carga de datos desde el presentador (List<CondicionPago>)
-            var data = _Presentador.ObtenerTodosCondicion();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceCondicionPago = data;
 
             g.ResumeLayout();
@@ -145,9 +147,10 @@ namespace VistaMadrid
         public void CargarDatosGRD()
         {
             var g = _frmVista.GRD;
+            var desc = _frmVista.ConsultaDescripcion;
 
             // Carga de datos desde el presentador (List<CondicionPago>)
-            var data = _Presentador.ObtenerTodosCondicion();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceCondicionPago = data;
 
             g.ResumeLayout();

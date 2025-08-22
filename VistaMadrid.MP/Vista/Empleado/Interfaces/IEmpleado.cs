@@ -13,6 +13,9 @@ namespace VistaMadrid.MP
         string Apellidos { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaNombre { get; set; }
+        string ConsultaUsuario { get; set; }
+
         PresentadorEmpleado Presentador { get; set; }
     }
 }

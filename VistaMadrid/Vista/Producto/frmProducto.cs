@@ -72,6 +72,10 @@ namespace VistaMadrid.Vista.Mantenimientos.Producto
 
         public byte[] ArchivoContenido { get; set; }
 
+        public string ConsultaDescripcion { get => TConsultaNombre.Text; set => TConsultaNombre.Text = value; }
+
+        public int ConsultaID_ProductoCategoria { get => CConsultaID_ProductoCategoria.SelectedValue == null ? 0 : Convert.ToInt32(CConsultaID_ProductoCategoria.SelectedValue); set => CID_ProductoCategoria.SelectedValue = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -136,6 +140,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Producto
 
             ArchivoContenido = null;
             Archivo.Image = null;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesProducto.CargarDatosGRD();
         }
         #endregion
 

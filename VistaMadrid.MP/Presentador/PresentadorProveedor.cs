@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using VistaMadrid.MP.EF;
 using VistaMadrid.MP.EF.Vistas;
@@ -14,6 +15,20 @@ namespace VistaMadrid.MP
         {
             _view = view;
             _modeloProveedor = new ModeloProveedor();
+        }
+
+        public List<Proveedor> CargarDatosGRD(string descripcion)
+        {
+            var lista = _modeloProveedor.ObtenerTodos();
+
+            if (!string.IsNullOrWhiteSpace(descripcion))
+            {
+                var q = descripcion.Trim();
+                lista = lista.Where(s => (s.Nombre ?? "")
+                    .IndexOf(q, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
+
+            return lista;
         }
 
         public List<Proveedor> ObtenerTodosProveedor()

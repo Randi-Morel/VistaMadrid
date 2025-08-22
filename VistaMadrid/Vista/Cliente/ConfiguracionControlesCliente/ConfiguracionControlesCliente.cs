@@ -69,6 +69,15 @@ namespace VistaMadrid
 
             // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
             _frmVista.CID_Condicion.SelectedIndex = -1;
+
+            _frmVista.CConsultaID_Condicion.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            _frmVista.CConsultaID_Condicion.DisplayMember = "Descripcion";
+            _frmVista.CConsultaID_Condicion.ValueMember = "ID_Condicion";
+            _frmVista.CConsultaID_Condicion.DataSource = salas;
+
+            // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
+            _frmVista.CConsultaID_Condicion.SelectedIndex = -1;
         }
 
         public bool ComprobarParaGuardar(out string mensaje)
@@ -233,8 +242,11 @@ namespace VistaMadrid
                 Width = 70
             });
 
-            // Carga de datos desde el presentador (List<Cliente>)
-            var data = _Presentador.ObtenerTodosC_Cliente();
+            var desc = _frmVista.ConsultaDescripcion;
+            var idCondicion = _frmVista.ConsultaID_Condicion;
+
+            // Carga de datos desde el presentador (List<C_Cliente>)
+            var data = _Presentador.CargarDatosGRD(desc, idCondicion);
             _frmVista.GRD_DataSourceCliente = data;
 
             g.ResumeLayout();
@@ -243,9 +255,11 @@ namespace VistaMadrid
         public void CargarDatosGRD()
         {
             var g = _frmVista.GRD;
+            var desc = _frmVista.ConsultaDescripcion;
+            var idCondicion = _frmVista.ConsultaID_Condicion;
 
-            // Carga de datos desde el presentador (List<Cliente>)
-            var data = _Presentador.ObtenerTodosC_Cliente();
+            // Carga de datos desde el presentador (List<C_Cliente>)
+            var data = _Presentador.CargarDatosGRD(desc, idCondicion);
             _frmVista.GRD_DataSourceCliente = data;
 
             g.ResumeLayout();

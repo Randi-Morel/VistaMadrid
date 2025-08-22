@@ -9,6 +9,8 @@ namespace VistaMadrid.MP
         string Descripcion { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaDescripcion { get; set; }
+
         PresentadorSala Presentador { get; set; }
     }
 }

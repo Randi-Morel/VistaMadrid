@@ -11,6 +11,8 @@ namespace VistaMadrid.MP
         int DiasCredito { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaDescripcion { get; set; }
+
         PresentadorCondicionPago Presentador { get; set; }
     }
 }

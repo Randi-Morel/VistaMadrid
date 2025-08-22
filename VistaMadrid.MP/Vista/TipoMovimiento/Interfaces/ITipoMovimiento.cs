@@ -10,6 +10,8 @@ namespace VistaMadrid.MP
         bool AfectaStock { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaDescripcion { get; set; }
+
         PresentadorTipoMovimiento Presentador { get; set; }
     }
 }

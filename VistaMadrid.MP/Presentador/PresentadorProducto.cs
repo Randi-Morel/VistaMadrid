@@ -28,6 +28,23 @@ namespace VistaMadrid.MP
             _modeloUnidadMedida = new ModeloUnidadMedida();
         }
 
+        public List<C_Producto> CargarDatosGRD(string descripcion, int? idCategoria)
+        {
+            var lista = _vistasRepository.DbContext.C_Producto.ToList();
+
+            if (idCategoria.HasValue && idCategoria > 0)
+                lista = lista.Where(s => s.ID_ProductoCategoria == idCategoria).ToList();
+
+            if (!string.IsNullOrWhiteSpace(descripcion))
+            {
+                var q = descripcion.Trim();
+                lista = lista.Where(s => (s.Nombre ?? "")
+                    .IndexOf(q, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
+
+            return lista;
+        }
+
         public ProductoArchivo ObtenerProductoArchivo(int ID_Producto)
         {
             var ProductoArchivo = _modeloProductoArchivo.ObtenerPorID_Producto(ID_Producto);

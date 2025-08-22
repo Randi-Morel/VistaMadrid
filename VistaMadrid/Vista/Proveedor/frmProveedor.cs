@@ -52,6 +52,8 @@ namespace VistaMadrid.Vista.Mantenimientos.Proveedor
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaNombre.Text; set => TConsultaNombre.Text = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -110,6 +112,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Proveedor
             Email = null;
             Direccion = null;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesProveedor.CargarDatosGRD();
         }
         #endregion
 

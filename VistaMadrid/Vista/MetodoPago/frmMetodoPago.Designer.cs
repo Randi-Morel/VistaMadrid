@@ -167,6 +167,7 @@
             this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
             this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label11
             // 
@@ -176,7 +177,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label11.Location = new System.Drawing.Point(3, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 20);
+            this.label11.Size = new System.Drawing.Size(100, 23);
             this.label11.TabIndex = 58;
             this.label11.Text = "Buscar por:";
             // 
@@ -188,7 +189,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(142, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 20);
+            this.label4.Size = new System.Drawing.Size(107, 23);
             this.label4.TabIndex = 61;
             this.label4.Text = "Descripción";
             // 
@@ -242,7 +243,7 @@
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(17, 57);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(69, 22);
+            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
             this.CHKActivo.TabIndex = 50;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = true;
@@ -255,7 +256,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(13, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -278,7 +279,7 @@
             this.TID_MetodoPago.Location = new System.Drawing.Point(17, 57);
             this.TID_MetodoPago.Name = "TID_MetodoPago";
             this.TID_MetodoPago.ReadOnly = true;
-            this.TID_MetodoPago.Size = new System.Drawing.Size(106, 23);
+            this.TID_MetodoPago.Size = new System.Drawing.Size(106, 27);
             this.TID_MetodoPago.TabIndex = 53;
             // 
             // label3
@@ -289,7 +290,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(13, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 20);
+            this.label3.Size = new System.Drawing.Size(26, 23);
             this.label3.TabIndex = 52;
             this.label3.Text = "Id";
             // 
@@ -341,7 +342,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label7.Location = new System.Drawing.Point(13, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 20);
+            this.label7.Size = new System.Drawing.Size(115, 23);
             this.label7.TabIndex = 45;
             this.label7.Text = "Descripción*";
             // 
@@ -364,7 +365,7 @@
             this.lblMesa.Location = new System.Drawing.Point(5, 10);
             this.lblMesa.Margin = new System.Windows.Forms.Padding(5);
             this.lblMesa.Name = "lblMesa";
-            this.lblMesa.Size = new System.Drawing.Size(450, 31);
+            this.lblMesa.Size = new System.Drawing.Size(554, 40);
             this.lblMesa.TabIndex = 17;
             this.lblMesa.Text = "Mantenimiento de Método de Pago";
             // 

@@ -223,8 +223,11 @@ namespace VistaMadrid
                 Width = 70
             });
 
-            // Carga de datos desde el presentador (List<C_Usuario>)
-            var data = _Presentador.ObtenerTodosC_Usuario();
+            var nom = _frmVista.ConsultaNombre;
+            var usu = _frmVista.ConsultaUsuario;
+
+            // Carga de datos desde el presentador (List<C_Usuario>>)
+            var data = _Presentador.CargarDatosGRD(nom, usu);
             _frmVista.GRD_DataSourceUsuario = data;
 
             g.ResumeLayout();
@@ -233,9 +236,11 @@ namespace VistaMadrid
         public void CargarDatosGRD()
         {
             var g = _frmVista.GRD;
+            var nom = _frmVista.ConsultaNombre;
+            var usu = _frmVista.ConsultaUsuario;
 
-            // Carga de datos desde el presentador (List<C_Usuario>)
-            var data = _Presentador.ObtenerTodosC_Usuario();
+            // Carga de datos desde el presentador (List<C_Usuario>>)
+            var data = _Presentador.CargarDatosGRD(nom, usu);
             _frmVista.GRD_DataSourceUsuario = data;
 
             g.ResumeLayout();

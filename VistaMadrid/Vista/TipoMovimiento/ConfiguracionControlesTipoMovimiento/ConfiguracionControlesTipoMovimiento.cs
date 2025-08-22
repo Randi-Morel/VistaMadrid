@@ -117,8 +117,9 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
             // Carga de datos desde el presentador (List<TipoMovimiento>)
-            var data = _Presentador.ObtenerTodosTipoMovimiento();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceTipoMovimiento = data;
 
             g.ResumeLayout();
@@ -128,8 +129,9 @@ namespace VistaMadrid
         {
             var g = _frmVista.GRD;
 
+            var desc = _frmVista.ConsultaDescripcion;
             // Carga de datos desde el presentador (List<TipoMovimiento>)
-            var data = _Presentador.ObtenerTodosTipoMovimiento();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceTipoMovimiento = data;
 
             g.ResumeLayout();

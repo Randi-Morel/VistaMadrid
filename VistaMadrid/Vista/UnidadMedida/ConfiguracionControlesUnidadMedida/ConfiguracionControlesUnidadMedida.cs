@@ -108,8 +108,9 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
             // Carga de datos desde el presentador (List<UnidadMedida>)
-            var data = _Presentador.ObtenerTodosUnidadMedida();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceUnidadMedida = data;
 
             g.ResumeLayout();
@@ -119,8 +120,9 @@ namespace VistaMadrid
         {
             var g = _frmVista.GRD;
 
+            var desc = _frmVista.ConsultaDescripcion;
             // Carga de datos desde el presentador (List<UnidadMedida>)
-            var data = _Presentador.ObtenerTodosUnidadMedida();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceUnidadMedida = data;
 
             g.ResumeLayout();

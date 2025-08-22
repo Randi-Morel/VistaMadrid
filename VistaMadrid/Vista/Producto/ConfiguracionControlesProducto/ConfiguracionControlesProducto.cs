@@ -127,6 +127,15 @@ namespace VistaMadrid
             // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
             _frmVista.CID_ProductoCategoria.SelectedIndex = -1;
 
+            _frmVista.CConsultaID_ProductoCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            _frmVista.CConsultaID_ProductoCategoria.DisplayMember = "Descripcion";
+            _frmVista.CConsultaID_ProductoCategoria.ValueMember = "ID_ProductoCategoria";
+            _frmVista.CConsultaID_ProductoCategoria.DataSource = ProductoCategoria;
+
+            // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
+            _frmVista.CConsultaID_ProductoCategoria.SelectedIndex = -1;
+
             var UnidadMedida = _Presentador.ObtenerTodosUnidadMedida().Where(s => s.Activo == true).ToList();
             _frmVista.CID_UnidadMedida.DropDownStyle = ComboBoxStyle.DropDownList;
 
@@ -331,8 +340,11 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
+            var categoria = _frmVista.ConsultaID_ProductoCategoria;
+
             // Carga de datos desde el presentador (List<Producto>)
-            var data = _Presentador.ObtenerTodosC_Producto();
+            var data = _Presentador.CargarDatosGRD(desc, categoria);
             _frmVista.GRD_DataSourceProducto = data;
 
             g.ResumeLayout();
@@ -341,9 +353,11 @@ namespace VistaMadrid
         public void CargarDatosGRD()
         {
             var g = _frmVista.GRD;
+            var desc = _frmVista.ConsultaDescripcion;
+            var categoria = _frmVista.ConsultaID_ProductoCategoria;
 
             // Carga de datos desde el presentador (List<Producto>)
-            var data = _Presentador.ObtenerTodosC_Producto();
+            var data = _Presentador.CargarDatosGRD(desc, categoria);
             _frmVista.GRD_DataSourceProducto = data;
 
             g.ResumeLayout();

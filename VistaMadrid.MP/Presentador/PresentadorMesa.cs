@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using VistaMadrid.MP.EF;
 namespace VistaMadrid.MP
@@ -17,6 +18,23 @@ namespace VistaMadrid.MP
             _vistasRepository = new MVistas.ModeloVistas();
             _modeloMesa = new ModeloMesa();
             _modeloSala = new ModeloSala();
+        }
+
+        public List<C_Mesa> CargarDatosGRD(string descripcion, int? idSala)
+        {
+            var lista = _vistasRepository.DbContext.C_Mesa.ToList();
+
+            if (idSala.HasValue && idSala.Value > 0)
+                lista = lista.Where(s => s.ID_Sala == idSala.Value).ToList();
+
+            if (!string.IsNullOrWhiteSpace(descripcion))
+            {
+                var q = descripcion.Trim();
+                lista = lista.Where(s => (s.Mesa ?? "")
+                    .IndexOf(q, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
+
+            return lista;
         }
 
         public List<Sala> ObtenerTodosSala()

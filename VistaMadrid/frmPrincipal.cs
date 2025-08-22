@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VistaMadrid.MP;
+using VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar;
+using VistaMadrid.Vista.CuentasVencidas;
+using VistaMadrid.Vista.DeudaCliente;
+using VistaMadrid.Vista.EntradasSalidas;
+using VistaMadrid.Vista.EstadoCuenta;
 using VistaMadrid.Vista.Facturacion;
 using VistaMadrid.Vista.Mantenimientos.Categoria;
 using VistaMadrid.Vista.Mantenimientos.Cliente;
@@ -15,13 +20,15 @@ using VistaMadrid.Vista.Mantenimientos.CondicionPago;
 using VistaMadrid.Vista.Mantenimientos.Empleado;
 using VistaMadrid.Vista.Mantenimientos.Mesa;
 using VistaMadrid.Vista.Mantenimientos.MetodoPago;
-using VistaMadrid.Vista.Mantenimientos.Permiso;
 using VistaMadrid.Vista.Mantenimientos.Producto;
 using VistaMadrid.Vista.Mantenimientos.Proveedor;
 using VistaMadrid.Vista.Mantenimientos.Rol;
 using VistaMadrid.Vista.Mantenimientos.Sala;
 using VistaMadrid.Vista.Mantenimientos.TipoMovimiento;
 using VistaMadrid.Vista.Mantenimientos.UnidadMedida;
+using VistaMadrid.Vista.RegistroMovimiento;
+using VistaMadrid.Vista.RegistroPagos;
+using VistaMadrid.Vista.StockActual;
 
 namespace VistaMadrid
 {
@@ -56,20 +63,32 @@ namespace VistaMadrid
             //Se entran los botones en listas y sus imagenes
             AddInList();
 
+            //Mantenimientos
             btnMesas.Click += (s, e) => AbrirTabForm<frmMesa>("Mesas");
             btnCategorias.Click += (s, e) => AbrirTabForm<frmCategoria>("Categorias");
             btnClientes.Click += (s, e) => AbrirTabForm<frmCliente>("Clientes");
             btnCondicionesPago.Click += (s, e) => AbrirTabForm<frmCondicionPago>("Condicion de Pago");
             btnEmpleados.Click += (s, e) => AbrirTabForm<frmEmpleado>("Empleados");
             btnMetodosPago.Click += (s, e) => AbrirTabForm<frmMetodoPago>("Metodo de Pago");
-            //btnPermisos.Click += (s, e) => AbrirTabForm<frmPermiso>("Permisos");
             btnProductos.Click += (s, e) => AbrirTabForm<frmProducto>("Productos");
             btnProveedores.Click += (s, e) => AbrirTabForm<frmProveedor>("Proveedores");
             btnRol.Click += (s, e) => AbrirTabForm<frmRol>("Roles");
             btnSala.Click += (s, e) => AbrirTabForm<frmSala>("Salas");
             btnTiposMovimiento.Click += (s, e) => AbrirTabForm<frmTipoMovimiento>("Tipos de Movimientos");
             btnUnidadesMedida.Click += (s, e) => AbrirTabForm<frmUnidadMedida>("Unidades de Medidas");
+
+            //Procesos
             btnFacturacion.Click += (s, e) => AbrirTabForm<frmFacturacion>("Facturación");
+            btnMovimientos.Click += (s, e) => AbrirTabForm<frmRegistroMovimiento>("Movimientos");
+            btnRegistroPago.Click += (s, e) => AbrirTabForm<frmRegistroPagos>("Registro de Pago");
+
+            //Reportes
+            btnStockActual.Click += (s, e) => AbrirTabForm<frmStockActual>("Stock Actual");
+            btnEntradasYSalidas.Click += (s, e) => AbrirTabForm<frmEntradasSalidas>("Entradas y Salidas");
+            btnCuentasPorCobrar.Click += (s, e) => AbrirTabForm<frmCuentasPorCobrar>("Cuentas Por Cobrar");
+            btnEstadoCuenta.Click += (s, e) => AbrirTabForm<frmEstadoCuenta>("Estado de Cuenta");
+            btnCuentasVencidas.Click += (s, e) => AbrirTabForm<frmCuentasVencidas>("Cuentas Vencidas");
+            btnDeudaCliente.Click += (s, e) => AbrirTabForm<frmDeudaCliente>("Deuda por Cliente");
 
             btnGuardar.Click += (s, e) => Ejecutar(f => {
                 if (f.Guardar()) MessageBox.Show("Guardado correctamente.");

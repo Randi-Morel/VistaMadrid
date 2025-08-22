@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using VistaMadrid.MP.EF;
 using VistaMadrid.MP.EF.Vistas;
@@ -18,6 +19,27 @@ namespace VistaMadrid.MP
             _vistasRepository = new MVistas.ModeloVistas();
             _modeloUsuario = new ModeloUsuario();
             _modeloCondicion = new ModeloCondicion();
+        }
+
+        public List<C_Usuario> CargarDatosGRD(string nom, string usu)
+        {
+            var lista = _vistasRepository.DbContext.C_Usuario.ToList();
+
+            if (!string.IsNullOrWhiteSpace(nom))
+            {
+                var q = nom.Trim();
+                lista = lista.Where(s => (s.Nombre ?? "")
+                    .IndexOf(q, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
+
+            if (!string.IsNullOrWhiteSpace(usu))
+            {
+                var q = usu.Trim();
+                lista = lista.Where(s => (s.Usuario ?? "")
+                    .IndexOf(q, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
+
+            return lista;
         }
 
         public List<Condicion> ObtenerTodosCondicion()

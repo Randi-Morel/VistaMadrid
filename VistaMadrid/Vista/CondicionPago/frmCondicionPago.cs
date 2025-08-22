@@ -50,6 +50,8 @@ namespace VistaMadrid.Vista.Mantenimientos.CondicionPago
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaDescripcion.Text; set => TConsultaDescripcion.Text = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -107,6 +109,11 @@ namespace VistaMadrid.Vista.Mantenimientos.CondicionPago
             AutoPago = false;
             DiasCredito = 1;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesCondicionPago.CargarDatosGRD();
         }
         #endregion
     }

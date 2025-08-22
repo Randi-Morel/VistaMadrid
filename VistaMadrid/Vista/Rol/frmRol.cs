@@ -46,6 +46,8 @@ namespace VistaMadrid.Vista.Mantenimientos.Rol
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaDescripcion.Text; set => TConsultaDescripcion.Text = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -100,6 +102,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Rol
             ID_Rol = 0;
             Descripcion = null;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesRol.CargarDatosGRD();
         }
         #endregion
 

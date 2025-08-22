@@ -50,6 +50,9 @@ namespace VistaMadrid.Vista.Mantenimientos.Mesa
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaDescripcion.Text; set => TConsultaDescripcion.Text = value; }
+        public int ConsultaID_Sala { get => CConsultaID_Sala.SelectedValue == null ? 0 : Convert.ToInt32(CConsultaID_Sala.SelectedValue); set => CConsultaID_Sala.SelectedValue = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -75,6 +78,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Mesa
             ID_Sala = -1;
             Asientos= 2;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesMesa.CargarDatosGRD();
         }
 
         private void frmMesa_Resize(object sender, EventArgs e)

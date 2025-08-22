@@ -17,6 +17,9 @@ namespace VistaMadrid.MP
         decimal PrecioVenta { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaDescripcion { get; set; }
+        int ConsultaID_ProductoCategoria { get; set; }
+
         PresentadorProducto Presentador { get; set; }
     }
 }

@@ -73,6 +73,15 @@ namespace VistaMadrid
 
             // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
             _frmVista.cbSala.SelectedIndex = -1;
+
+            _frmVista.CConsultaID_Sala.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            _frmVista.CConsultaID_Sala.DisplayMember = "Descripcion";
+            _frmVista.CConsultaID_Sala.ValueMember = "ID_Sala";
+            _frmVista.CConsultaID_Sala.DataSource = salas;
+
+            // (Opcional) Dejar sin selección inicial o respetar la que tenga la vista
+            _frmVista.CConsultaID_Sala.SelectedIndex = -1;
         }
 
         public bool ComprobarParaGuardar(out string mensaje)
@@ -172,9 +181,25 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
+            var idSala = _frmVista.ConsultaID_Sala;
+
             // Carga de datos desde el presentador (List<C_Mesa>)
-            var data = _Presentador.ObtenerTodosC_Mesa();   
+            var data = _Presentador.CargarDatosGRD(desc, idSala);
             _frmVista.GRD_DataSourceMesa = data;           
+
+            g.ResumeLayout();
+        }
+
+        public void CargarDatosGRD()
+        {
+            var g = _frmVista.GRD;
+            var desc = _frmVista.ConsultaDescripcion;
+            var idSala = _frmVista.ConsultaID_Sala;
+
+            // Carga de datos desde el presentador (List<C_Mesa>)
+            var data = _Presentador.CargarDatosGRD(desc, idSala);
+            _frmVista.GRD_DataSourceMesa = data;
 
             g.ResumeLayout();
         }

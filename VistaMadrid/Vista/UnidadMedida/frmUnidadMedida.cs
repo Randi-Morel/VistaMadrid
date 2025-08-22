@@ -46,6 +46,8 @@ namespace VistaMadrid.Vista.Mantenimientos.UnidadMedida
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaDescripcion.Text; set => TConsultaDescripcion.Text = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -101,6 +103,11 @@ namespace VistaMadrid.Vista.Mantenimientos.UnidadMedida
             ID_UnidadMedida = 0;
             Descripcion = null;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesUnidadMedida.CargarDatosGRD();
         }
         #endregion
 

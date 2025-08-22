@@ -34,11 +34,9 @@
             this.pnInferior = new System.Windows.Forms.Panel();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TConsultaDescripcion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.NUMConsultaDias = new System.Windows.Forms.NumericUpDown();
             this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,7 +58,6 @@
             this.pnInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMConsultaDias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMDiasCredito)).BeginInit();
             this.tblCentral.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -138,11 +135,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 260F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 260F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.TConsultaDescripcion, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.NUMConsultaDias, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnBuscar, 4, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -155,18 +150,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1144, 72);
             this.tableLayoutPanel1.TabIndex = 57;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(420, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 20);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "Días de crédito";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -175,7 +158,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(140, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 20);
+            this.label4.Size = new System.Drawing.Size(107, 23);
             this.label4.TabIndex = 58;
             this.label4.Text = "Descripción";
             // 
@@ -200,36 +183,9 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label9.Location = new System.Drawing.Point(3, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 20);
+            this.label9.Size = new System.Drawing.Size(100, 23);
             this.label9.TabIndex = 57;
             this.label9.Text = "Buscar por:";
-            // 
-            // NUMConsultaDias
-            // 
-            this.NUMConsultaDias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.NUMConsultaDias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NUMConsultaDias.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMConsultaDias.Location = new System.Drawing.Point(420, 36);
-            this.NUMConsultaDias.Maximum = new decimal(new int[] {
-            366,
-            0,
-            0,
-            0});
-            this.NUMConsultaDias.MaximumSize = new System.Drawing.Size(120, 0);
-            this.NUMConsultaDias.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NUMConsultaDias.Name = "NUMConsultaDias";
-            this.NUMConsultaDias.Size = new System.Drawing.Size(120, 23);
-            this.NUMConsultaDias.TabIndex = 57;
-            this.NUMConsultaDias.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // btnBuscar
             // 
@@ -254,6 +210,7 @@
             this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
             this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label2
             // 
@@ -263,7 +220,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(9, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.Size = new System.Drawing.Size(134, 23);
             this.label2.TabIndex = 56;
             this.label2.Text = "Días de crédito";
             // 
@@ -275,7 +232,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(13, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -298,7 +255,7 @@
             0,
             0});
             this.NUMDiasCredito.Name = "NUMDiasCredito";
-            this.NUMDiasCredito.Size = new System.Drawing.Size(120, 23);
+            this.NUMDiasCredito.Size = new System.Drawing.Size(120, 27);
             this.NUMDiasCredito.TabIndex = 55;
             this.NUMDiasCredito.Value = new decimal(new int[] {
             1,
@@ -346,7 +303,7 @@
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(17, 57);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(69, 22);
+            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
             this.CHKActivo.TabIndex = 51;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = true;
@@ -382,7 +339,7 @@
             this.TID_Condicion.Location = new System.Drawing.Point(9, 59);
             this.TID_Condicion.Name = "TID_Condicion";
             this.TID_Condicion.ReadOnly = true;
-            this.TID_Condicion.Size = new System.Drawing.Size(106, 23);
+            this.TID_Condicion.Size = new System.Drawing.Size(106, 27);
             this.TID_Condicion.TabIndex = 57;
             // 
             // label11
@@ -393,7 +350,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label11.Location = new System.Drawing.Point(9, 33);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 20);
+            this.label11.Size = new System.Drawing.Size(26, 23);
             this.label11.TabIndex = 56;
             this.label11.Text = "Id";
             // 
@@ -405,7 +362,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label7.Location = new System.Drawing.Point(179, 33);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 20);
+            this.label7.Size = new System.Drawing.Size(115, 23);
             this.label7.TabIndex = 45;
             this.label7.Text = "Descripción*";
             // 
@@ -459,7 +416,7 @@
             this.CHKAutoPago.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKAutoPago.Location = new System.Drawing.Point(17, 60);
             this.CHKAutoPago.Name = "CHKAutoPago";
-            this.CHKAutoPago.Size = new System.Drawing.Size(39, 22);
+            this.CHKAutoPago.Size = new System.Drawing.Size(46, 26);
             this.CHKAutoPago.TabIndex = 53;
             this.CHKAutoPago.Text = "Si";
             this.CHKAutoPago.UseVisualStyleBackColor = true;
@@ -472,7 +429,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(13, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(95, 23);
             this.label1.TabIndex = 52;
             this.label1.Text = "Auto Pago";
             // 
@@ -495,7 +452,7 @@
             this.lblCondicion.Location = new System.Drawing.Point(5, 10);
             this.lblCondicion.Margin = new System.Windows.Forms.Padding(5);
             this.lblCondicion.Name = "lblCondicion";
-            this.lblCondicion.Size = new System.Drawing.Size(475, 31);
+            this.lblCondicion.Size = new System.Drawing.Size(586, 40);
             this.lblCondicion.TabIndex = 17;
             this.lblCondicion.Text = "Mantenimiento de Condición de Pago";
             // 
@@ -513,7 +470,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMConsultaDias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMDiasCredito)).EndInit();
             this.tblCentral.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -549,10 +505,8 @@
         internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         internal System.Windows.Forms.TextBox TConsultaDescripcion;
-        internal System.Windows.Forms.NumericUpDown NUMConsultaDias;
         internal System.Windows.Forms.CheckBox CHKActivo;
         private ReaLTaiizor.Controls.ParrotButton btnBuscar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.CheckBox CHKAutoPago;

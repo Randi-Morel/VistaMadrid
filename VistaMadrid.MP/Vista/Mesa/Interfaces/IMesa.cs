@@ -11,6 +11,9 @@ namespace VistaMadrid.MP
         int Asientos { get; set; }
         bool Activo { get; set; }
 
+        string ConsultaDescripcion { get; set; }
+        int ConsultaID_Sala { get; set; }
+
         PresentadorMesa Presentador { get; set; }
     }
 }

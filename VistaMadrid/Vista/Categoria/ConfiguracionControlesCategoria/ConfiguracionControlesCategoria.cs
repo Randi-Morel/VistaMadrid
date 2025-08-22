@@ -108,8 +108,10 @@ namespace VistaMadrid
                 Width = 70
             });
 
+            var desc = _frmVista.ConsultaDescripcion;
+
             // Carga de datos desde el presentador (List<ProductoCategoria>)
-            var data = _Presentador.ObtenerTodosProductoCategoria();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceCategoria = data;
 
             g.ResumeLayout();
@@ -118,9 +120,10 @@ namespace VistaMadrid
         public void CargarDatosGRD()
         {
             var g = _frmVista.GRD;
+            var desc = _frmVista.ConsultaDescripcion;
 
             // Carga de datos desde el presentador (List<ProductoCategoria>)
-            var data = _Presentador.ObtenerTodosProductoCategoria();
+            var data = _Presentador.CargarDatosGRD(desc);
             _frmVista.GRD_DataSourceCategoria = data;
 
             g.ResumeLayout();

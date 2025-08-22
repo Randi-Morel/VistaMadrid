@@ -48,6 +48,10 @@ namespace VistaMadrid.Vista.Mantenimientos.Cliente
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaDescripcion { get => TConsultaNombre.Text; set => TConsultaNombre.Text = value; }
+
+        public int ConsultaID_Condicion { get => CConsultaID_Condicion.SelectedValue == null ? 0 : Convert.ToInt32(CConsultaID_Condicion.SelectedValue); set => CID_Condicion.SelectedValue = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -107,6 +111,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Cliente
             Direccion = null;
             ID_Condicion = -1;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesCliente.CargarDatosGRD();
         }
         #endregion
 

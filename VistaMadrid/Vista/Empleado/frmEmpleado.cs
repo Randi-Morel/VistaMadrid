@@ -56,6 +56,9 @@ namespace VistaMadrid.Vista.Mantenimientos.Empleado
             set => GRD.DataSource = value;
         }
 
+        public string ConsultaNombre { get => TConsultaNombre.Text; set => TConsultaNombre.Text = value; }
+        public string ConsultaUsuario { get => TConsultaUsuario.Text; set => TConsultaUsuario.Text = value; }
+
         #region "Eventos del Formulario"
         public bool Guardar()
         {
@@ -115,6 +118,11 @@ namespace VistaMadrid.Vista.Mantenimientos.Empleado
             Nombre = null;
             Apellidos = null;
             Activo = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            _ConfiguracionControlesEmpleado.CargarDatosGRD();
         }
         #endregion
 

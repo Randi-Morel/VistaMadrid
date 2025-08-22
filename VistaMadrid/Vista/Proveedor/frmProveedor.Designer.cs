@@ -34,13 +34,9 @@
             this.pnInferior = new System.Windows.Forms.Panel();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtConsulta1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.TConsultaNombre = new System.Windows.Forms.TextBox();
             this.btnBuscar = new ReaLTaiizor.Controls.ParrotButton();
-            this.txtConsulta2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtConsulta3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tblCentral = new System.Windows.Forms.TableLayoutPanel();
             this.tblAccesibilidad = new System.Windows.Forms.TableLayoutPanel();
@@ -144,13 +140,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.label10, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsulta1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.TConsultaNombre, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnBuscar, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsulta2, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtConsulta3, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -163,41 +155,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1144, 72);
             this.tableLayoutPanel1.TabIndex = 57;
             // 
-            // label10
+            // TConsultaNombre
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label10.Location = new System.Drawing.Point(716, 5);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 20);
-            this.label10.TabIndex = 61;
-            this.label10.Text = "Campo 3";
-            // 
-            // txtConsulta1
-            // 
-            this.txtConsulta1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TConsultaNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsulta1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta1.Location = new System.Drawing.Point(76, 36);
-            this.txtConsulta1.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsulta1.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsulta1.Name = "txtConsulta1";
-            this.txtConsulta1.Size = new System.Drawing.Size(255, 27);
-            this.txtConsulta1.TabIndex = 34;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.label7.Location = new System.Drawing.Point(396, 5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 20);
-            this.label7.TabIndex = 60;
-            this.label7.Text = "Campo 2 ";
+            this.TConsultaNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TConsultaNombre.Location = new System.Drawing.Point(76, 36);
+            this.TConsultaNombre.MaximumSize = new System.Drawing.Size(255, 27);
+            this.TConsultaNombre.MinimumSize = new System.Drawing.Size(185, 27);
+            this.TConsultaNombre.Name = "TConsultaNombre";
+            this.TConsultaNombre.Size = new System.Drawing.Size(255, 27);
+            this.TConsultaNombre.TabIndex = 34;
             // 
             // btnBuscar
             // 
@@ -224,18 +192,7 @@
             this.btnBuscar.TextColor = System.Drawing.SystemColors.ControlText;
             this.btnBuscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnBuscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // txtConsulta2
-            // 
-            this.txtConsulta2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsulta2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta2.Location = new System.Drawing.Point(396, 36);
-            this.txtConsulta2.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsulta2.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsulta2.Name = "txtConsulta2";
-            this.txtConsulta2.Size = new System.Drawing.Size(255, 27);
-            this.txtConsulta2.TabIndex = 53;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
@@ -245,21 +202,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(76, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.Size = new System.Drawing.Size(78, 23);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Campo 1";
-            // 
-            // txtConsulta3
-            // 
-            this.txtConsulta3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConsulta3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta3.Location = new System.Drawing.Point(716, 36);
-            this.txtConsulta3.MaximumSize = new System.Drawing.Size(255, 27);
-            this.txtConsulta3.MinimumSize = new System.Drawing.Size(185, 27);
-            this.txtConsulta3.Name = "txtConsulta3";
-            this.txtConsulta3.Size = new System.Drawing.Size(255, 27);
-            this.txtConsulta3.TabIndex = 54;
+            this.label1.Text = "Nombre";
             // 
             // label9
             // 
@@ -270,7 +215,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label9.Location = new System.Drawing.Point(3, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 28);
+            this.label9.Size = new System.Drawing.Size(63, 28);
             this.label9.TabIndex = 58;
             this.label9.Text = "Buscar por:";
             // 
@@ -326,7 +271,7 @@
             this.CHKActivo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
             this.CHKActivo.Location = new System.Drawing.Point(167, 112);
             this.CHKActivo.Name = "CHKActivo";
-            this.CHKActivo.Size = new System.Drawing.Size(69, 22);
+            this.CHKActivo.Size = new System.Drawing.Size(82, 26);
             this.CHKActivo.TabIndex = 51;
             this.CHKActivo.Text = "Activo";
             this.CHKActivo.UseVisualStyleBackColor = true;
@@ -339,7 +284,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label6.Location = new System.Drawing.Point(163, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 36;
             this.label6.Text = "Estado";
             // 
@@ -413,7 +358,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label5.Location = new System.Drawing.Point(9, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.Size = new System.Drawing.Size(88, 23);
             this.label5.TabIndex = 43;
             this.label5.Text = "Dirección";
             // 
@@ -425,7 +370,7 @@
             this.TTelefono.Location = new System.Drawing.Point(13, 41);
             this.TTelefono.MaximumSize = new System.Drawing.Size(255, 27);
             this.TTelefono.Name = "TTelefono";
-            this.TTelefono.Size = new System.Drawing.Size(255, 23);
+            this.TTelefono.Size = new System.Drawing.Size(255, 27);
             this.TTelefono.TabIndex = 42;
             // 
             // label3
@@ -436,7 +381,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(9, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.Size = new System.Drawing.Size(91, 23);
             this.label3.TabIndex = 41;
             this.label3.Text = "Teléfono*";
             // 
@@ -463,7 +408,7 @@
             this.TID_Proveedor.Location = new System.Drawing.Point(17, 41);
             this.TID_Proveedor.Name = "TID_Proveedor";
             this.TID_Proveedor.ReadOnly = true;
-            this.TID_Proveedor.Size = new System.Drawing.Size(106, 23);
+            this.TID_Proveedor.Size = new System.Drawing.Size(106, 27);
             this.TID_Proveedor.TabIndex = 57;
             // 
             // label11
@@ -474,7 +419,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label11.Location = new System.Drawing.Point(13, 15);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 20);
+            this.label11.Size = new System.Drawing.Size(26, 23);
             this.label11.TabIndex = 56;
             this.label11.Text = "Id";
             // 
@@ -486,7 +431,7 @@
             this.TEmail.Location = new System.Drawing.Point(167, 142);
             this.TEmail.MaximumSize = new System.Drawing.Size(255, 27);
             this.TEmail.Name = "TEmail";
-            this.TEmail.Size = new System.Drawing.Size(255, 23);
+            this.TEmail.Size = new System.Drawing.Size(255, 27);
             this.TEmail.TabIndex = 35;
             // 
             // label4
@@ -497,7 +442,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label4.Location = new System.Drawing.Point(163, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 20);
+            this.label4.Size = new System.Drawing.Size(54, 23);
             this.label4.TabIndex = 34;
             this.label4.Text = "Email";
             // 
@@ -509,7 +454,7 @@
             this.TNombre.Location = new System.Drawing.Point(167, 41);
             this.TNombre.MaximumSize = new System.Drawing.Size(255, 27);
             this.TNombre.Name = "TNombre";
-            this.TNombre.Size = new System.Drawing.Size(255, 23);
+            this.TNombre.Size = new System.Drawing.Size(255, 27);
             this.TNombre.TabIndex = 33;
             // 
             // label2
@@ -520,7 +465,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(163, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.Size = new System.Drawing.Size(86, 23);
             this.label2.TabIndex = 32;
             this.label2.Text = "Nombre*";
             // 
@@ -545,7 +490,7 @@
             this.lblAccesibilidad.Location = new System.Drawing.Point(725, 61);
             this.lblAccesibilidad.Margin = new System.Windows.Forms.Padding(5);
             this.lblAccesibilidad.Name = "lblAccesibilidad";
-            this.lblAccesibilidad.Size = new System.Drawing.Size(117, 22);
+            this.lblAccesibilidad.Size = new System.Drawing.Size(144, 27);
             this.lblAccesibilidad.TabIndex = 19;
             this.lblAccesibilidad.Text = "Accesibilidad";
             // 
@@ -558,7 +503,7 @@
             this.lblInfo.Location = new System.Drawing.Point(3, 61);
             this.lblInfo.Margin = new System.Windows.Forms.Padding(5);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(228, 22);
+            this.lblInfo.Size = new System.Drawing.Size(282, 27);
             this.lblInfo.TabIndex = 18;
             this.lblInfo.Text = "Informacion del Proveedor";
             // 
@@ -571,7 +516,7 @@
             this.lblProveedor.Location = new System.Drawing.Point(5, 10);
             this.lblProveedor.Margin = new System.Windows.Forms.Padding(5);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(373, 31);
+            this.lblProveedor.Size = new System.Drawing.Size(459, 40);
             this.lblProveedor.TabIndex = 17;
             this.lblProveedor.Text = "Mantenimiento de Proveedor";
             // 
@@ -630,13 +575,9 @@
         internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
         internal System.Windows.Forms.CheckBox CHKActivo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtConsulta1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox TConsultaNombre;
         internal ReaLTaiizor.Controls.ParrotButton btnBuscar;
-        private System.Windows.Forms.TextBox txtConsulta2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtConsulta3;
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.TextBox TID_Proveedor;
         private System.Windows.Forms.Label label11;
