@@ -10,12 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VistaMadrid.MP;
 
-namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
+namespace VistaMadrid.Vista.StockActual
 {
-    public partial class frmCuentasPorCobrar : Form
+    public partial class frmStockActual : Form
     {
-        public frmCuentasPorCobrar()
+
+        public frmStockActual()
         {
             InitializeComponent();
             btnGenerarReporte.Click += btnGenerarReporte_Click;
@@ -88,6 +90,8 @@ namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
             // Agregar tabla al documento
             doc.Add(tabla);
             doc.Close();
-        }
+        } 
     }
+
+    
 }

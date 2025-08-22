@@ -11,16 +11,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
+namespace VistaMadrid.Vista.EstadoCuenta
 {
-    public partial class frmCuentasPorCobrar : Form
+    public partial class frmEstadoCuenta : Form
     {
-        public frmCuentasPorCobrar()
+        public frmEstadoCuenta()
         {
             InitializeComponent();
             btnGenerarReporte.Click += btnGenerarReporte_Click;
         }
-
         private void btnGenerarReporte_Click(object sender, EventArgs e)
         {
             // Seleccionar dónde guardar

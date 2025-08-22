@@ -1,6 +1,6 @@
-﻿namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
+﻿namespace VistaMadrid.Vista.CuentasVencidas
 {
-    partial class frmCuentasPorCobrar
+    partial class frmCuentasVencidas
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblEmpleado = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnProducto = new System.Windows.Forms.Panel();
@@ -40,39 +38,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnGenerarReporte = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblEmpleado = new System.Windows.Forms.Label();
             this.GRD = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnProducto.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.panel4.Controls.Add(this.lblEmpleado);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1144, 70);
-            this.panel4.TabIndex = 20;
-            // 
-            // lblEmpleado
-            // 
-            this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpleado.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
-            this.lblEmpleado.Location = new System.Drawing.Point(5, 10);
-            this.lblEmpleado.Margin = new System.Windows.Forms.Padding(5);
-            this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(310, 40);
-            this.lblEmpleado.TabIndex = 18;
-            this.lblEmpleado.Text = "Cuentas por Cobrar";
             // 
             // tableLayoutPanel1
             // 
@@ -91,7 +68,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1144, 683);
-            this.tableLayoutPanel1.TabIndex = 21;
+            this.tableLayoutPanel1.TabIndex = 25;
             // 
             // panel1
             // 
@@ -175,6 +152,29 @@
             this.btnGenerarReporte.Text = "Generar Reporte";
             this.btnGenerarReporte.UseVisualStyleBackColor = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panel4.Controls.Add(this.lblEmpleado);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1144, 70);
+            this.panel4.TabIndex = 24;
+            // 
+            // lblEmpleado
+            // 
+            this.lblEmpleado.AutoSize = true;
+            this.lblEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmpleado.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.lblEmpleado.Location = new System.Drawing.Point(5, 10);
+            this.lblEmpleado.Margin = new System.Windows.Forms.Padding(5);
+            this.lblEmpleado.Name = "lblEmpleado";
+            this.lblEmpleado.Size = new System.Drawing.Size(287, 40);
+            this.lblEmpleado.TabIndex = 18;
+            this.lblEmpleado.Text = "Entradas y Salidas";
+            // 
             // GRD
             // 
             this.GRD.AllowUserToDeleteRows = false;
@@ -224,7 +224,7 @@
             this.GRD.Size = new System.Drawing.Size(1058, 398);
             this.GRD.TabIndex = 64;
             // 
-            // frmCuentasPorCobrar
+            // frmCuentasVencidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -232,10 +232,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmCuentasPorCobrar";
-            this.Text = "frmCuentasPorCobrar";
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.Name = "frmCuentasVencidas";
+            this.Text = "frmCuentasVencidas";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.pnProducto.ResumeLayout(false);
@@ -243,6 +241,8 @@
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,15 +251,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblEmpleado;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnProducto;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button btnGenerarReporte;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblEmpleado;
         internal ReaLTaiizor.Controls.PoisonDataGridView GRD;
     }
 }

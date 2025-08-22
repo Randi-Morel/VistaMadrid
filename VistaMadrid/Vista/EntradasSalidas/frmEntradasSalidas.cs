@@ -11,11 +11,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
+namespace VistaMadrid.Vista.EntradasSalidas
 {
-    public partial class frmCuentasPorCobrar : Form
+    public partial class frmEntradasSalidas : Form
     {
-        public frmCuentasPorCobrar()
+        public frmEntradasSalidas()
         {
             InitializeComponent();
             btnGenerarReporte.Click += btnGenerarReporte_Click;
@@ -27,7 +27,7 @@ namespace VistaMadrid.Vista.CuentasPorCobrar.ConfiguracionCuentasPorCobrar
             SaveFileDialog saveFile = new SaveFileDialog
             {
                 Filter = "PDF (*.pdf)|*.pdf",
-                FileName = $"ReporteStock-{DateTime.Now.ToString("dd-MM-yyyy")}.pdf"
+                FileName = $"ReporteEntradasYSalidas-{DateTime.Now.ToString("dd-MM-yyyy")}.pdf"
             };
 
             if (saveFile.ShowDialog() == DialogResult.OK)
